@@ -71,6 +71,11 @@ a {
   color: black;
 }
 
+a:hover {
+  text-decoration: underline;
+  color: black;
+}
+
 section {
   color: black;
   padding-top: 10%;
@@ -155,6 +160,20 @@ footer {
   padding-bottom: 5px;
 }
 
+@media screen and (min-width: 650px) {
+  #buttonNavigation {
+    -ms-flex-line-pack: center;
+        align-content: center;
+    vertical-align: middle;
+  }
+  button {
+    background-color: #8ea69b;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-size: 15px;
+  }
+}
+
 @media screen and (min-width: 1280px) {
   body {
     font-size: 13px;
@@ -163,16 +182,16 @@ footer {
   }
   #about {
     float: right;
-    width: 33%;
+    width: 30%;
     height: 100vh;
     display: fixed;
     background-color: #8ea69b;
   }
   #aboutSection {
-    margin-top: 15%;
+    margin-top: 10%;
   }
   header {
-    width: 67%;
+    width: 70%;
     height: 1%;
     display: inline-block;
     background-color: whitesmoke;
@@ -214,11 +233,35 @@ footer {
             text-decoration: underline #8ea69b;
   }
   .scroller {
-    width: 67%;
+    width: 70%;
     height: 100vh;
     overflow-y: scroll;
     scrollbar-color: #8ea69b whitesmoke;
     scrollbar-width: thin;
+  }
+  #aboutSection {
+    text-align: left;
+  }
+  #aboutSection #description {
+    width: 70%;
+    margin: auto;
+  }
+  #aboutSection #description #name {
+    font-size: 30px;
+    padding-left: 10px;
+  }
+  #aboutSection #description #function {
+    float: right;
+    font-size: 20px;
+    padding-right: 10px;
+  }
+  #aboutSection #description #corps {
+    padding-left: 10px;
+    font-size: 1.1em;
+  }
+  #aboutSection #description #network {
+    float: right;
+    padding-right: 10px;
   }
   section {
     color: black;
@@ -241,7 +284,7 @@ footer {
     font-style: oblique;
   }
   footer {
-    width: 67%;
+    width: 70%;
   }
   #educations, #skills #experiences {
     height: 100%;
@@ -265,6 +308,43 @@ footer {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1920px) {
+  body {
+    font-size: 15px;
+  }
+  #about {
+    width: 25%;
+    height: 100vh;
+  }
+  button {
+    padding-left: 3%;
+    padding-right: 3%;
+    font-size: 20px;
+    letter-spacing: 7px;
+  }
+  .scroller {
+    width: 75%;
+  }
+  #aboutSection #description {
+    width: 75%;
+  }
+  #aboutSection #description #name {
+    font-size: 36px;
+  }
+  #aboutSection #description #function {
+    font-size: 26px;
+  }
+  #aboutSection #description #corps {
+    font-size: 1.25em;
+  }
+  #aboutSection #description #network {
+    font-size: 1.25em;
+  }
+  footer {
+    width: 75%;
   }
 }
 /*# sourceMappingURL=style.css.map */

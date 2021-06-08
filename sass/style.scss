@@ -38,7 +38,9 @@ header{
 #screenModeImg{
     padding-top:3px;
     height: 15px;  
+    
 }
+
   
 #buttonNavigation{
     //background-color: brown;
@@ -73,6 +75,12 @@ a{
     text-decoration: none;
     color: black;
 }
+
+a:hover{
+    text-decoration:underline;
+    color: black;
+}
+
 
 section{
     color : black;
@@ -162,6 +170,24 @@ footer{
     padding-bottom: 5px;
 }
 
+//tablet
+@media screen and (min-width: 650px){
+
+    #buttonNavigation{
+        //background-color: brown;
+        align-content: center;
+        vertical-align: middle;
+    }
+    
+    button{
+        background-color: rgb(142,166,155);
+        padding-left: 2%;
+        padding-right: 2%;
+        font-size: 15px;
+    }
+
+
+}
 //Laptop
 @media screen and (min-width: 1280px) {
 
@@ -174,20 +200,21 @@ body{
 
 #about{
     float:right;
-    width: 33%;
+    width: 30%;
     height: 100vh;
     display: fixed;
     background-color: rgb(142,166,155);
+
 }
 
 
 #aboutSection{
-    margin-top : 15%;
+    margin-top : 10%;
     //background-color: yellow;
 }
 
 header{
-    width: 67%;
+    width: 70%;
     height: 1%;
     display: inline-block;
     background-color: whitesmoke;
@@ -241,7 +268,7 @@ button:hover{
  }
 
 .scroller {
-    width: 67%;
+    width: 70%;
     height: 100vh;
     overflow-y: scroll;
     scrollbar-color: rgb(142,166,155) whitesmoke;
@@ -249,6 +276,35 @@ button:hover{
 
 }
 
+#aboutSection{
+    text-align: left;
+
+    #description{
+        //background-color: blueviolet;
+        width: 70%;
+        margin:auto;
+
+        #name{
+            font-size: 30px;
+            padding-left:10px;
+        }
+        #function{
+            float: right;
+            font-size: 20px;
+            padding-right:10px;
+        }
+        #corps{
+            padding-left:10px;
+            font-size: 1.1em;
+            //background-color: red;
+        }
+        #network{
+            float: right;
+            padding-right:10px;
+        }
+        
+    }
+}
 
 
 section{
@@ -277,37 +333,87 @@ section{
     }
 }
 
-footer{
-    width:67%;
+    footer{
+        width:70%;
+    }
+
+
+    #educations, #skills #experiences{
+        height: 100%;
+    }
+
+
+    #skills{
+        //background-color: yellowgreen;
+    }
+
+    #educations{
+        //background-color: blueviolet;
+    }
+
+    #flex{
+        //background-color: brown;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 100%;
+        align-self: center;
+        align-items: center;
+        justify-content: center;
+
+    }
+
+
 }
 
+@media screen and (min-width: 1920px){
 
-#educations, #skills #experiences{
-    height: 100%;
-}
-
-#skills{
-    //background-color: yellowgreen;
-}
-
-#educations{
-    //background-color: blueviolet;
-}
-
-#flex{
-    //background-color: brown;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-    align-self: center;
-    align-items: center;
-    justify-content: center;
-
+    body{
+        font-size: 15px;
+        //overflow: hidden;
+    }
     
-}
+    #about{
+        width: 25%;
+        height: 100vh;
+    }
 
+    button{
+        padding-left: 3%;
+        padding-right: 3%;
+        font-size: 20px;
+        letter-spacing: 7px;
+    }
+    
+    .scroller {
+        width: 75%;
+    }
 
+    #aboutSection{
+    
+        #description{
+            width: 75%;
+
+            #name{
+                font-size: 36px;
+            }
+            #function{
+                font-size: 26px;
+            }
+            #corps{
+                font-size: 1.25em;
+                //background-color: red;
+            }
+            #network{
+                font-size: 1.25em;
+            }
+            
+        }
+    }
+
+    footer{
+        width:75%;
+    }
 }
 
 
