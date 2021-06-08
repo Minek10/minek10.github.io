@@ -4,10 +4,8 @@ body {
     word-wrap: break-word;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 15px;
-}
-
-div.opacity{
-    opacity:0;
+    margin: 0;
+    padding: 0;
 }
 
 header{
@@ -48,7 +46,7 @@ header{
     vertical-align: middle;
 }
 
-#btnHeader{
+button{
     background-color: rgb(142,166,155);
     padding-left: 2.5%;
     padding-right: 2.5%;
@@ -57,7 +55,7 @@ header{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#btnHeader:hover{
+button:hover{
    color:white
 }
 
@@ -81,6 +79,7 @@ section{
     //background-color: yellow;
     padding-top: 10%;
     padding-bottom: 5%;
+    padding-left:2%;
     opacity: 1;
     transition-duration: 0.5s;
     
@@ -170,7 +169,7 @@ body{
     font-size: 13px;
     margin: 0;
     padding: 0;
-    overflow: hidden;
+    //overflow: hidden;
 }
 
 #about{
@@ -178,17 +177,18 @@ body{
     width: 33%;
     height: 100vh;
     display: fixed;
-    top:0;
     background-color: rgb(142,166,155);
 }
 
+
 #aboutSection{
-    margin-top : 100px;
+    margin-top : 15%;
+    //background-color: yellow;
 }
 
 header{
-    width: 66%;
-    height: 10%;
+    width: 67%;
+    height: 1%;
     display: inline-block;
     background-color: whitesmoke;
     top:0;
@@ -223,15 +223,32 @@ header{
     vertical-align: middle;
 }
 
-#btnHeader{
+button{
     background-color: whitesmoke;
     padding-left: 2.5%;
     padding-right: 2.5%;
     border: none;
     font-size: 15px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 5px;
 
 }
+
+button:hover{
+    color:rgb(142,166,155);
+    text-decoration: underline rgb(142,166,155);
+    
+ }
+
+.scroller {
+    width: 67%;
+    height: 100vh;
+    overflow-y: scroll;
+    scrollbar-color: rgb(142,166,155) whitesmoke;
+    scrollbar-width: thin;
+
+}
+
 
 
 section{
@@ -260,13 +277,34 @@ section{
     }
 }
 
-section.opaque{ 
-    background-color: red;
-    opacity:0;
-}
-
 footer{
     width:67%;
+}
+
+
+#educations, #skills{
+    height: 100vh;
+}
+
+#skills{
+    //background-color: yellowgreen;
+}
+
+#educations{
+    //background-color: blueviolet;
+}
+
+#flex{
+    //background-color: brown;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    align-self: center;
+    align-items: center;
+    justify-content: center;
+
+    
 }
 
 

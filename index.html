@@ -17,10 +17,10 @@
                 <img id="screenModeImg" src="./img/small_screen2.png" alt="">
             </span>
                 <span id="buttonNavigation">
-                    <a href="#about"><button id="btnHeader" class="btnAbout">Contact</button></a>
-                    <a href="#educations"><button id="btnHeader" class="btnEducations">Formations</button></a>
-                    <a href="#skills"><button id="btnHeader" class="btnskills">Expériences</button></a>
-                    
+                    <a href="#about"><button id="aboutBtn" class="btnAbout">Contact</button></a>
+                    <a href="#educations"><button id="btnEducation" class="btnEducations">Formations</button></a>
+                    <a href="#"><button id="btnEducation" class="btnEducations">Expériences</button></a>
+                    <a href="#skills"><button id="btnSkills" class="btnskills">Compétences</button></a>
                 </span>
             </span>
             
@@ -49,6 +49,7 @@
         </section>
     </div>
 
+    <div class="scroller">
     <!--Formation-->
     <div id="educations">
         
@@ -62,13 +63,13 @@
 
             <span id='Title'>■ Bachelier en informatique de gestion </span> <br>
             <ul>
-                <li><b><u>Date</u> :</b> Septembre 2016 – Novembre 202</li>
+                <li><b><u>Date</u> :</b> Septembre 2016 – Novembre 2020</li>
                 <li><b><u>Titre du mémoire</u> :</b> <i>"Administration et optimisation du réseau de fibres
                     optiques dans l'infrastructure du Tec Charleroi "</i></li>
                 <li><b><u>Lieu</u> :</b> Cefora/Technocité Hornu</li>
             </ul>
 
-            <span id='Title'>■ Qualification "Technicien en informatique" </span> <br>
+            <span id='Title'>■ Qualification rhétorique "Technicien en informatique" </span> <br>
             <ul>
                 <li><b><u>Date</u> :</b> Septembre 2012 – Juin 2013</li>
                 <li><b><u>Titre du mémoire</u> :</b> <i>"Installation, configuration et paramétrage d'un
@@ -82,77 +83,86 @@
     <!--Compétences-->
     <div id="skills">
         <section id="SkillSection"> 
+            
             <p id="Category">֍ Compétences ֍</p>
 
             <p id="SubCategory"> Programmation :</p>
-            <span id='Title'>■ Front-End </span> <br>
+            <div id="flex"> 
             <ul>
+                <span id='Title'>■ Front-End </span> <br>
                 <li>HTML, CSS (SASS, Thailwind),</li>
                 <li>Javascript (Vanilla, ES6, Angular, React, Cypress)</li>
                 <li>ASP.NET</li>
             </ul>
-
-            <span id='Title'>■ Back-End </span> <br>
             <ul>
+                <span id='Title'>■ Back-End </span> <br>
                 <li>NodeJS (Express, Typescript, TypeORM)</li>
                 <li>Javascript</li>
                 <li>C#</li>
             </ul><br>
+        </div>
 
             <p id="SubCategory"> Moteur de base de données :</p>
-            <span id='Title'>■ MySQL </span> <br>
+            <div id="flex"> 
             <ul>
+                <span id='Title'>■ MySQL </span> <br>
                 <li>MariaDb</li>
                 <li>InnoDb</li>
             </ul><br>
-
-            <span id='Title'>■ NoSQL </span> <br>
             <ul>
+                <span id='Title'>■ NoSQL </span> <br>
                 <li>Mongo</li>
                 <li>Elastic</li>
             </ul><br>
+            </div>
 
             <p id="SubCategory"> Analyse :</p>
-            <span id='Title'>■ Meurise </span> <br>
-            <ul>
-                <li>Modèle conceptuel des données</li>
-                <li>Modèle physique des données</li>
-                <li>Modèle logique des données</li>
-            </ul>
 
-            <span id='Title'>■ UML </span> <br>
-            <ul>
-                <li>UseCase</li>
-                <li>Node</li>
-                <li>Diagramme de classe</li>
-            </ul>
-
-            <span id='Title'>■ SCRUM </span> <br><br><br>
+            <div id="flex"> 
+                <ul>
+                    <span id='Title'>■ Meurise </span> <br>
+                    <li>Modèle conceptuel des données</li>
+                    <li>Modèle physique des données</li>
+                    <li>Modèle logique des données</li>
+                </ul>
+                <ul>
+                    <span id='Title'>■ UML </span> <br>
+                    <li>UseCase</li>
+                    <li>Node</li>
+                    <li>Diagramme de classe</li>
+                </ul>
+                <ul>
+                    <span id='Title'>■ SCRUM </span> <br>
+                </ul>
+            </div>
 
             <p id="SubCategory"> Systèmes d'exploitation :</p>
-            <span id='Title'>■ Windows </span> <br>
+            <div id="flex"> 
+            
             <ul>
+                <span id='Title'>■ Windows </span> <br>
                 <li>Maintenance et exploitation du système</li>
             </ul><br>
 
-            <span id='Title'>■ Windows Server </span> <br>
+           
             <ul>
-                <li>Active Directory, Serveur</li>
+                <span id='Title'>■ Windows Server </span> <br>
+                <li>Active Directory</li>
                 <li>Serveur DHCP</li>
                 <li>Serveur DNS</li>
                 <li>Serveur de fichiers</li>
                 <li>GPO</li>
             </ul><br>
 
-            <span id='Title'>■ Ubuntu </span> <br>
+            
             <ul>
+                <span id='Title'>■ Ubuntu </span> <br>
                 <li>Exploitation du système et de l'environnement</li>
             </ul><br>
             
         </section>
     </div>
-
-
+</div>
 <!--Footer-->
 
     <footer id="footer">

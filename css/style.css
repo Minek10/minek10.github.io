@@ -4,10 +4,8 @@ body {
   word-wrap: break-word;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 15px;
-}
-
-div.opacity {
-  opacity: 0;
+  margin: 0;
+  padding: 0;
 }
 
 header {
@@ -44,7 +42,7 @@ header {
   vertical-align: middle;
 }
 
-#btnHeader {
+button {
   background-color: #8ea69b;
   padding-left: 2.5%;
   padding-right: 2.5%;
@@ -53,7 +51,7 @@ header {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#btnHeader:hover {
+button:hover {
   color: white;
 }
 
@@ -77,6 +75,7 @@ section {
   color: black;
   padding-top: 10%;
   padding-bottom: 5%;
+  padding-left: 2%;
   opacity: 1;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
@@ -161,22 +160,20 @@ footer {
     font-size: 13px;
     margin: 0;
     padding: 0;
-    overflow: hidden;
   }
   #about {
     float: right;
     width: 33%;
     height: 100vh;
     display: fixed;
-    top: 0;
     background-color: #8ea69b;
   }
   #aboutSection {
-    margin-top: 100px;
+    margin-top: 15%;
   }
   header {
-    width: 66%;
-    height: 10%;
+    width: 67%;
+    height: 1%;
     display: inline-block;
     background-color: whitesmoke;
     top: 0;
@@ -202,13 +199,26 @@ footer {
         align-content: center;
     vertical-align: middle;
   }
-  #btnHeader {
+  button {
     background-color: whitesmoke;
     padding-left: 2.5%;
     padding-right: 2.5%;
     border: none;
     font-size: 15px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 5px;
+  }
+  button:hover {
+    color: #8ea69b;
+    -webkit-text-decoration: underline #8ea69b;
+            text-decoration: underline #8ea69b;
+  }
+  .scroller {
+    width: 67%;
+    height: 100vh;
+    overflow-y: scroll;
+    scrollbar-color: #8ea69b whitesmoke;
+    scrollbar-width: thin;
   }
   section {
     color: black;
@@ -230,12 +240,31 @@ footer {
             text-decoration: underline dotted 3px #8ea69b;
     font-style: oblique;
   }
-  section.opaque {
-    background-color: red;
-    opacity: 0;
-  }
   footer {
     width: 67%;
+  }
+  #educations, #skills {
+    height: 100vh;
+  }
+  #flex {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    width: 100%;
+    -ms-flex-item-align: center;
+        align-self: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
 }
 /*# sourceMappingURL=style.css.map */
