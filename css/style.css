@@ -44,10 +44,11 @@ header {
 
 button {
   background-color: #8ea69b;
-  padding-left: 2.5%;
-  padding-right: 2.5%;
+  background-color: red;
+  padding-left: 1%;
+  padding-right: 1%;
   border: none;
-  font-size: 15px;
+  font-size: 12px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
