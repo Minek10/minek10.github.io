@@ -155,4 +155,87 @@ footer {
   font-size: 12px;
   padding-bottom: 5px;
 }
+
+@media screen and (min-width: 1280px) {
+  body {
+    font-size: 13px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+  }
+  #about {
+    float: right;
+    width: 33%;
+    height: 100vh;
+    display: fixed;
+    top: 0;
+    background-color: #8ea69b;
+  }
+  #aboutSection {
+    margin-top: 100px;
+  }
+  header {
+    width: 66%;
+    height: 10%;
+    display: inline-block;
+    background-color: whitesmoke;
+    top: 0;
+    vertical-align: middle;
+    position: fixed;
+  }
+  #banner {
+    margin: 0 auto;
+    width: 100%;
+    vertical-align: middle;
+    text-align: center;
+  }
+  #mode {
+    padding-left: 10px;
+    float: left;
+  }
+  #screenModeImg {
+    padding-top: 3px;
+    height: 15px;
+  }
+  #buttonNavigation {
+    -ms-flex-line-pack: center;
+        align-content: center;
+    vertical-align: middle;
+  }
+  #btnHeader {
+    background-color: whitesmoke;
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    border: none;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  section {
+    color: black;
+    padding: 6% 3% 3% 3%;
+  }
+  section #Title {
+    font-size: 1.2em;
+  }
+  section #Category {
+    text-align: center;
+    font-size: 30px;
+    -webkit-text-decoration: underline overline #8ea69b;
+            text-decoration: underline overline #8ea69b;
+  }
+  section #SubCategory {
+    text-align: center;
+    font-size: 25px;
+    -webkit-text-decoration: underline dotted 3px #8ea69b;
+            text-decoration: underline dotted 3px #8ea69b;
+    font-style: oblique;
+  }
+  section.opaque {
+    background-color: red;
+    opacity: 0;
+  }
+  footer {
+    width: 67%;
+  }
+}
 /*# sourceMappingURL=style.css.map */
