@@ -1,0 +1,173 @@
+body {
+    background-color: whitesmoke;
+    //overflow: hidden;
+    word-wrap: break-word;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+}
+
+div.opacity{
+    opacity:0;
+}
+
+header{
+    width: 100%;
+    display: inline-block;
+    background-color: rgb(142,166,155);
+    top:0;
+    padding-bottom: 3%;
+    vertical-align: middle;
+    position:fixed;
+}
+
+#banner{
+    margin : 0 auto;
+    //background-color: blue;
+    width: 100%;
+    vertical-align: middle;
+    text-align: center;
+    padding-top:2%;
+    
+}
+
+#mode{
+    //background-color: yellow;
+    padding-left: 10px;
+    float: left;
+    //font-size: 15px;
+}
+
+#screenModeImg{
+    padding-top:3px;
+    height: 15px;  
+}
+  
+#buttonNavigation{
+    //background-color: brown;
+    align-content: center;
+    vertical-align: middle;
+}
+
+#btnHeader{
+    background-color: rgb(142,166,155);
+    padding-left: 2.5%;
+    padding-right: 2.5%;
+    border: none;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+#btnHeader:hover{
+   color:white
+}
+
+li{
+    list-style: none;
+}
+li::before{
+    content: "•";
+    padding-right: 10px;
+    color: rgb(142,166,155);
+    font-size:20px;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+section{
+    color : black;
+    //background-color: yellow;
+    padding-top: 10%;
+    padding-bottom: 5%;
+    opacity: 1;
+    transition-duration: 0.5s;
+    
+    #Title{
+        font-size: 1.3em;
+        //background-color: red;
+    }
+
+    #Category{
+        text-align: center;
+        font-size: 30px;
+        //background-color: red;
+        text-decoration: underline overline rgb(142,166,155);
+    }
+    
+    #SubCategory{
+        text-align: center;
+        font-size: 25px;
+        //background-color: red;
+        text-decoration: underline dotted 3px rgb(142,166,155);
+        font-style: oblique;
+    }
+}
+
+section.opaque{ 
+    background-color: red;
+    opacity:0;
+}
+
+
+
+#aboutSection{
+    text-align: left;
+
+    #profileImg{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 275px;
+        height: 315px;
+        border-radius: 25%;
+        padding-top: 2%;
+    }
+
+    #description{
+        //background-color: blueviolet;
+        width: 65%;
+        margin:auto;
+
+        #name{
+            font-size: 28px;
+            padding-left:10px;
+        }
+        #function{
+            float: right;
+            font-size: 20px;
+            padding-right:10px;
+        }
+        #corps{
+            padding-left:10px;
+            //background-color: red;
+        }
+        #network{
+            float: right;
+            padding-right:10px;
+        }
+        
+    }
+}
+
+
+footer{
+    position:fixed;
+    bottom:0;
+    width:100%;
+    padding-top:5px;
+    background-color: rgb(142,166,155);
+    text-align: center;
+    font-size: 12px;
+    padding-bottom: 5px;
+}
+
+
+
+
+
+
+
+  
+
