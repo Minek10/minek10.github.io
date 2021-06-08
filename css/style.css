@@ -44,7 +44,6 @@ header {
 
 button {
   background-color: #8ea69b;
-  background-color: red;
   padding-left: 1%;
   padding-right: 1%;
   border: none;
@@ -244,8 +243,8 @@ footer {
   footer {
     width: 67%;
   }
-  #educations, #skills {
-    height: 100vh;
+  #educations, #skills #experiences {
+    height: 100%;
   }
   #flex {
     display: -webkit-box;

@@ -48,7 +48,6 @@ header{
 
 button{
     background-color: rgb(142,166,155);
-    background-color: red;;
     padding-left: 1%;
     padding-right: 1%;
     border: none;
@@ -283,8 +282,8 @@ footer{
 }
 
 
-#educations, #skills{
-    height: 100vh;
+#educations, #skills #experiences{
+    height: 100%;
 }
 
 #skills{
