@@ -179,7 +179,8 @@ hr {
 }
 
 #languages #screenLang {
-  width: 23%;
+  width: 60px;
+  height: 75px;
   padding-left: 1%;
   padding-bottom: 5%;
 }
