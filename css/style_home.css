@@ -68,8 +68,8 @@ hr {
   border: none;
   border-top: 10px dotted #8ea69b;
   width: 30%;
-  margin-top: 25%;
-  margin-bottom: 25%;
+  margin-top: 20%;
+  margin-bottom: 20%;
 }
 
 .bloc {
@@ -81,7 +81,7 @@ hr {
 }
 
 #hello {
-  margin-top: 25%;
+  margin-top: 20%;
   text-align: center;
 }
 
@@ -111,6 +111,8 @@ hr {
 
 #txtAboutMe {
   text-justify: auto;
+  padding-left: 1%;
+  padding-right: 1%;
 }
 
 #desc {
@@ -127,10 +129,13 @@ hr {
       -ms-flex-pack: justify;
           justify-content: space-between;
   margin-top: 8%;
+  margin-left: 3%;
+  margin-right: 1%;
+  width: 95%;
 }
 
 #desc span#left {
-  width: 32%;
+  width: 30%;
   font-weight: bold;
 }
 
@@ -140,7 +145,7 @@ hr {
 }
 
 #desc span#right {
-  width: 60%;
+  width: 62%;
 }
 
 #desc #screenMedia {
@@ -156,7 +161,8 @@ hr {
 }
 
 #languages {
-  display: inline-block;
+  display: table;
+  margin: auto;
 }
 
 #languages #langImg {
@@ -190,7 +196,9 @@ hr {
 }
 
 #softs {
-  display: inline-block;
+  display: table;
+  margin: auto;
+  width: 97%;
 }
 
 #softs #softsImg {
@@ -213,7 +221,8 @@ hr {
 }
 
 #softs #screenSofts {
-  width: 23%;
+  width: 60px;
+  height: 75px;
   padding-left: 1%;
   padding-bottom: 5%;
 }
@@ -223,8 +232,8 @@ hr {
 }
 
 #db {
-  margin-top: 3%;
-  display: inline-block;
+  display: table;
+  width: 98%;
 }
 
 #db #dbImg {
@@ -247,8 +256,8 @@ hr {
 }
 
 #db #dbImg #screenBd {
-  width: 23%;
-  padding-left: 1%;
+  width: 60px;
+  height: 75px;
 }
 
 #db #dbImg #screenBd:hover {
@@ -302,19 +311,24 @@ footer {
     font-size: 30px;
     letter-spacing: 2px;
   }
-  #languages #screenLang {
-    width: 19%;
-    padding-left: 1%;
-    padding-bottom: 7%;
+  #desc {
+    margin: auto;
+    width: 70%;
+    margin-top: 5%;
+    margin-left: 17%;
   }
-  #softs #screenSofts {
-    width: 19%;
-    padding-left: 1%;
-    padding-bottom: 7%;
+  span#left {
+    width: 10px;
+    font-weight: bold;
+    text-align: right;
   }
-  #db #screenBd {
-    width: 19%;
-    padding-left: 1%;
+  span#middle {
+    text-align: center;
+  }
+  #db {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
   }
 }
 
@@ -331,31 +345,29 @@ footer {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   #hello {
-    margin-top: 20%;
+    margin-top: 15%;
   }
   #hello #name {
     font-size: 36px;
     font-family: "Trirong", serif;
   }
+  #hello #txtAboutMe {
+    padding-right: 2%;
+    padding-left: 2%;
+    text-align: justify;
+  }
   #desc {
-    width: 80%;
-    margin: auto;
-    margin-top: 7%;
-  }
-  span#left {
-    width: 70px;
-    font-weight: bold;
-  }
-  span#middle {
-    text-align: center;
+    width: 61%;
+    margin-top: 5%;
+    margin-left: 22%;
   }
   #Category {
     font-size: 36px;
     letter-spacing: 5px;
   }
   hr {
-    margin-top: 20%;
-    margin-bottom: 20%;
+    margin-top: 15%;
+    margin-bottom: 15%;
   }
   span#left {
     width: 32%;
@@ -380,19 +392,10 @@ footer {
     padding-right: 3px;
     height: 25px;
   }
-  #languages #screenLang {
-    width: 15%;
-    padding-left: 1%;
-    padding-bottom: 7%;
-  }
-  #softs #screenSofts {
-    width: 15%;
-    padding-left: 1%;
-    padding-bottom: 7%;
-  }
-  #db #screenBd {
-    width: 19%;
-    padding-left: 1%;
+  #db {
+    width: 50%;
+    margin-left: 25%;
+    margin-right: 25%;
   }
 }
 
@@ -404,24 +407,14 @@ footer {
   #desc {
     margin-top: 8%;
   }
-  #languages #screenLang {
-    width: 12%;
-    padding-bottom: 4%;
-  }
-  #softs #screenSofts {
-    width: 12%;
-    padding-left: 1%;
-    padding-bottom: 4%;
-  }
-  #db #screenBd {
-    width: 12%;
-    padding-left: 1%;
+  #softs {
+    width: 70%;
   }
 }
 
 @media screen and (min-width: 1024px) {
   body {
-    font-size: 20px;
+    font-size: 16px;
   }
   header {
     padding-bottom: 2%;
@@ -430,12 +423,12 @@ footer {
     padding-top: 2%;
   }
   button {
-    font-size: 18px;
+    font-size: 16px;
   }
   .bloc {
-    margin-left: 10%;
-    margin-right: 10%;
-    width: 80%;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+    width: 85%;
   }
   hr {
     margin-top: 15%;
@@ -449,15 +442,9 @@ footer {
     font-family: "Trirong", serif;
   }
   #desc {
-    width: 75%;
+    width: 55%;
     margin: auto;
-    margin-top: 7%;
-  }
-  span#left {
-    font-weight: bold;
-  }
-  span#middle {
-    text-align: center;
+    margin-top: 5%;
   }
   #screenMedia {
     padding-top: 3px;
@@ -465,26 +452,20 @@ footer {
     padding-right: 5px;
     height: 27px;
   }
+  #languages {
+    width: 80%;
+  }
   #languages #screenLang {
-    width: 11%;
-    padding-bottom: 4%;
-    padding-left: 1%;
+    padding-bottom: 0;
   }
   #softs #screenSofts {
-    width: 11%;
-    padding-left: 1%;
-    padding-bottom: 7%;
-  }
-  #db #screenBd {
-    width: 12%;
-    padding-left: 1%;
+    padding-left: 1.5%;
+    padding-right: 1.5%;
+    padding-bottom: 0;
   }
 }
 
 @media screen and (min-width: 1280px) {
-  body {
-    font-size: 24px;
-  }
   header {
     padding-bottom: 1.52%;
   }
@@ -493,11 +474,6 @@ footer {
   }
   button {
     font-size: 20px;
-  }
-  .bloc {
-    margin-left: 12.5%;
-    margin-right: 12.5%;
-    width: 75%;
   }
   hr {
     margin-top: 12%;
@@ -515,14 +491,9 @@ footer {
     font-family: "Trirong", serif;
   }
   #desc {
-    width: 70%;
+    width: 50%;
     margin: auto;
-    margin-top: 6%;
-  }
-  #languages #screenLang {
-    width: 9%;
-    padding-bottom: 0;
-    padding-left: 1%;
+    margin-top: 4%;
   }
   #softs #screenSofts {
     width: 9%;
@@ -537,16 +508,16 @@ footer {
     margin-top: 3%;
     margin-bottom: 12%;
   }
+  #softs button#contactButton {
+    background-color: #8ea69b;
+    padding: 15px;
+    border-radius: 10px;
+  }
 }
 
 @media screen and (min-width: 1280px) and (min-width: 1366px) {
   button {
     font-size: 22px;
-  }
-  .bloc {
-    margin-left: 12.5%;
-    margin-right: 12.5%;
-    width: 75%;
   }
   hr {
     margin-top: 12%;
@@ -561,12 +532,12 @@ footer {
     margin-top: 12%;
   }
   #desc {
-    width: 65%;
+    width: 45%;
     margin: auto;
-    margin-top: 6%;
+    margin-left: 30%;
+    margin-top: 4%;
   }
   #languages #screenLang {
-    width: 8%;
     padding-left: 1%;
   }
   #softs #screenSofts {
@@ -588,7 +559,7 @@ footer {
 
 @media screen and (min-width: 1600px) {
   body {
-    font-size: 18px;
+    font-size: 14px;
   }
   header {
     padding-bottom: 1.25%;
@@ -609,26 +580,33 @@ footer {
     margin-top: 10%;
   }
   #desc {
-    width: 60%;
+    width: 40%;
     margin-top: 5%;
   }
   #languages #screenLang {
-    width: 7%;
-    padding-left: 2%;
+    width: 78px;
+    height: 100px;
   }
   #softs #screenSofts {
-    width: 7%;
-    padding-left: 2%;
+    width: 78px;
+    height: 100px;
+    padding-right: 1%;
+    padding-left: 1%;
   }
   #db #screenBd {
-    width: 9%;
-    padding-left: 1%;
+    width: 78px;
+    height: 100px;
+  }
+  button#contactButton {
+    background-color: #8ea69b;
+    padding: 10px;
+    border-radius: 10px;
   }
 }
 
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1980px) {
   body {
-    font-size: 16px;
+    font-size: 13px;
   }
   header {
     padding-bottom: 1%;
@@ -657,20 +635,18 @@ footer {
     margin-top: 2%;
   }
   #languages #screenLang {
-    width: 6%;
-    padding-left: 3%;
+    padding-left: 1%;
+    padding-right: 1%;
   }
   #softs #screenSofts {
-    width: 6%;
-    padding-left: 3%;
+    padding-left: 2%;
+    padding-right: 2%;
   }
-  #db #screenBd {
-    width: 6%;
-    padding-left: 3%;
-  }
-  #contactMe {
-    margin-top: 2%;
-    margin-bottom: 5%;
+  button#contactButton {
+    background-color: #8ea69b;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: brown;
   }
 }
 
@@ -685,7 +661,7 @@ footer {
     padding-top: 0.5%;
   }
   .bloc {
-    margin-left: 17.5%;
+    margin-left: 16.5%;
     margin-right: 17.5%;
     width: 65%;
     margin-top: 0;
@@ -701,23 +677,16 @@ footer {
     text-align: justify;
   }
   #desc {
-    width: 55%;
+    width: 40%;
     margin: auto;
     margin-top: 2%;
   }
-  #languages #screenLang {
-    width: 4%;
-    padding-left: 4%;
-  }
-  #softs #screenSofts {
-    width: 4%;
-  }
-  #db #screenBd {
-    width: 4%;
+  #languages {
+    width: 65%;
   }
   #contactMe {
     margin-top: 1.5%;
-    margin-bottom: 3%;
+    margin-bottom: 1%;
   }
 }
 /*# sourceMappingURL=style_home.css.map */
