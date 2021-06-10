@@ -4,213 +4,129 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon CV</title>
-    <link rel="stylesheet" href="./css/style.css">
+    <title>PortoFolio de Riccardo Carroyer</title>
+    <link rel="stylesheet" href="./css/style_home.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <script src="./js/index.js" defer></script>
 </head>
+
+
 
 <body>
 
     <header>
         <div id="banner">
             <span id="mode">Mode : 
-                <img id="screenModeImg" src="./img/small_screen2.png" alt="">
+                <img id="screenModeImg" src="../img/small_screen2.png" alt="">
             </span>
                 <span id="buttonNavigation">
-                    <a href="#about"><button id="aboutBtn" class="btnAbout">Contact</button></a>
-                    <a href="#educations"><button id="btnEducation" class="btnEducations">Formations</button></a>
-                    <a href="#experiences"><button id="btnEducation" class="btnEducations">Expériences</button></a>
-                    <a href="#skills"><button id="btnSkills" class="btnskills">Compétences</button></a>
+                    <a href="#"><button id="aboutBtn" class="btnAbout">A propos de moi</button></a>
+                    <a href="./html/cv.html"><button id="btnEducation" class="btnEducations">CV</button></a>
+                    <a href="#"><button id="btnEducation" class="btnEducations">Projets</button></a>
+                    <a href="#desc"><button id="btnSkills" class="btnskills">Contact</button></a>
                 </span>
             </span>
             
         </div>
     </header>
-
-    <!--Contact-->
-    <div id="about">
-        <section id="aboutSection">
-            <p id="Category">֍ Contact ֍</p>
-            <p>
-                <img id="profileImg" src="./img/riccarde_tr.png" alt="">
-                    <p id="description">
-                        <span id="name">        Riccardo Carroyer</span><br>
-                        <span id="function">    Développeur web junior</span><br><br>
-                        <span id="corps">        <b>Tél</b> 0499 27 18 30</span><br>
-                        <span id="corps">        <b>Mail</b> <a href="mailto:riccardo_carroyer@hotmail.be">riccardo_carroyer@hotmail.be</a></span><br>
-                        <span id="corps">        <b>Langues maternelle</b> Français</span><br>
-                        <span id="corps">        <b>Seconde langue</b> Anglais technique</span><br><br>
-                        <span id="network">     <a href="https://www.linkedin.com/in/riccardo-carroyer-425092208/">Linkedin</a> • 
-                                                <a href="https://github.com/minek10">GitHub</a></span><br>
-                        <span id="corps">  ↳    <a href="./att/CV.pdf">Télécharger le CV</a></span>
-                        
-                    </p>
-            </p>
-
-        </section>
-    </div>
-
-    <div class="scroller">
-    <!--Formation-->
-        <div id="educations">
-            
-            <section id="EducationSection"> 
-                <p id="Category">֍ Formations ֍</p>
-                <span id='Title'>■ Formation développeur Full Stack NodeJs </span> <br>
-                <ul>
-                    <li><b><u>Date</u> :</b> Février 2021 – Juillet 2021</li>
-                    <li><b><u>Lieu</u> :</b> Cefora/Technocité Hornu</li>
-                </ul>
-
-                <br> <br> 
-
-                <span id='Title'>■ Bachelier en informatique de gestion </span> <br>
-                <ul>
-                    <li><b><u>Date</u> :</b> Septembre 2016 – Novembre 2020</li>
-                    <li><b><u>Titre du mémoire</u> :</b> <i>"Administration et optimisation du réseau de fibres
-                        optiques dans l'infrastructure du Tec Charleroi "</i></li>
-                    <li><b><u>Lieu</u> :</b> Cefora/Technocité Hornu</li>
-                </ul>
-
-                <br> <br> 
-
-                <span id='Title'>■ Qualification rhétorique "Technicien en informatique" </span> <br>
-                <ul>
-                    <li><b><u>Date</u> :</b> Septembre 2012 – Juin 2013</li>
-                    <li><b><u>Titre du mémoire</u> :</b> <i>"Installation, configuration et paramétrage d'un
-                        Windows Server 2012"</i></li>
-                    <li><b><u>Lieu</u> :</b> ITCB Boussu</li>
-                </ul>
-                
-            </section>      
+    <div id="contener" class="bloc">
+        <div id="hello">
+            Bonjour et bienvenue à toutes et à tous !<br><br>   Mon nom est <br><div id="name"><b>Riccardo Carroyer</b></div>
+            <img id="profileImg" src="../img/riccarde_tr.png" alt="">
         </div>
 
-        <div id="experiences">
-            <section id= expSection>
-                <p id="Category">֍ Expériences ֍</p>
-                <span id='Title'>■ Analyste-développeur (stage) </span> <br>
-                <ul>
-                    <li><b><u>Date</u> :</b> Décembre 2019 – Février 2020</li>
-                    <li><b><u>Lieu</u> :</b> Tec Charleroi</li>
-                    <li><b><u>Fonction</u> :</b> mise en place d'un outil de digitalisation d'un schéma de 
-                                                 fibres optiques et création de la base de données. (ASP.NET et MySQL) 
-                   </li>
-                </ul>
+        <hr>
 
-                <span id='Title'>■ Analyste (stage) - Tec Charleroi </span> <br>
-                <ul>
-                    <li><b><u>Date</u> :</b> Janvier 2019 – Février 2019</li>
-                    <li><b><u>Lieu</u> :</b> Tec Charleroi</li>
-                    <li><b><u>Fonction</u> :</b> lecture et analyse de règlements dans le but de bâtir une 
-                                                    base de données liée à la gestion de prise de congé du personnel
-                    </li>
-                </ul>
+            <!--A Propos-->
+        <div id="aboutMe">
+                <p id="Category">| A Propos de moi |</p>
+                <div id="txtAboutMe">
+                    Passionné par l'outil informatique depuis le plus jeune âge.  J'ai vite commencé mes premiers sites avec le logiciel FrontPage de la suite Office, j'étais Webmaster de mon équipe de foot à 11 ans !
+                    Dès que j'ai eu l'opportunité, j'ai choisi une orientation informatique à l'école, j'y ai appris la maintenance, l'assemblage, installation, administration de Windows, Windows Server et de certaines distributions Linux. 
+                    <br><br>Dans la suite de cet apprentissage, j'ai terminé avec fruit un bachelier en informatique de gestion, où m'a été appris une certaine expérience de travail avec certains outils ainsi qu'une méthodologie de travail.  
+                    Cette expérience m'a mis à l'aise avec les bases de données, les rouages de la programmation ainsi que l'analyse et la conception d'un projet.  
+                    <br><br>Dans la suite de ce graduat, j'ai eu l'opportunité d'être sélectionné dans une formation 6 mois à 40 heures semaine comme développeur "Full stack NodeJS" organisé par Cefora-Téchnocité.  
+                    Cette formation m'a permis de professionnaliser encore plus mon approche et mes méthodes de travail.
+                    <br><br>Je suis une personne patiente et autonome mais je n'hésite pas à demander conseil ou une astuce à une personne expérimentée lorsque je suis face à des difficultés ou a des questionnements.
+                    <br>Le travail d'équipe m'est agréable.
+                </div>
 
-                <span id='Title'>■ Préposé recyparc" </span> <br>
-                <ul>
-                    <li><b><u>Date</u> :</b> Octobre 2015 – Novembre 2020</li>
-                    <li><b><u>Lieu</u> :</b> Hygea</li>
-                    <li><b><u>Fonction</u> :</b> accueil du citoyen et orientation vers les conteneurs adéquats</li>
-                </ul>
-
-                <span id='Title'>■ Technicien-vendeur IT (stage rhétorique)" </span> <br>
-                <ul>
-                    <li><b><u>Date</u> :</b> Mars 2013</li>
-                    <li><b><u>Lieu</u> :</b> Service Informatique Harvent</li>
-                    <li><b><u>Fonction</u> :</b> réparation, diagnostics, montage informatique</li>
-                </ul>
-            </section>
+                <!--Tableau recap-->
+                <div id="desc">
+                    <span id="left">Nom complet</span> <span id="middle">:</span> <span id="right">Riccardo Carroyer</span><br>
+                    <span id="left">Né le </span> <span id="middle">:</span> <span id="right">23 janvier 1992</span><br>
+                    <span id="left">Pays</span> <span id="middle">:</span> <span id="right">Belgique</span><br>
+                    <span id="left">Nationnalité</span> <span id="middle">:</span> <span id="right">Belge</span><br>
+                    <span id="left">Ville</span> <span id="middle">:</span> <span id="right">Jemappes</span><br>
+                    <span id="left">Occupations</span> <span id="middle">:</span> <span id="right">Nouvelles technologies<br> Supporter de football <br> Promenade <br> Rétro Gaming</span><br>
+                    <span id="left">Email</span> <span id="middle">:</span> <span id="right"><a href="mailto:riccardo_carroyer@hotmail.be">riccardo_carroyer@hotmail.be</a></span><br>
+                    <span id="left">Téléphone</span> <span id="middle">:</span> <span id="right">0499 27 18 30</span><br>
+                    <span id="left">Diplômes</span> <span id="middle">:</span> <span id="right"> - Qualification "Technicien en informatique"<br>- Bachelier en "Informatique de gestion"</span><br>
+                    <span id="left">Médias</span> <span id="middle">:</span> <span id="right">
+                                                    <a href="https://www.linkedin.com/in/riccardo-carroyer-425092208/"><img id="screenMedia" src="./img/linkedin2.png" alt=""></a>
+                                                    <a href="https://github.com/minek10"><img id="screenMedia" src="./img/git2.png" alt=""> </a>                                         </span><br>
+                </div>
         </div>
 
-        <!--Compétences-->
-        <div id="skills">
-            <section id="SkillSection"> 
-                
-                <p id="Category">֍ Compétences ֍</p>
+        <hr>
 
-                <p id="SubCategory"> Programmation :</p>
-                <div id="flex"> 
-                <ul>
-                    <span id='Title'>■ Front-End </span> <br>
-                    <li>HTML, CSS (SASS, Thailwind),</li>
-                    <li>Javascript (Vanilla, ES6, Angular, React, Cypress)</li>
-                    <li>ASP.NET</li>
-                </ul>
-                <ul>
-                    <span id='Title'>■ Back-End </span> <br>
-                    <li>NodeJS (Express, Typescript, TypeORM)</li>
-                    <li>Javascript</li>
-                    <li>C#</li>
-                </ul><br>
+                <!--A Languages de programmmation-->
+        <p id="Category">| Les languages utilisés |</p>
+        <div id="languages">
+            <div id='langImg'>
+                    <img id="screenLang" src="./img/html3.png" alt="logo HTML">         
+                    <img id="screenLang" src="./img/angular2.png" alt="Logo Angular">   
+                    <img id="screenLang" src="./img/react2.png" alt="Logo react">       
+                    <img id="screenLang" src="./img/css3.png" alt="logo css">           
+                    <img id="screenLang" src="./img/sass2.png" alt="logo sass">         
+                    <img id="screenLang" src="./img/js3.png" alt="js3">                 
+                    <img id="screenLang" src="./img/nodeJs2.png" alt="Logo nodeJs">     
+                    <img id="screenLang" src="./img/typescript2.png"  alt="logo Typescript">
+                    <img id="screenLang" src="./img/c2.png" alt="Logo C#">               
+                    <img id="screenLang" src="./img/asp2.png" alt="Logo ASP">
             </div>
-
-                <p id="SubCategory"> Moteur de base de données :</p>
-                <div id="flex"> 
-                <ul>
-                    <span id='Title'>■ MySQL </span> <br>
-                    <li>MariaDb</li>
-                    <li>InnoDb</li>
-                </ul><br>
-                <ul>
-                    <span id='Title'>■ NoSQL </span> <br>
-                    <li>Mongo</li>
-                    <li>Elastic</li>
-                </ul><br>
-                </div>
-
-                <p id="SubCategory"> Analyse :</p>
-
-                <div id="flex"> 
-                    <ul>
-                        <span id='Title'>■ Meurise </span> <br>
-                        <li>Modèle conceptuel des données</li>
-                        <li>Modèle physique des données</li>
-                        <li>Modèle logique des données</li>
-                    </ul>
-                    <ul>
-                        <span id='Title'>■ UML </span> <br>
-                        <li>UseCase</li>
-                        <li>Node</li>
-                        <li>Diagramme de classe</li>
-                    </ul>
-                    <ul>
-                        <span id='Title'>■ SCRUM </span> <br>
-                    </ul>
-                </div>
-
-                <p id="SubCategory"> Systèmes d'exploitation :</p>
-                <div id="flex"> 
-                
-                <ul>
-                    <span id='Title'>■ Windows </span> <br>
-                    <li>Maintenance et exploitation du système</li>
-                </ul><br>
-
-            
-                <ul>
-                    <span id='Title'>■ Windows Server </span> <br>
-                    <li>Active Directory</li>
-                    <li>Serveur DHCP</li>
-                    <li>Serveur DNS</li>
-                    <li>Serveur de fichiers</li>
-                    <li>GPO</li>
-                </ul><br>
-
-                
-                <ul>
-                    <span id='Title'>■ Ubuntu </span> <br>
-                    <li>Exploitation du système et de l'environnement</li>
-                </ul><br>
-                
-            </section>
         </div>
-</div>
-<!--Footer-->
 
-    <footer id="footer">
-        
-    </footer>
-   
+        <hr>
+                
+        <!--Logiciels-->
+        <p id="Category">| Les logiciels utilisés |</p>
+        <div id="softs">
+            <div id='softsImg' >
+                <img id="screenSofts" src="./img/vscode2.png" alt="logo vscode"> </a>    
+                <img id="screenSofts" src="./img/vsStudio2.png" alt="Logo vsStudio"> </a>    
+                <img id="screenSofts" src="./img/wamp.png" alt="Logo wamp"> </a>    
+                <img id="screenSofts" src="./img/ws2l.png" alt="logo wsl"> </a>   
+                <img id="screenSofts" src="./img/insomnia2.png" alt="logo insomnia"> </a>   
+                <img id="screenSofts" src="./img/heidi2.png" alt="jlogi HeidiSql"> </a>   
+                <img id="screenSofts" src="./img/nosqlBooster2.png" alt="Logo nosqlBooster"> </a>   
+            </div>
+        </div>
+
+        <hr>
+
+        <!--Db-->
+        <p id="Category">| Les moteurs BD utilisés |</p>
+        <div id="db">
+            <div id='dbImg'>
+                <img id="screenBd" src="./img/mysql2.png" alt="logo HTML"> </a>    
+                <img id="screenBd" src="./img/mongodb2.png" alt="Logo Angular"> </a>    
+                <img id="screenBd" src="./img/elastic2.png" alt="Logo react"> </a>    
+            </div>
+        </div>
+
+    <hr>
+    
+    <!--Me coontacter-->
+    <p id="Category">| Me contacter |</p>
+    <div id="contactMe">
+        N'hésitez pas à me contacter si mon profil vous intéressse ou si vous avez la moindre question, j'y répondrais avec le plus grand plaisir ! <br>
+    <div id="btnContener"><a href="#desc"><button id="contactButton">Me contacter</button></a></div> 
+
+</div>   
+
+
+<!--Footer-->
 
 </body>
 </html>
