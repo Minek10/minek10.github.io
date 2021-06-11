@@ -29,8 +29,9 @@ header {
 }
 
 #mode {
-  padding-left: 10px;
+  padding-left: 5px;
   float: left;
+  font-size: 13px;
 }
 
 #screenModeImg {
@@ -89,7 +90,7 @@ a:hover {
 
 section {
   color: black;
-  padding-top: 10%;
+  padding-top: 3%;
   padding-bottom: 5%;
   padding-left: 2%;
   opacity: 1;
@@ -104,6 +105,8 @@ section #Title {
 section #Category {
   text-align: center;
   font-size: 30px;
+  -webkit-text-decoration: underline overline #8ea69b;
+          text-decoration: underline overline #8ea69b;
   letter-spacing: 5px;
   font-family: "Sofia", sans-serif;
   cursor: default;
@@ -117,13 +120,9 @@ section #SubCategory {
   font-style: oblique;
 }
 
-section.opaque {
-  background-color: red;
-  opacity: 0;
-}
-
 #aboutSection {
   text-align: left;
+  padding-top: 10%;
 }
 
 #aboutSection #profileImg {
@@ -143,7 +142,7 @@ section.opaque {
 }
 
 #aboutSection #description {
-  width: 65%;
+  width: 70%;
   margin: auto;
 }
 
@@ -178,6 +177,19 @@ footer {
   padding-bottom: 5px;
 }
 
+z {
+  color: #8ea69b;
+}
+
+@media screen and (min-width: 500px) {
+  button {
+    background-color: #8ea69b;
+    padding-left: 2%;
+    padding-right: 2%;
+    font-size: 14px;
+  }
+}
+
 @media screen and (min-width: 650px) {
   #buttonNavigation {
     -ms-flex-line-pack: center;
@@ -189,6 +201,40 @@ footer {
     padding-left: 2%;
     padding-right: 2%;
     font-size: 15px;
+  }
+  section {
+    color: black;
+    padding-top: 1%;
+    padding-bottom: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    opacity: 1;
+    -webkit-transition-duration: 0.5s;
+            transition-duration: 0.5s;
+  }
+  section#aboutSection {
+    padding-top: 10%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  span#name, span#corps {
+    margin-left: 10%;
+  }
+  span#function, span#network {
+    margin-right: 10%;
+  }
+  #mode {
+    font-size: 15px;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  span#name, span#corps {
+    margin-left: 20%;
+  }
+  span#function, span#network {
+    margin-right: 20%;
   }
 }
 
@@ -265,6 +311,7 @@ footer {
     margin: auto;
   }
   #aboutSection #description #name {
+    margin-left: 0;
     font-size: 26px;
     padding-left: 10px;
   }
@@ -272,14 +319,17 @@ footer {
     float: right;
     font-size: 18px;
     padding-right: 10px;
+    margin-right: 0;
   }
   #aboutSection #description #corps {
+    margin-left: 0;
     padding-left: 10px;
     font-size: 15px;
   }
   #aboutSection #description #network {
     float: right;
     padding-right: 10px;
+    margin-right: 0;
   }
   section {
     color: black;
@@ -294,6 +344,7 @@ footer {
     -webkit-text-decoration: underline overline #8ea69b;
             text-decoration: underline overline #8ea69b;
     letter-spacing: 7px;
+    padding: 0;
   }
   section #SubCategory {
     text-align: center;

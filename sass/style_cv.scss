@@ -27,15 +27,13 @@ header{
     vertical-align: middle;
     text-align: center;
     padding-top:2%;
-    
-    
 }
 
 #mode{
     //background-color: yellow;
-    padding-left: 10px;
+    padding-left: 5px;
     float: left;
-    //font-size: 15px;
+    font-size: 13px;
 }
 
 #screenModeImg{
@@ -98,7 +96,7 @@ a:hover{
 section{
     color : black;
     //background-color: yellow;
-    padding-top: 10%;
+    padding-top: 3%;
     padding-bottom: 5%;
     padding-left:2%;
     opacity: 1;
@@ -113,7 +111,7 @@ section{
         text-align: center;
         font-size: 30px;
         //background-color: red;
-        //text-decoration: underline overline rgb(142,166,155);
+        text-decoration: underline overline rgb(142,166,155);
         letter-spacing: 5px;
         font-family: "Sofia", sans-serif;
         cursor: default;
@@ -129,15 +127,11 @@ section{
     }
 }
 
-section.opaque{ 
-    background-color: red;
-    opacity:0;
-}
-
 
 
 #aboutSection{
     text-align: left;
+    padding-top: 10%;
 
     #profileImg{
         display: block;
@@ -159,7 +153,7 @@ section.opaque{
     }
     #description{
         //background-color: blueviolet;
-        width: 65%;
+        width: 70%;
         margin:auto;
 
         #name{
@@ -183,7 +177,6 @@ section.opaque{
     }
 }
 
-
 footer{
     position:fixed;
     bottom:0;
@@ -193,6 +186,19 @@ footer{
     text-align: center;
     font-size: 12px;
     padding-bottom: 5px;
+}
+
+z{
+    color: rgb(142,166,155);
+}
+
+@media screen and (min-width: 500px){
+    button{
+        background-color: rgb(142,166,155);
+        padding-left: 2%;
+        padding-right: 2%;
+        font-size: 14px;
+    }
 }
 
 //tablet
@@ -211,7 +217,48 @@ footer{
         font-size: 15px;
     }
 
+    section{
+        color : black;
+        //background-color: yellow;
+        padding-top: 1%;
+        padding-bottom: 5%;
+        padding-left:2%;
+        padding-right: 2% ;
+        opacity: 1;
+        transition-duration: 0.5s;
+    }
 
+    section#aboutSection{
+        padding-top: 10%;
+        //background-color: sandybrown;
+    }
+
+}
+
+@media screen and (min-width: 800px) {
+    span#name, span#corps{
+        margin-left:10%;
+        //background-color: slateblue;
+    }
+
+    span#function, span#network{
+        margin-right:10%;
+    }
+
+    #mode{
+        font-size: 15px;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    span#name, span#corps{
+        margin-left:20%;
+        //background-color: slateblue;
+    }
+
+    span#function, span#network{
+        margin-right:20%;
+    }
 }
 //Laptop
 @media screen and (min-width: 1280px) {
@@ -256,7 +303,6 @@ header{
     width: 100%;
     vertical-align: middle;
     text-align: center;
-    
 }
 
 #mode{
@@ -312,6 +358,7 @@ button:hover{
         margin:auto;
 
         #name{
+            margin-left:0;
             font-size: 26px;
             padding-left:10px;
         }
@@ -319,8 +366,10 @@ button:hover{
             float: right;
             font-size: 18px;
             padding-right:10px;
+            margin-right:0;
         }
         #corps{
+            margin-left:0;
             padding-left:10px;
             font-size: 15px;
             //background-color: red;
@@ -328,6 +377,7 @@ button:hover{
         #network{
             float: right;
             padding-right:10px;
+            margin-right:0;
         }
         
     }
@@ -350,6 +400,7 @@ section{
         //background-color: red;
         text-decoration: underline overline rgb(142,166,155);
         letter-spacing: 7px;
+        padding: 0;
     }
     
     #SubCategory{

@@ -101,9 +101,9 @@ function btnContact(){
         document.getElementById("contactBtn").style.display="inline-block"
         console.log("modification de contact")
         var contact = document.getElementsByClassName("contact");
-        contact[0].innerText="| Contact |"
+        contact[0].innerHTML= ` <z>|</z> Contact <z>|</z>`
         contact[0].style.textDecoration = "underline overline rgb(142,166,155)";
-        document.getElementById("EducationSection").classList.add("transition");
+        //document.getElementById("EducationSection").classList.add("transition");
         
     }
 }
