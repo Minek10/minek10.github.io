@@ -55,6 +55,15 @@ button:hover {
   color: white;
 }
 
+#homeImg {
+  width: 10%;
+  background-color: yellow;
+}
+
+#homeImg:hover {
+  background-color: salmon;
+}
+
 li {
   list-style: none;
 }
@@ -95,6 +104,8 @@ section #Category {
   font-size: 30px;
   -webkit-text-decoration: underline overline #8ea69b;
           text-decoration: underline overline #8ea69b;
+  letter-spacing: 5px;
+  font-family: "Sofia", sans-serif;
 }
 
 section #SubCategory {
@@ -275,6 +286,7 @@ footer {
     font-size: 30px;
     -webkit-text-decoration: underline overline #8ea69b;
             text-decoration: underline overline #8ea69b;
+    letter-spacing: 7px;
   }
   section #SubCategory {
     text-align: center;

@@ -5,6 +5,8 @@ body {
   font-size: 15px;
   margin: 0;
   padding: 0;
+  text-align: justify;
+  font-family: 'Karla', sans-serif;
 }
 
 header {
@@ -102,7 +104,7 @@ hr {
 
 #Category {
   text-align: center;
-  font-size: 30px;
+  font-size: 40px;
   -webkit-text-decoration: underline overline #8ea69b;
           text-decoration: underline overline #8ea69b;
   font-family: "Sofia", sans-serif;
@@ -592,6 +594,10 @@ footer {
     height: 100px;
     padding-right: 1%;
     padding-left: 1%;
+  }
+  #db {
+    width: 20%;
+    margin: auto;
   }
   #db #screenBd {
     width: 78px;

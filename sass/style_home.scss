@@ -6,6 +6,8 @@ body {
     font-size: 15px;
     margin: 0;
     padding: 0;
+    text-align:justify;
+    font-family: 'Karla', sans-serif;
 }
 
 header{
@@ -798,6 +800,8 @@ footer{
     
     #db{
         //background-color: yellow;
+        width: 20%;
+        margin: auto;
     
         #screenBd{
             width: 78px;

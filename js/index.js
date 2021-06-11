@@ -1,12 +1,14 @@
 checkDevice();
 footer();
-educationsDiv();
+//educationsDiv();
 
 var educationsBtn = document.getElementById("btnEducation");
 var educations = document.getElementById('educations')
 var skillsBtn = document.getElementById("btnSkills");
 var skills = document.getElementById("skills");
 var aboutBtn =  document.getElementById("aboutBtn");
+var expBtn = document.getElementById("btnEducation");
+var exp= document.getElementById("experiences")
 var about = document.getElementById('about')
 
 educationsBtn.addEventListener('click', educationsDiv());
@@ -26,6 +28,8 @@ function skillsDiv(){
     educations.style.display="none";
     about.style.float="right";
 }
+
+
     
 
 
@@ -37,27 +41,38 @@ function checkDevice(){
     if (larg > 649){
         console.log(larg);
         var image = document.getElementById("screenModeImg");
-        image.src = "./img/small_screen2.png";
+        image.src = "../img/small_screen2.png";
     }
     
     if (larg > 650){
         console.log(larg);
         var image = document.getElementById("screenModeImg");
-        image.src = "./img/middle_screen2.png";
+        image.src = "../img/middle_screen2.png";
     }
 
     if (larg > 1280){
         console.log(larg);
         var image = document.getElementById("screenModeImg");
-        image.src = "./img/big_screen2.png";
+        image.src = "../img/big_screen2.png";
+        document.getElementById("about").classList.remove("transition");
+        
     }
 
     if (larg > 1366){
         console.log(larg);
         var image = document.getElementById("screenModeImg");
-        image.src = "./img/veryBig_screen2.png";
+        image.src = "../img/veryBig_screen2.png";
+        document.getElementById("about").classList.remove("transition");
     }
 }
+
+
+expBtn.addEventListener("click", transistion());
+
+function transistion(){
+    console.log("transistio,")
+}
+
 
 function footer(){
     var date = new Date();

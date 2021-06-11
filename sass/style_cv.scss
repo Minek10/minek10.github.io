@@ -46,6 +46,7 @@ header{
     //background-color: brown;
     align-content: center;
     vertical-align: middle;
+    //background-color: red;
 }
 
 button{
@@ -55,10 +56,19 @@ button{
     border: none;
     font-size: 12px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    //background-color: red;
 }
 
 button:hover{
    color:white
+}
+
+#homeImg{
+    width: 10%;
+    background-color: yellow;
+}
+#homeImg:hover{
+    background-color: salmon;
 }
 
 li{
@@ -101,6 +111,8 @@ section{
         font-size: 30px;
         //background-color: red;
         text-decoration: underline overline rgb(142,166,155);
+        letter-spacing: 5px;
+        font-family: "Sofia", sans-serif;
     }
     
     #SubCategory{
@@ -322,6 +334,7 @@ section{
         font-size: 30px;
         //background-color: red;
         text-decoration: underline overline rgb(142,166,155);
+        letter-spacing: 7px;
     }
     
     #SubCategory{
