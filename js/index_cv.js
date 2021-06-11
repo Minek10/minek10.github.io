@@ -1,4 +1,4 @@
-console.log("on rfentre dans le js")
+footer();
 checkDevice();
 
 window.addEventListener('resize', checkDevice);
@@ -106,4 +106,12 @@ function btnContact(){
         //document.getElementById("EducationSection").classList.add("transition");
         
     }
+}
+
+function footer(){
+    var date = new Date();
+    const year = date.getFullYear();
+    console.log(year);
+    
+    document.getElementById("footer").innerText="Designed by Riccardo Carroyer | 2021 - " + year + " |";
 }

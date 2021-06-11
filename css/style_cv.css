@@ -93,6 +93,7 @@ section {
   padding-top: 3%;
   padding-bottom: 5%;
   padding-left: 2%;
+  padding-right: 2%;
   opacity: 1;
   -webkit-transition-duration: 0.5s;
           transition-duration: 0.5s;
@@ -142,7 +143,7 @@ section #SubCategory {
 }
 
 #aboutSection #description {
-  width: 70%;
+  width: 75%;
   margin: auto;
 }
 
@@ -170,11 +171,11 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  padding-top: 5px;
   background-color: #8ea69b;
   text-align: center;
   font-size: 12px;
   padding-bottom: 5px;
+  padding-top: 5px;
 }
 
 z {
@@ -214,6 +215,9 @@ z {
   }
   section#aboutSection {
     padding-top: 10%;
+  }
+  header {
+    padding-bottom: 1.5%;
   }
 }
 
@@ -256,7 +260,6 @@ z {
   }
   header {
     width: 70%;
-    height: 1%;
     display: inline-block;
     background-color: whitesmoke;
     top: 0;
@@ -385,9 +388,16 @@ z {
   body {
     font-size: 15px;
   }
+  span#mode {
+    font-size: 18px;
+  }
   #about {
     width: 25%;
     height: 100vh;
+  }
+  header {
+    width: 75%;
+    height: 5%;
   }
   button {
     padding-left: 3%;
