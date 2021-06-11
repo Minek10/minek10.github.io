@@ -73,6 +73,8 @@ function checkDevice(){
 
         document.getElementById("contactBtn").style.display="none"
         console.log("modification de contact")
+        document.getElementsByClassName("contact")[0].innerText="Me contacter"
+        document.getElementById("EducationSection").classList.add("transition");
         
     }
 
@@ -86,8 +88,7 @@ function checkDevice(){
         console.log(larg);
         var image = document.getElementById("screenModeImg");
         image.src = "../img/veryBig_screen2.png";
-        document.getElementsByClassName("contact")[0].innerText="Me contacter"
-        document.getElementById("EducationSection").classList.add("transition");
+
     }
   
 }
@@ -99,6 +100,10 @@ function btnContact(){
 
         document.getElementById("contactBtn").style.display="inline-block"
         console.log("modification de contact")
+        var contact = document.getElementsByClassName("contact");
+        contact[0].innerText="| Contact |"
+        contact[0].style.textDecoration = "underline overline rgb(142,166,155)";
+        document.getElementById("EducationSection").classList.add("transition");
         
     }
 }

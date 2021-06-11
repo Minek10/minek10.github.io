@@ -92,6 +92,10 @@ hr{
     //background-color: yellow;
 }
 
+z{
+    color: rgb(142,166,155);
+}
+
 #hello{
     margin-top: 20%;
     //background-color: chartreuse;
@@ -280,6 +284,7 @@ hr{
     margin-top: 3%;
     //background-color: yellow;
     margin-bottom: 15%;
+    text-align: center;
 }
 
 #btnContener{
@@ -315,43 +320,6 @@ footer{
     float: left;
 }
 
-.modal-window {
-    position: fixed;
-    background-color: rgba(255, 255, 255, 0.25);
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: 0;
-    z-index: 999;
-    visibility: hidden;
-    opacity: 0;
-    pointer-events: none;
-    transition: all 0.3s;
-    &:target {
-      visibility: visible;
-      opacity: 1;
-      pointer-events: auto;
-    }
-    & > div {
-      width: 400px;
-      position: absolute;
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      padding: 2em;
-      background: white;
-    }
-    header {
-      font-weight: bold;
-    }
-    h1 {
-      font-size: 150%;
-      margin: 0 0 15px;
-    }
-  }
-  
-  
-  
 
 @media screen and (min-width: 500px){
 
@@ -810,6 +778,7 @@ footer{
         //margin:auto;
         //margin-top: 4%;
         margin-top:5%
+
         
     }
 
