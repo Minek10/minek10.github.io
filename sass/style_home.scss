@@ -568,6 +568,12 @@ footer{
             }
             
         }
+
+        #contactMe{
+            margin-top: 3%;
+            margin-bottom: 5%;
+        }
+
     }
 
     @media screen and (min-width: 1260px){
@@ -653,16 +659,6 @@ footer{
             
         }
 
-        #contactMe{
-            margin-top: 3%;
-            margin-bottom: 12%;
-        }
-
-        button#contactButton{
-            background-color:rgb(142,166,155);
-            padding: 15px;
-            border-radius: 10px;
-        }
     }
 
     @media screen and (min-width: 1350px){
@@ -736,7 +732,7 @@ footer{
     }
     #contactMe{
         margin-top: 2%;
-        margin-bottom: 10%;
+        margin-bottom: 5%;
     }
 }
 
@@ -972,7 +968,6 @@ footer{
     
 
     #contactMe{
-        margin-top: 1.5%;
-        margin-bottom: 1%;
+        margin-bottom: 5%;
     }
 }

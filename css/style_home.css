@@ -479,6 +479,10 @@ footer {
     padding-right: 1.5%;
     padding-bottom: 0;
   }
+  #contactMe {
+    margin-top: 3%;
+    margin-bottom: 5%;
+  }
 }
 
 @media screen and (min-width: 1260px) {
@@ -520,15 +524,6 @@ footer {
     width: 9%;
     padding-left: 1%;
   }
-  #softs #contactMe {
-    margin-top: 3%;
-    margin-bottom: 12%;
-  }
-  #softs button#contactButton {
-    background-color: #8ea69b;
-    padding: 15px;
-    border-radius: 10px;
-  }
 }
 
 @media screen and (min-width: 1260px) and (min-width: 1350px) {
@@ -569,7 +564,7 @@ footer {
 @media screen and (min-width: 1260px) {
   #contactMe {
     margin-top: 2%;
-    margin-bottom: 10%;
+    margin-bottom: 5%;
   }
 }
 
@@ -705,8 +700,7 @@ footer {
     width: 65%;
   }
   #contactMe {
-    margin-top: 1.5%;
-    margin-bottom: 1%;
+    margin-bottom: 5%;
   }
 }
 /*# sourceMappingURL=style_home.css.map */
