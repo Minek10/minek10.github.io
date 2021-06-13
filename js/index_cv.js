@@ -45,6 +45,8 @@ const $ = document.querySelector.bind(document);
 
     fadeOut($("#EducationSection"));
 
+    
+
 
 
 
@@ -66,7 +68,7 @@ function checkDevice(){
         image.src = "../img/middle_screen2.png";
     }
 
-    if (larg >= 1280){
+    if (larg >= 1260){
         console.log(larg);
         var image = document.getElementById("screenModeImg");
         image.src = "../img/big_screen2.png";
@@ -103,7 +105,7 @@ function btnContact(){
         var contact = document.getElementsByClassName("contact");
         contact[0].innerHTML= ` <z>|</z> Contact <z>|</z>`
         contact[0].style.textDecoration = "underline overline rgb(142,166,155)";
-        //document.getElementById("EducationSection").classList.add("transition");
+        contact[0].style.fontFamily = "Segoe UI', Tahoma, Geneva, Verdana, sans-serif"; 
         
     }
 }

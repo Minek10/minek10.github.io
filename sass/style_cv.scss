@@ -194,7 +194,7 @@ z{
     color: rgb(142,166,155);
 }
 
-@media screen and (min-width: 500px){
+@media screen and (min-width: 490px){
     button{
         background-color: rgb(142,166,155);
         padding-left: 2%;
@@ -204,7 +204,7 @@ z{
 }
 
 //tablet
-@media screen and (min-width: 650px){
+@media screen and (min-width: 640px){
 
     #buttonNavigation{
         //background-color: brown;
@@ -242,7 +242,7 @@ z{
 
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 790px) {
     span#name, span#corps{
         margin-left:10%;
         //background-color: slateblue;
@@ -257,7 +257,7 @@ z{
     }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1000px) {
     span#name, span#corps{
         margin-left:20%;
         //background-color: slateblue;
@@ -268,10 +268,10 @@ z{
     }
 }
 //Laptop
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1260px) {
 
 body{
-    font-size: 15px;
+    font-size: 12px;
     margin: 0;
     padding: 0;
     //overflow: hidden;
@@ -289,6 +289,8 @@ body{
 }
 
 
+
+
 #aboutSection{
     margin-top : 0;
     //background-color: yellow;
@@ -302,6 +304,7 @@ header{
     top:0;
     vertical-align: middle;
     position:fixed;
+ 
 }
 
 #banner{
@@ -310,6 +313,7 @@ header{
     width: 100%;
     vertical-align: middle;
     text-align: center;
+    font-size: 10px;
 }
 
 #mode{
@@ -341,6 +345,7 @@ button{
 
 }
 
+
 button:hover{
     color:rgb(142,166,155);
     text-decoration: underline rgb(142,166,155);
@@ -356,8 +361,21 @@ button:hover{
 
 }
 
+
 #aboutSection{
     text-align: left;
+    
+
+    #profileImg{
+          
+        width: 175px;
+        height: 200px;
+        border-radius: 10%;
+        padding-top: 2%;
+        transition-duration: 2s;
+        //background-color: pink;
+    
+    }
 
     #description{
         //background-color: blueviolet;
@@ -378,7 +396,7 @@ button:hover{
         #corps{
             margin-left:0;
             padding-left:10px;
-            font-size: 15px;
+            font-size: 14px;
             //background-color: red;
         }
         #network{
@@ -386,9 +404,22 @@ button:hover{
             padding-right:10px;
             margin-right:0;
         }
+
+
         
     }
 }
+
+
+
+#Category.contact{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    //background-color: aquamarine;
+    padding-top: 0;
+    margin-top: 0;
+    //font-size: 12px;
+}
+
 
 
 section{
@@ -445,14 +476,14 @@ section{
         width: 100%;
         align-self: center;
         align-items: center;
-        justify-content: center;
+        justify-content:baseline;
 
     }
 
 
 }
 
-@media screen and (min-width: 1600px){
+@media screen and (min-width: 1580px){
 
     body{
         font-size: 15px;
@@ -486,6 +517,17 @@ section{
     }
 
     #aboutSection{
+
+        #profileImg{
+          
+            width: 275px;
+            height: 300px;
+            border-radius: 10%;
+            padding-top: 2%;
+            transition-duration: 2s;
+            //background-color: pink;
+        
+        }
     
         #description{
             width: 75%;
@@ -497,7 +539,7 @@ section{
                 font-size: 20px;
             }
             #corps{
-                font-size: 15px;
+                font-size: 16px;
                 //background-color: red;
             }
             #network{

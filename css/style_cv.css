@@ -182,7 +182,7 @@ z {
   color: #8ea69b;
 }
 
-@media screen and (min-width: 500px) {
+@media screen and (min-width: 490px) {
   button {
     background-color: #8ea69b;
     padding-left: 2%;
@@ -191,7 +191,7 @@ z {
   }
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 640px) {
   #buttonNavigation {
     -ms-flex-line-pack: center;
         align-content: center;
@@ -221,7 +221,7 @@ z {
   }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 790px) {
   span#name, span#corps {
     margin-left: 10%;
   }
@@ -233,7 +233,7 @@ z {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1000px) {
   span#name, span#corps {
     margin-left: 20%;
   }
@@ -242,9 +242,9 @@ z {
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1260px) {
   body {
-    font-size: 15px;
+    font-size: 12px;
     margin: 0;
     padding: 0;
   }
@@ -271,6 +271,7 @@ z {
     width: 100%;
     vertical-align: middle;
     text-align: center;
+    font-size: 10px;
   }
   #mode {
     padding-left: 10px;
@@ -309,6 +310,14 @@ z {
   #aboutSection {
     text-align: left;
   }
+  #aboutSection #profileImg {
+    width: 175px;
+    height: 200px;
+    border-radius: 10%;
+    padding-top: 2%;
+    -webkit-transition-duration: 2s;
+            transition-duration: 2s;
+  }
   #aboutSection #description {
     width: 70%;
     margin: auto;
@@ -327,12 +336,17 @@ z {
   #aboutSection #description #corps {
     margin-left: 0;
     padding-left: 10px;
-    font-size: 15px;
+    font-size: 14px;
   }
   #aboutSection #description #network {
     float: right;
     padding-right: 10px;
     margin-right: 0;
+  }
+  #Category.contact {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding-top: 0;
+    margin-top: 0;
   }
   section {
     color: black;
@@ -378,13 +392,13 @@ z {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
+    -webkit-box-pack: baseline;
+        -ms-flex-pack: baseline;
+            justify-content: baseline;
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1580px) {
   body {
     font-size: 15px;
   }
@@ -408,6 +422,14 @@ z {
   .scroller {
     width: 75%;
   }
+  #aboutSection #profileImg {
+    width: 275px;
+    height: 300px;
+    border-radius: 10%;
+    padding-top: 2%;
+    -webkit-transition-duration: 2s;
+            transition-duration: 2s;
+  }
   #aboutSection #description {
     width: 75%;
   }
@@ -418,7 +440,7 @@ z {
     font-size: 20px;
   }
   #aboutSection #description #corps {
-    font-size: 15px;
+    font-size: 16px;
   }
   #aboutSection #description #network {
     font-size: 18px;

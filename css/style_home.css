@@ -7,6 +7,7 @@ body {
   padding: 0;
   text-align: justify;
   font-family: 'Karla', sans-serif;
+  text-align: justify;
 }
 
 header {
@@ -305,6 +306,10 @@ z {
   background-color: #79a791;
 }
 
+#alert {
+  color: #8ea69b;
+}
+
 footer {
   position: fixed;
   bottom: 0;
@@ -343,7 +348,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 650px) {
+@media screen and (min-width: 640px) {
   body {
     font-size: 17px;
   }
@@ -410,7 +415,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 790px) {
   #Category {
     font-size: 40px;
     letter-spacing: 6px;
@@ -423,7 +428,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 1000px) {
   body {
     font-size: 16px;
   }
@@ -476,7 +481,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1260px) {
   header {
     padding-bottom: 1.52%;
   }
@@ -526,7 +531,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 1280px) and (min-width: 1366px) {
+@media screen and (min-width: 1260px) and (min-width: 1350px) {
   button {
     font-size: 22px;
   }
@@ -561,14 +566,14 @@ footer {
   }
 }
 
-@media screen and (min-width: 1280px) {
+@media screen and (min-width: 1260px) {
   #contactMe {
     margin-top: 2%;
     margin-bottom: 10%;
   }
 }
 
-@media screen and (min-width: 1600px) {
+@media screen and (min-width: 1580px) {
   body {
     font-size: 14px;
   }
@@ -619,7 +624,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 1980px) {
+@media screen and (min-width: 1950px) {
   body {
     font-size: 13px;
   }
