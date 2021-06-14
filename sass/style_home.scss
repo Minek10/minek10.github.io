@@ -60,6 +60,24 @@ button{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+button#btnTranslate{
+    //background-color: blueviolet;
+    float: right;
+    padding: 0;
+    font-size: 14px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-right: 2%;
+    margin-top:0;
+    border: none;
+
+    #flag{
+        width: 20px;
+        height: 12px;
+        padding:0 0 0 5px
+        //padding-left: 5%;
+    }
+}
+
 button:hover{
    color:white
 }
@@ -284,7 +302,7 @@ z{
 #contactMe{
     margin-top: 3%;
     //background-color: yellow;
-    margin-bottom: 15%;
+    margin-bottom: 10%;
     text-align: center;
 }
 
@@ -292,7 +310,8 @@ z{
     //background-color: aqua;
     margin: auto;
     width: 35%;
-    margin-top: 5%;
+    margin-top: 0;
+    margin-bottom: 5%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -382,6 +401,20 @@ footer{
         border: none;
         font-size: 15px;
         font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    button#btnTranslate{
+        padding: 0;
+        font-size: 16px;
+        margin-right: 2%;
+        margin-top:0;
+    
+        #flag{
+            width: 22px;
+            height: 13px;
+            padding:0 0 0 5px
+            //padding-left: 5%;
+        }
     }
 
        
@@ -592,6 +625,17 @@ footer{
             font-size: 20px;
         }
 
+        button#btnTranslate{
+            padding: 0;
+            font-size: 22px;
+            margin-top:0;
+        
+            #flag{
+                width: 28px;
+                height: 15px;
+            }
+        }
+
         hr{
             margin-top: 12%;
             margin-bottom: 12%;
@@ -665,6 +709,17 @@ footer{
     
         button{
             font-size: 22px;
+        }
+
+        button#btnTranslate{
+            padding: 0;
+            font-size: 24px;
+            margin-top:0;
+        
+            #flag{
+                width: 30px;
+                height: 16px;
+            }
         }
 
 

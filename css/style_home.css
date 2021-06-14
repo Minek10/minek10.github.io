@@ -53,6 +53,22 @@ button {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+button#btnTranslate {
+  float: right;
+  padding: 0;
+  font-size: 14px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin-right: 2%;
+  margin-top: 0;
+  border: none;
+}
+
+button#btnTranslate #flag {
+  width: 20px;
+  height: 12px;
+  padding: 0 0 0 5px;
+}
+
 button:hover {
   color: white;
 }
@@ -277,14 +293,15 @@ z {
 
 #contactMe {
   margin-top: 3%;
-  margin-bottom: 15%;
+  margin-bottom: 10%;
   text-align: center;
 }
 
 #btnContener {
   margin: auto;
   width: 35%;
-  margin-top: 5%;
+  margin-top: 0;
+  margin-bottom: 5%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -359,6 +376,17 @@ footer {
     border: none;
     font-size: 15px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  button#btnTranslate {
+    padding: 0;
+    font-size: 16px;
+    margin-right: 2%;
+    margin-top: 0;
+  }
+  button#btnTranslate #flag {
+    width: 22px;
+    height: 13px;
+    padding: 0 0 0 5px;
   }
   #hello {
     margin-top: 15%;
@@ -495,6 +523,15 @@ footer {
   button {
     font-size: 20px;
   }
+  button#btnTranslate {
+    padding: 0;
+    font-size: 22px;
+    margin-top: 0;
+  }
+  button#btnTranslate #flag {
+    width: 28px;
+    height: 15px;
+  }
   hr {
     margin-top: 12%;
     margin-bottom: 12%;
@@ -529,6 +566,15 @@ footer {
 @media screen and (min-width: 1260px) and (min-width: 1350px) {
   button {
     font-size: 22px;
+  }
+  button#btnTranslate {
+    padding: 0;
+    font-size: 24px;
+    margin-top: 0;
+  }
+  button#btnTranslate #flag {
+    width: 30px;
+    height: 16px;
   }
   hr {
     margin-top: 12%;
