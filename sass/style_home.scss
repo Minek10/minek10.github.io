@@ -8,7 +8,7 @@ body {
     padding: 0;
     text-align:justify;
     font-family: 'Karla', sans-serif;
-    text-align: justify;
+    //text-align: justify;
 }
 
 header{
@@ -67,13 +67,15 @@ button#btnTranslate{
     font-size: 14px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     margin-right: 2%;
-    margin-top:0;
+    margin-top:1px;
     border: none;
 
     #flag{
         width: 20px;
         height: 12px;
-        padding:0 0 0 5px
+        padding:0 0 0 5px;
+        margin-top: 4px;
+        
         //padding-left: 5%;
     }
 }
@@ -412,7 +414,8 @@ footer{
         #flag{
             width: 22px;
             height: 13px;
-            padding:0 0 0 5px
+            padding:0 0 0 5px;
+            margin-top:5px;
             //padding-left: 5%;
         }
     }

@@ -7,7 +7,6 @@ body {
   padding: 0;
   text-align: justify;
   font-family: 'Karla', sans-serif;
-  text-align: justify;
 }
 
 header {
@@ -59,7 +58,7 @@ button#btnTranslate {
   font-size: 14px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   margin-right: 2%;
-  margin-top: 0;
+  margin-top: 1px;
   border: none;
 }
 
@@ -67,6 +66,7 @@ button#btnTranslate #flag {
   width: 20px;
   height: 12px;
   padding: 0 0 0 5px;
+  margin-top: 4px;
 }
 
 button:hover {
@@ -387,6 +387,7 @@ footer {
     width: 22px;
     height: 13px;
     padding: 0 0 0 5px;
+    margin-top: 5px;
   }
   #hello {
     margin-top: 15%;
