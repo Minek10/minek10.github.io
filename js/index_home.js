@@ -1,5 +1,4 @@
-checkDevice();
-
+init();
 
 window.addEventListener('resize', checkDevice);
 document.getElementById("btnContener").addEventListener('click', alertJs);
@@ -29,12 +28,11 @@ function alertJs(){
 }
 
 
-
 function checkDevice(){
-
+    
     var larg = (document.body.clientWidth);
     console.log("La largeur est de " + larg);
-
+    
     if (larg < 649){
         console.log(larg);
         var image = document.getElementById("screenModeImg");
@@ -46,14 +44,14 @@ function checkDevice(){
         var image = document.getElementById("screenModeImg");
         image.src = "../img/middle_screen2.png";
     }
-
+    
     if (larg > 1280){
         console.log(larg);
         var image = document.getElementById("screenModeImg");
         image.src = "../img/big_screen2.png";
         
     }
-
+    
     if (larg > 1650){
         console.log(larg);
         var image = document.getElementById("screenModeImg");
@@ -61,6 +59,31 @@ function checkDevice(){
     }
 }
 
+function init() {
+    const btnSwitch = document.querySelector('#languagesSwitch');
+    const initLabelsSwitch = () => {
+        btnSwitch.innerHTML = '';
+
+        AVAILABLE_LANGUAGES.forEach(language => {
+            const option = document.createElement('option');
+            option.value = language;
+            option.innerText = language.toUpperCase();
+            option.selected = language === currentLanguage;
+            btnSwitch.appendChild(option);
+        });
+
+        setLabels(currentLanguage);
+    };
+
+
+    btnSwitch.addEventListener('change', (event) => {
+        currentLanguage = event.target.value;
+        initLabelsSwitch();
+    });
+
+    checkDevice();
+    initLabelsSwitch();
+}
 
 
 
