@@ -1,6 +1,7 @@
 checkDevice();
 
 var btnText = document.getElementById('btnTranslate');
+var imgContact = document.getElementById("imgContact");
 
 window.addEventListener('resize', checkDevice);
 document.getElementById("btnContener").addEventListener('click', alertJs);
@@ -48,6 +49,7 @@ function checkDevice(){
         console.log(larg);
         var image = document.getElementById("screenModeImg");
         image.src = "../img/middle_screen2.png";
+        
     }
 
     if (larg > 1280){

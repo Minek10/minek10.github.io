@@ -38,8 +38,7 @@ header {
 }
 
 #buttonNavigation {
-  -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
   vertical-align: middle;
 }
 
@@ -67,6 +66,10 @@ button#btnTranslate #flag {
   height: 12px;
   padding: 0 0 0 5px;
   margin-top: 4px;
+}
+
+button#btnTranslate:hover {
+  opacity: 0.4;
 }
 
 button:hover {
@@ -130,8 +133,7 @@ z {
 #Category {
   text-align: center;
   font-size: 30px;
-  -webkit-text-decoration: underline overline #8ea69b;
-          text-decoration: underline overline #8ea69b;
+  text-decoration: underline overline #8ea69b;
   font-family: "Sofia", sans-serif;
   text-shadow: 3px 3px 3px #ababab;
 }
@@ -143,18 +145,10 @@ z {
 }
 
 #desc {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
   margin-top: 8%;
   margin-left: 3%;
   margin-right: 1%;
@@ -197,18 +191,10 @@ z {
   padding-top: 3%;
   padding-left: 1%;
   padding-right: 1%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 #languages #screenLang {
@@ -233,18 +219,10 @@ z {
   padding-top: 3%;
   padding-left: 1%;
   padding-right: 1%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
 }
 
 #softs #screenSofts {
@@ -268,18 +246,10 @@ z {
   padding-top: 3%;
   padding-left: 1%;
   padding-right: 1%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -ms-flex-wrap: wrap;
-      flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 #db #dbImg #screenBd {
@@ -302,15 +272,9 @@ z {
   width: 35%;
   margin-top: 0;
   margin-bottom: 5%;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 #btnContener button#contactButton {
@@ -321,6 +285,10 @@ z {
 
 #btnContener button#contactButton:hover {
   background-color: #79a791;
+}
+
+#imgContact {
+  display: none;
 }
 
 #alert {
@@ -362,6 +330,9 @@ footer {
     width: 50%;
     margin-left: 25%;
     margin-right: 25%;
+  }
+  #imgContact {
+    display: none;
   }
 }
 
@@ -442,6 +413,9 @@ footer {
     margin-left: 25%;
     margin-right: 25%;
   }
+  #imgContact {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 790px) {
@@ -454,6 +428,9 @@ footer {
   }
   #softs {
     width: 70%;
+  }
+  #imgContact {
+    display: none;
   }
 }
 
@@ -512,6 +489,11 @@ footer {
     margin-top: 3%;
     margin-bottom: 5%;
   }
+  #imgContact {
+    width: 275px;
+    height: 175px;
+    display: inline-block;
+  }
 }
 
 @media screen and (min-width: 1260px) {
@@ -561,6 +543,10 @@ footer {
   #softs #db #screenBd {
     width: 9%;
     padding-left: 1%;
+  }
+  #softs #imgContact {
+    width: 275px;
+    height: 175px;
   }
 }
 
@@ -664,6 +650,13 @@ footer {
     padding: 10px;
     border-radius: 10px;
   }
+  #contactMe {
+    margin-top: 0;
+  }
+  #imgContact {
+    width: 350px;
+    height: 222px;
+  }
 }
 
 @media screen and (min-width: 1950px) {
@@ -704,11 +697,12 @@ footer {
     padding-left: 2%;
     padding-right: 2%;
   }
+  #contactMe {
+    margin-bottom: 4%;
+  }
   button#contactButton {
     background-color: #8ea69b;
-    padding: 5px;
     border-radius: 10px;
-    background-color: brown;
   }
 }
 
@@ -747,7 +741,11 @@ footer {
     width: 65%;
   }
   #contactMe {
-    margin-bottom: 5%;
+    margin-bottom: 3%;
+  }
+  #imgContact {
+    width: 400px;
+    height: 250px;
   }
 }
 /*# sourceMappingURL=style_home.css.map */

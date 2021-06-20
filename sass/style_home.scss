@@ -80,6 +80,11 @@ button#btnTranslate{
     }
 }
 
+button#btnTranslate:hover{
+    opacity: 0.4;
+    //background-color: red;
+}
+
 button:hover{
    color:white
 }
@@ -274,6 +279,7 @@ z{
     display:table;
     //background-color: cornflowerblue;
     width: 98%;
+    //background-color: coral;
 
     #dbImg{
         margin-top:3%;
@@ -326,9 +332,15 @@ z{
 
     button#contactButton:hover{
         background-color:rgb(121, 167, 145);
-        
     }
+
 }
+
+#imgContact{
+    display: none;
+}
+
+
 
 #alert{
     color:rgb(142,166,155)
@@ -344,6 +356,7 @@ footer{
     font-size: 12px;
     padding-bottom: 5px;
     float: left;
+    
 }
 
 
@@ -388,6 +401,10 @@ footer{
         width: 50%;
         margin-left: 25%;
         margin-right: 25%;
+    }
+
+    #imgContact{
+        display: none;
     }
 }
 
@@ -496,6 +513,10 @@ footer{
         margin-left: 25%;
         margin-right:25%;
      }
+
+     #imgContact{
+        display: none;
+    }
     
 }
 
@@ -512,6 +533,10 @@ footer{
     
     #softs{
         width: 70%;
+    }
+
+    #imgContact{
+        display: none;
     }
     
 }
@@ -610,6 +635,12 @@ footer{
             margin-bottom: 5%;
         }
 
+        #imgContact{
+            width: 275px;
+            height: 175px;
+            display: inline-block;
+        }
+
     }
 
     @media screen and (min-width: 1260px){
@@ -704,6 +735,11 @@ footer{
                 //background-color: burlywood;
             }
             
+        }
+
+        #imgContact{
+            width: 275px;
+            height: 175px;
         }
 
     }
@@ -887,6 +923,15 @@ footer{
         padding: 10px;
         border-radius: 10px;
     }
+
+    #contactMe{
+        margin-top: 0;
+    }
+
+    #imgContact{
+        width: 350px;
+        height: 222px;
+    }
 }
 
 @media screen and (min-width: 1950px){
@@ -964,12 +1009,18 @@ footer{
         
     }
 
+    #contactMe{
+        margin-bottom: 4%;
+    }
+
     button#contactButton{
         background-color:rgb(142,166,155);
-        padding: 5px;
+        //padding: 5px;
         border-radius: 10px;
-        background-color: brown;
+        //background-color: brown;
     }
+
+
 
 }
 
@@ -1026,6 +1077,11 @@ footer{
     
 
     #contactMe{
-        margin-bottom: 5%;
+        margin-bottom: 3%;
+    }
+
+    #imgContact{
+        width: 400px;
+        height: 250px;
     }
 }

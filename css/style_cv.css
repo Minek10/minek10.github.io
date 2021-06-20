@@ -40,8 +40,7 @@ header {
 }
 
 #buttonNavigation {
-  -ms-flex-line-pack: center;
-      align-content: center;
+  align-content: center;
   vertical-align: middle;
 }
 
@@ -95,8 +94,7 @@ section {
   padding-left: 2%;
   padding-right: 2%;
   opacity: 1;
-  -webkit-transition-duration: 0.5s;
-          transition-duration: 0.5s;
+  transition-duration: 0.5s;
 }
 
 section #Title {
@@ -106,8 +104,7 @@ section #Title {
 section #Category {
   text-align: center;
   font-size: 30px;
-  -webkit-text-decoration: underline overline #8ea69b;
-          text-decoration: underline overline #8ea69b;
+  text-decoration: underline overline #8ea69b;
   letter-spacing: 5px;
   font-family: "Sofia", sans-serif;
   cursor: default;
@@ -116,8 +113,7 @@ section #Category {
 section #SubCategory {
   text-align: center;
   font-size: 25px;
-  -webkit-text-decoration: underline dotted 3px #8ea69b;
-          text-decoration: underline dotted 3px #8ea69b;
+  text-decoration: underline dotted 3px #8ea69b;
   font-style: oblique;
 }
 
@@ -134,8 +130,7 @@ section #SubCategory {
   height: 315px;
   border-radius: 25%;
   padding-top: 2%;
-  -webkit-transition-duration: 2s;
-          transition-duration: 2s;
+  transition-duration: 2s;
 }
 
 #aboutSection #profileImg:hover {
@@ -193,8 +188,7 @@ z {
 
 @media screen and (min-width: 640px) {
   #buttonNavigation {
-    -ms-flex-line-pack: center;
-        align-content: center;
+    align-content: center;
     vertical-align: middle;
   }
   button {
@@ -210,8 +204,7 @@ z {
     padding-left: 2%;
     padding-right: 2%;
     opacity: 1;
-    -webkit-transition-duration: 0.5s;
-            transition-duration: 0.5s;
+    transition-duration: 0.5s;
   }
   section#aboutSection {
     padding-top: 10%;
@@ -282,8 +275,7 @@ z {
     height: 15px;
   }
   #buttonNavigation {
-    -ms-flex-line-pack: center;
-        align-content: center;
+    align-content: center;
     vertical-align: middle;
   }
   button {
@@ -297,8 +289,7 @@ z {
   }
   button:hover {
     color: #8ea69b;
-    -webkit-text-decoration: underline #8ea69b;
-            text-decoration: underline #8ea69b;
+    text-decoration: underline #8ea69b;
   }
   .scroller {
     width: 70%;
@@ -315,8 +306,7 @@ z {
     height: 200px;
     border-radius: 10%;
     padding-top: 2%;
-    -webkit-transition-duration: 2s;
-            transition-duration: 2s;
+    transition-duration: 2s;
   }
   #aboutSection #description {
     width: 70%;
@@ -358,16 +348,14 @@ z {
   section #Category {
     text-align: center;
     font-size: 30px;
-    -webkit-text-decoration: underline overline #8ea69b;
-            text-decoration: underline overline #8ea69b;
+    text-decoration: underline overline #8ea69b;
     letter-spacing: 7px;
     padding: 0;
   }
   section #SubCategory {
     text-align: center;
     font-size: 25px;
-    -webkit-text-decoration: underline dotted 3px #8ea69b;
-            text-decoration: underline dotted 3px #8ea69b;
+    text-decoration: underline dotted 3px #8ea69b;
     font-style: oblique;
   }
   footer {
@@ -377,24 +365,13 @@ z {
     height: 100vh;
   }
   #flex {
-    display: -webkit-box;
-    display: -ms-flexbox;
     display: flex;
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: row;
-            flex-direction: row;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    flex-direction: row;
+    flex-wrap: wrap;
     width: 100%;
-    -ms-flex-item-align: center;
-        align-self: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    -webkit-box-pack: baseline;
-        -ms-flex-pack: baseline;
-            justify-content: baseline;
+    align-self: center;
+    align-items: center;
+    justify-content: baseline;
   }
 }
 
@@ -427,8 +404,7 @@ z {
     height: 300px;
     border-radius: 10%;
     padding-top: 2%;
-    -webkit-transition-duration: 2s;
-            transition-duration: 2s;
+    transition-duration: 2s;
   }
   #aboutSection #description {
     width: 75%;
