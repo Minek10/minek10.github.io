@@ -7,12 +7,14 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Karla', sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
 header {
   width: 100%;
   display: inline-block;
   background-color: #8ea69b;
+  background-image: linear-gradient(90deg, #c0d1c9 0%, #7c958a 50%, #c0d1c9 100%);
   top: 0;
   padding-bottom: 3%;
   vertical-align: middle;
@@ -42,15 +44,23 @@ header {
 #buttonNavigation {
   align-content: center;
   vertical-align: middle;
+  border: none;
+  background: none;
+  outline: none;
 }
 
 button {
-  background-color: #8ea69b;
   padding-left: 1%;
   padding-right: 1%;
   border: none;
   font-size: 12px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
 }
 
 button:hover {
@@ -179,7 +189,6 @@ z {
 
 @media screen and (min-width: 490px) {
   button {
-    background-color: #8ea69b;
     padding-left: 2%;
     padding-right: 2%;
     font-size: 14px;
@@ -192,7 +201,6 @@ z {
     vertical-align: middle;
   }
   button {
-    background-color: #8ea69b;
     padding-left: 2%;
     padding-right: 2%;
     font-size: 15px;
@@ -246,7 +254,13 @@ z {
     width: 30%;
     height: 100vh;
     display: fixed;
-    background-color: #8ea69b;
+    background: #f5f5f5;
+    background: linear-gradient(90deg, whitesmoke 0%, #a8bab1 70%);
+  }
+  #header {
+    padding: 0;
+    margin-bottom: 0;
+    background-image: 0;
   }
   #aboutSection {
     margin-top: 0;
@@ -254,10 +268,10 @@ z {
   header {
     width: 70%;
     display: inline-block;
-    background-color: whitesmoke;
     top: 0;
     vertical-align: middle;
     position: fixed;
+    padding: 0;
   }
   #banner {
     margin: 0 auto;
@@ -265,6 +279,8 @@ z {
     vertical-align: middle;
     text-align: center;
     font-size: 10px;
+    padding-bottom: 2%;
+    background-color: whitesmoke;
   }
   #mode {
     padding-left: 10px;
@@ -295,7 +311,7 @@ z {
     width: 70%;
     height: 100vh;
     overflow-y: scroll;
-    scrollbar-color: #8ea69b whitesmoke;
+    scrollbar-color: #b6cecc whitesmoke;
     scrollbar-width: thin;
   }
   #aboutSection {
@@ -372,6 +388,9 @@ z {
     align-self: center;
     align-items: center;
     justify-content: baseline;
+  }
+  footer {
+    background-color: whitesmoke;
   }
 }
 

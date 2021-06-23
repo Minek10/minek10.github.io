@@ -10,6 +10,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;400&display=swap" rel="stylesheet"> 
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet"> 
+
     <script src="./js/index_home.js" defer></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
@@ -25,10 +32,10 @@
                 <img id="screenModeImg" src="./img/small_screen2.png" alt="">
             </span>
                 <span id="buttonNavigation">
-                    <a href="#"><button id="aboutBtn" class="btnAbout">A propos de moi</button></a>
-                    <a href="./html/cv.html"><button id="btnEducation" class="btnEducations">CV</button></a>
-                    <a href="#"><button id="btnProject" class="btnProjects">Projets</button></a>
-                    <a href="#contactMe"><button id="btnSkills" class="btnskills">Contact</button></a>
+                    <a href="#"><button id="aboutBtn" class="btn btnAbout">A propos de moi</button></a>
+                    <a href="./html/cv.html"><button id="btnEducation" class="btn">CV</button></a>
+                    <a href="#"><button id="btnProject" class="btn">Projets</button></a>
+                    <a href="#contactMe"><button id="btnSkills" class="btn">Contact</button></a>
                     
                 </span>
             </span>
@@ -36,11 +43,18 @@
              
         </div>
     </header>
+
+
     <div id="contener" class="bloc">
+
+        
         <div id="hello" class="hello">
-            Bonjour et bienvenue à toutes et à tous !<br><br>   Mon nom est <br><div id="name"><b>Riccardo Carroyer</b></div>
+            <p>Bonjour et bienvenue à toutes et à tous !</p> 
+            <p>Mon nom est</p> 
+            <div id="name" class="clignote"><b>Riccardo Carroyer</b></div>
             <img id="profileImg" src="./img/riccarde_tr.png" alt="">
         </div>
+    
 
         <hr>
 
@@ -48,21 +62,27 @@
         <div id="aboutMe">
                 <p id="Category" class="aboutMe"><z>|</z> A Propos de moi <z>|</z></p>
                 <div id="txtAboutMe">
+                    <img src="./img/bitmoji_pc_tr.png" alt="" id="imgAbout">
+                    <br>
                     <p>Passionné par l'outil informatique depuis le plus jeune âge, j'ai vite commencé mes premiers sites avec le logiciel FrontPage de la suite Office, j'étais Webmaster de mon équipe de foot à 11 ans !
-                    <br>Dès que j'ai eu l'opportunité, j'ai choisi une orientation informatique à l'école, j'y ai appris la maintenance, l'assemblage, installation, administration de Windows, Windows Server et de certaines distributions Linux. </p>
+                    Dès que j'ai eu l'opportunité, j'ai choisi une orientation informatique à l'école, j'y ai appris la maintenance, l'assemblage, installation, administration de Windows, Windows Server et de certaines distributions Linux. </p>
                     
                     <p>Dans la suite de cet apprentissage, j'ai terminé avec fruit un bachelier en informatique de gestion, où m'a été appris une certaine expérience de travail avec certains outils ainsi qu'une méthodologie de travail.  
-                    <br>Cette expérience m'a mis à l'aise avec les bases de données, les rouages de la programmation ainsi que l'analyse et la conception d'un projet. </p>
+                    Cette expérience m'a mis à l'aise avec les bases de données, les rouages de la programmation ainsi que l'analyse et la conception d'un projet. </p>
                     
                     <p>Dans la continuité de ce graduat, j'ai eu l'opportunité d'être sélectionné dans une formation 6 mois à 40 heures semaine comme développeur "Full stack NodeJS" organisé par Cefora-Téchnocité.  
                     <br>Cette formation m'a permis de professionnaliser encore plus mon approche et mes méthodes de travail.</p>
 
                     <p>Je suis une personne patiente et autonome mais je n'hésite pas à demander conseil ou une astuce à une personne expérimentée lorsque je suis face à des difficultés ou a des questionnements.
-                    <br>Le travail d'équipe m'est agréable.</p>
+                    Le travail d'équipe m'est agréable.</p>
                 </div>
 
                 <!--Tableau recap-->
+                <br>
+                <img src="./img/bitmoji_tr3.png" alt="" id="imgDescLeft">
+                <img src="./img/bitmoji_tr3.png" alt="" id="imgDescRight">
                 <div id="desc">
+                    <br>
                     <span id="left" class="nameTable">Nom complet</span> <span id="middle">:</span> <span id="right">Riccardo Carroyer</span><br>
                     <span id="left" class="birthTable">Né le </span> <span id="middle">:</span> <span id="right" class="birthTableAnswer">23 janvier 1992</span><br>
                     <span id="left" Class="countryTable">Pays</span> <span id="middle">:</span> <span id="right" class="countryTableAnswer">Belgique</span><br>

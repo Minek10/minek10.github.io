@@ -14,6 +14,7 @@ window.addEventListener('resize', btnContact);
 // var skills = document.getElementById("SkillSection");
 
 
+//transition de pages
 const $ = document.querySelector.bind(document);
     
     function fadeOut(el){
@@ -97,7 +98,7 @@ function checkDevice(){
 
 function btnContact(){
     var larg = document.body.clientWidth;
-    if (larg <= 1280){
+    if (larg < 1260){
       
 
         document.getElementById("contactBtn").style.display="inline-block"

@@ -5,18 +5,29 @@ body {
   font-size: 15px;
   margin: 0;
   padding: 0;
-  text-align: justify;
-  font-family: 'Karla', sans-serif;
+  font-family: 'Quicksand', sans-serif;
 }
 
 header {
   width: 100%;
   display: inline-block;
-  background-color: #8ea69b;
   top: 0;
   padding-bottom: 3%;
   vertical-align: middle;
   position: fixed;
+  background-color: #8ea69b;
+  background: linear-gradient(360deg, whitesmoke 0%, #a8bab1 50%);
+}
+
+.clignote {
+  color: black;
+  animation: clignote 7.5s linear infinite;
+}
+
+@keyframes clignote {
+  50% {
+    opacity: 0;
+  }
 }
 
 #banner {
@@ -30,25 +41,34 @@ header {
 #mode {
   padding-left: 10px;
   float: left;
+  font-size: 14px;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
 #screenModeImg {
   padding-top: 3px;
-  height: 15px;
+  height: 12px;
 }
 
 #buttonNavigation {
-  align-content: center;
-  vertical-align: middle;
+  border: none;
+  background: none;
+  outline: none;
+  color: black;
 }
 
 button {
-  background-color: #8ea69b;
   padding-left: 1%;
   padding-right: 1%;
-  border: none;
   font-size: 13px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: black;
+  background-color: Transparent;
+  background-repeat: no-repeat;
+  border: none;
+  cursor: pointer;
+  overflow: hidden;
+  outline: none;
 }
 
 button#btnTranslate {
@@ -63,9 +83,9 @@ button#btnTranslate {
 
 button#btnTranslate #flag {
   width: 20px;
-  height: 12px;
+  height: 14px;
   padding: 0 0 0 5px;
-  margin-top: 4px;
+  margin-top: 2px;
 }
 
 button#btnTranslate:hover {
@@ -139,16 +159,26 @@ z {
 }
 
 #txtAboutMe {
-  text-justify: auto;
   padding-left: 1%;
   padding-right: 1%;
+}
+
+#imgAbout {
+  display: none;
+}
+
+#imgDescLeft {
+  display: none;
+}
+
+#imgDescRight {
+  display: none;
 }
 
 #desc {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  justify-content: space-between;
   margin-top: 8%;
   margin-left: 3%;
   margin-right: 1%;
@@ -312,6 +342,15 @@ footer {
     font-size: 30px;
     letter-spacing: 2px;
   }
+  #imgAbout {
+    display: none;
+  }
+  #imgDescLeft {
+    display: none;
+  }
+  #imgDescRight {
+    display: none;
+  }
   #desc {
     margin: auto;
     width: 70%;
@@ -340,13 +379,21 @@ footer {
   body {
     font-size: 17px;
   }
+  #mode {
+    font-size: 14px;
+  }
+  #screenModeImg {
+    padding-top: 3px;
+    height: 13px;
+  }
+  #imgAbout {
+    display: none;
+  }
   button {
-    background-color: #8ea69b;
     padding-left: 3%;
     padding-right: 3%;
     border: none;
     font-size: 15px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   }
   button#btnTranslate {
     padding: 0;
@@ -355,10 +402,10 @@ footer {
     margin-top: 0;
   }
   button#btnTranslate #flag {
-    width: 22px;
-    height: 13px;
+    width: 25px;
+    height: 16px;
     padding: 0 0 0 5px;
-    margin-top: 5px;
+    margin-top: 3px;
   }
   #hello {
     margin-top: 15%;
@@ -376,6 +423,12 @@ footer {
     width: 61%;
     margin-top: 5%;
     margin-left: 22%;
+  }
+  #imgDescLeft {
+    display: none;
+  }
+  #imgDescRight {
+    display: none;
   }
   #Category {
     font-size: 36px;
@@ -426,10 +479,19 @@ footer {
   #desc {
     margin-top: 8%;
   }
+  #imgDescLeft {
+    display: none;
+  }
+  #imgDescRight {
+    display: none;
+  }
   #softs {
     width: 70%;
   }
   #imgContact {
+    display: none;
+  }
+  #imgAbout {
     display: none;
   }
 }
@@ -443,6 +505,15 @@ footer {
   }
   #banner {
     padding-top: 2%;
+  }
+  #mode {
+    padding-left: 10px;
+    float: left;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  #screenModeImg {
+    height: 15px;
   }
   button {
     font-size: 16px;
@@ -497,14 +568,55 @@ footer {
 }
 
 @media screen and (min-width: 1260px) {
+  body {
+    font-size: 15px;
+  }
   header {
-    padding-bottom: 1.52%;
+    padding: 0;
+    margin-bottom: 0;
+    background-image: 0;
   }
   #banner {
+    margin: 0;
+    font-size: 10px;
     padding-top: 1.5%;
+    padding-bottom: 1%;
+    background-color: whitesmoke;
+    box-shadow: 1px 5px 20px #79a791;
+  }
+  #mode {
+    padding-top: 0px;
+    font-size: 15px;
+    margin: 0;
+    letter-spacing: 3px;
+  }
+  #screenModeImg {
+    height: 14px;
   }
   button {
-    font-size: 20px;
+    font-size: 15px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 4px;
+  }
+  #buttonNavigation {
+    margin: 0;
+    padding: 0;
+  }
+  .btn {
+    opacity: 0.8;
+    transition: 0.3s;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+    opacity: 0.7;
+    transition: 1s;
+    border-radius: 30px;
+  }
+  .btn:hover {
+    opacity: 1;
+    color: whitesmoke;
+    background-color: #79a791;
   }
   button#btnTranslate {
     padding: 0;
@@ -512,8 +624,10 @@ footer {
     margin-top: 0;
   }
   button#btnTranslate #flag {
-    width: 28px;
-    height: 15px;
+    width: 30px;
+    height: 18px;
+    margin: 0;
+    padding: 0;
   }
   hr {
     margin-top: 12%;
@@ -521,7 +635,7 @@ footer {
   }
   #Category {
     font-size: 42px;
-    letter-spacing: 7px;
+    letter-spacing: 6px;
   }
   #hello {
     margin-top: 12.5%;
@@ -530,10 +644,29 @@ footer {
     font-size: 50px;
     font-family: "Trirong", serif;
   }
+  #imgAbout {
+    display: none;
+  }
   #desc {
-    width: 50%;
+    width: 58%;
     margin: auto;
-    margin-top: 4%;
+    margin-top: 6%;
+  }
+  #imgDescLeft {
+    display: block;
+    float: left;
+    height: 325px;
+    width: 200px;
+    padding-top: 10px;
+    margin-left: 2%;
+  }
+  #imgDescRight {
+    display: block;
+    float: right;
+    height: 325px;
+    width: 200px;
+    padding-top: 10px;
+    margin-right: 2%;
   }
   #softs #screenSofts {
     width: 9%;
@@ -548,11 +681,26 @@ footer {
     width: 275px;
     height: 175px;
   }
+  #softs button#contactButton:hover {
+    color: whitesmoke;
+  }
 }
 
 @media screen and (min-width: 1260px) and (min-width: 1350px) {
+  body {
+    font-size: 15px;
+  }
+  #mode {
+    font-size: 17px;
+    margin: 0;
+    letter-spacing: 4px;
+  }
+  #screenModeImg {
+    height: 15px;
+  }
   button {
-    font-size: 22px;
+    font-size: 17px;
+    letter-spacing: 5px;
   }
   button#btnTranslate {
     padding: 0;
@@ -560,8 +708,8 @@ footer {
     margin-top: 0;
   }
   button#btnTranslate #flag {
-    width: 30px;
-    height: 16px;
+    width: 32px;
+    height: 20px;
   }
   hr {
     margin-top: 12%;
@@ -576,10 +724,18 @@ footer {
     margin-top: 12%;
   }
   #desc {
-    width: 45%;
+    width: 50%;
     margin: auto;
-    margin-left: 30%;
+    margin-left: 23%;
     margin-top: 4%;
+  }
+  #imgDescLeft {
+    padding-top: 10px;
+    margin-left: 0%;
+  }
+  #imgDescRight {
+    padding-top: 10px;
+    margin-right: 0%;
   }
   #languages #screenLang {
     padding-left: 1%;
@@ -601,15 +757,38 @@ footer {
   }
 }
 
-@media screen and (min-width: 1580px) {
+@media screen and (min-width: 1590px) {
   body {
-    font-size: 14px;
-  }
-  header {
-    padding-bottom: 1.25%;
+    font-size: 15px;
   }
   #banner {
-    padding-top: 1.25%;
+    padding-top: 1.5%;
+    padding-bottom: 1%;
+  }
+  #mode {
+    padding-top: 0;
+    font-size: 18px;
+    margin: 0;
+    letter-spacing: 4px;
+  }
+  #screenModeImg {
+    padding-top: 0px;
+    height: 17px;
+  }
+  button {
+    border: none;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    letter-spacing: 5px;
+  }
+  button#btnTranslate {
+    padding: 0;
+    font-size: 24px;
+    margin-top: 0;
+  }
+  button#btnTranslate #flag {
+    width: 32px;
+    height: 22px;
   }
   hr {
     margin-top: 8%;
@@ -620,12 +799,36 @@ footer {
     margin-right: 15%;
     width: 70%;
   }
+  #txtAboutMe {
+    padding-bottom: 5%;
+  }
+  #imgAbout {
+    float: right;
+    display: block;
+  }
   #hello {
     margin-top: 10%;
   }
+  #imgAbout {
+    display: block;
+    padding-bottom: 1%;
+  }
   #desc {
-    width: 40%;
-    margin-top: 5%;
+    width: 48%;
+    margin-top: 4%;
+    margin-left: 26%;
+  }
+  #imgDescLeft {
+    height: 325px;
+    width: 200px;
+    padding-top: 10px;
+    margin-left: 4%;
+  }
+  #imgDescRight {
+    height: 325px;
+    width: 200px;
+    padding-top: 10px;
+    margin-right: 4%;
   }
   #languages #screenLang {
     width: 78px;
@@ -661,15 +864,17 @@ footer {
 
 @media screen and (min-width: 1950px) {
   body {
-    font-size: 13px;
+    font-size: 16px;
   }
   header {
-    padding-bottom: 1%;
+    padding: 0;
   }
-  #banner {
-    padding-top: 1%;
+  button {
+    font-size: 17px;
+    letter-spacing: 4px;
   }
-  .bloc {
+  v
+.bloc {
     margin-left: 17.5%;
     margin-right: 17.5%;
     width: 65%;
@@ -679,15 +884,25 @@ footer {
     margin-bottom: 6%;
   }
   #hello {
-    margin-top: 6%;
+    margin-top: 8%;
   }
   #txtAboutMe {
-    text-align: justify;
+    padding-bottom: 5%;
   }
   #desc {
     width: 50%;
     margin: auto;
-    margin-top: 2%;
+    margin-top: 4%;
+  }
+  #imgDescLeft {
+    height: 350px;
+    width: 200px;
+    margin-left: 8%;
+  }
+  #imgDescRight {
+    height: 350px;
+    width: 200px;
+    margin-right: 8%;
   }
   #languages #screenLang {
     padding-left: 1%;
@@ -708,13 +923,7 @@ footer {
 
 @media screen and (min-width: 2500px) {
   body {
-    font-size: 15px;
-  }
-  header {
-    padding-bottom: 0.5%;
-  }
-  #banner {
-    padding-top: 0.5%;
+    font-size: 16px;
   }
   .bloc {
     margin-left: 16.5%;
@@ -727,15 +936,25 @@ footer {
     margin-bottom: 4%;
   }
   #hello {
-    margin-top: 6%;
+    margin-top: 8%;
   }
   #txtAboutMe {
-    text-align: justify;
+    margin-bottom: 3%;
   }
   #desc {
-    width: 40%;
-    margin: auto;
-    margin-top: 2%;
+    width: 35%;
+    margin-top: 3%;
+    margin-left: 32%;
+  }
+  #imgDescLeft {
+    height: 350px;
+    width: 200px;
+    margin-left: 15%;
+  }
+  #imgDescRight {
+    height: 350px;
+    width: 200px;
+    margin-right: 15%;
   }
   #languages {
     width: 65%;

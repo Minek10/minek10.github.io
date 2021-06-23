@@ -32,8 +32,6 @@ function alertJs(){
 
 
 
-
-
 function checkDevice(){
 
     var larg = (document.body.clientWidth);
@@ -94,7 +92,7 @@ function translate(){
 
     // banner
     document.getElementsByClassName('btnAbout')[0].innerHTML="About me";
-    document.getElementById('btnProject').innerText="Project"
+    document.getElementById('btnProject').innerText="Projects"
 
     //hello
     document.getElementById('hello').innerHTML=
@@ -104,14 +102,15 @@ function translate(){
 
     //Section aboutMe
     document.getElementsByClassName('aboutMe')[0].innerHTML="<z>|</z> About me <z>|</z>";
-    document.getElementById('txtAboutMe').innerHTML=`Passionate about computer tools from a young age, I quickly started my first websites with the FrontPage software of the Office suite, I was Webmaster of my football team at 11 years old!
-    As soon as I had the opportunity, I chose an IT orientation at school, where I learned the maintenance, assembly, installation, administration of Windows, Windows Server and some Linux distributions.
-    <br> <br> In the continuity of this learning, I successfully completed a bachelor's degree in IT Management, where I was taught some work experience with a few tools as well as a work methodology.
-    This experience taught me to work with databases, programming mechanisms but also the analysis and design of a project.
-    <br> <br> Following this graduate, I had the opportunity to be selected in a 6 month training at 40 hours a week as a "Full stack NodeJS" developer organized by Cefora-Téchnocité.
-    This training allowed me to further professionalize my perception and my working methods.
-    <br> <br> I am a patient and autonomous person but I do not hesitate to seek advice or a tip from an experienced person when I am facing difficulties or have questions.
-    <br> Teamwork is nice to me.`;
+    document.getElementById('txtAboutMe').innerHTML=` <img src="./img/bitmoji_pc_tr.png" alt="" id="imgAbout"> <br>
+    <p> Passionate about computer tools from a young age, I quickly started my first websites with the FrontPage software of the Office suite, I was Webmaster of my football team at 11 years old !
+    As soon as I had the opportunity, I chose an IT orientation at school, where I learned the maintenance, assembly, installation, administration of Windows, Windows Server and some Linux distributions. </p>
+    <p> In the continuity of this learning, I successfully completed a bachelor's degree in IT Management, where I gained some work experience with a few tools as well as a work methodology.
+    This, in turn, taught  me to work with databases, programming mechanisms but also the analysis and design of a project.</p>
+    <p> Following this graduate course, I had the opportunity to be selected for a 6 month training of 40 hours a week as a "Full stack NodeJS" developer organized by Cefora-Téchnocité.
+    This allowed me to further professionalize my perception and my working methods. </p>
+    <p> I am a patient and autonomous person but I do not hesitate to seek advice or a tip from an experienced colleague when I am facr difficulties or have questions.
+     Teamwork is indeed important to me. </p>`;
 
     //Table left
     document.getElementsByClassName('nameTable')[0].innerText="Name";
@@ -142,9 +141,10 @@ function translate(){
 
     //Section Contact
     document.getElementsByClassName("contactSection")[0].innerHTML="<z>|</z> Contact me <z>|</z>";
-    document.getElementsByClassName("contactMe")[0].innerText=
-    `Don't hesitate to contact me if my profile interests you or if you have any questions,
-    I would answer them with the greatest pleasure!` 
+    document.getElementsByClassName("contactMe")[0].innerHTML=
+    `<p>Don't hesitate to contact me if my profile interests you or if you have any questions,
+    I will be more than happy to answer them !</p>
+    <img src="./img/bitmoji_tel_tr.png" alt="" id="imgContact">` 
     document.getElementsByClassName("btnContact")[0].innerText="Contact me"
 }
 
