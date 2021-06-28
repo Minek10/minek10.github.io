@@ -376,6 +376,15 @@ z {
     margin-top: 7px;
     margin-right: 5%;
     letter-spacing: 3px;
+    opacity: 0.7;
+    transition: 1s;
+    border-radius: 30px;
+  }
+  #languagesSwitch:hover {
+    background: #79a791;
+    color: black;
+    border-radius: 30px;
+    opacity: 1;
   }
   .scroller {
     width: 70%;
