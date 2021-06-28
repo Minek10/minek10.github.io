@@ -7,14 +7,14 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Karla', sans-serif;
-    font-family: 'Quicksand', sans-serif;
+    //font-family: 'Quicksand', sans-serif;
 }
 
 header{
     width: 100%;
     display: inline-block;
     background-color: rgb(142,166,155);
-    background-image: linear-gradient(90deg, rgba(192,209,201,1) 0%, rgba(124,149,138,1) 50%, rgba(192,209,201,1) 100%);
+    background: linear-gradient(360deg, rgba(245,245,245,1) 0%, rgba(168,186,177,1) 50%);
     top:0;
     padding-bottom: 3%;
     vertical-align: middle;
@@ -57,10 +57,10 @@ header{
 
 button{
 
-    padding-left: 1%;
-    padding-right: 1%;
+    padding-left: 0.5%;
+    padding-right: 0.5%;
     border: none;
-    font-size: 12px;
+    font-size: 11px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 
     background-color: Transparent;
@@ -75,6 +75,39 @@ button{
 button:hover{
    color:white
 }
+
+#languagesSwitch{
+    float:right;
+    background-color: whitesmoke;
+    border:none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 11px;
+    margin-top:2px;
+    margin-right: 1%;
+    border-radius: 30px;
+}
+
+#languagesSwitch:hover {
+    background: rgb(121, 167, 145);
+    color: black;
+    border-radius: 30px;
+  }
+  
+#languagesSwitch:active {
+    background: yellow;
+    color: blue;
+  }
+  
+#languagesSwitch:focus {
+    background: rgb(121, 167, 145);
+    color: black;
+    border-radius: 30px;
+  }
+  
+#languagesSwitch:selected {
+    background: blue;
+    color: yellow;
+  }
 
 #homeImg{
     width: 10%;
@@ -181,10 +214,17 @@ section{
         #corps{
             padding-left:10px;
             //background-color: red;
+            #flag{
+                width: 20px;
+                height: 10px;
+            }
+            
+
         }
         #network{
             float: right;
             padding-right:10px;
+           
         }
         
     }
@@ -194,7 +234,7 @@ footer{
     position:fixed;
     bottom:0;
     width:100%;
-    background-color: rgb(142,166,155);
+    background: linear-gradient(180deg, rgba(245,245,245,1) 0%, rgba(168,186,177,1) 65%, rgba(168,186,177,1) 98%);
     text-align: center;
     font-size: 12px;
     padding-bottom: 5px;
@@ -208,9 +248,16 @@ z{
 
 @media screen and (min-width: 490px){
     button{
-        padding-left: 2%;
-        padding-right: 2%;
-        font-size: 14px;
+        padding-left: 1.5%;
+        padding-right: 1.5%;
+        font-size: 13px;
+    }
+
+    #languagesSwitch{
+      
+        font-size: 13px;
+        margin-top:1px;
+        margin-right: 1%;
     }
 }
 
@@ -229,6 +276,29 @@ z{
         font-size: 15px;
     }
 
+    #languagesSwitch{
+        float:right;
+        margin-right:5%;
+        background-color: whitesmoke;
+        border:none;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+    
+    #languagesSwitch:hover {
+        background: rgb(121, 167, 145);
+        color: black;
+      }
+      
+    #languagesSwitch:active {
+        background: yellow;
+        color: blue;
+      }
+      
+    #languagesSwitch:focus {
+        background: rgb(121, 167, 145);
+        color: black;
+      }
+    
     section{
         color : black;
         //background-color: yellow;
@@ -366,23 +436,35 @@ header{
     vertical-align: middle;
 }
 
-button{
-    background-color: whitesmoke;
-    padding-left: 2.5%;
-    padding-right: 2.5%;
-    border: none;
-    font-size: 15px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    letter-spacing: 5px;
-
+ .btn{
+    opacity: 0.8;
+    transition: 0.3s;
+    padding-left: 1%;
+    padding-right: 1%;
+    margin-left: 2%;
+    margin-right: 2%;
+    opacity: 0.7;
+    transition: 1s;
+    border-radius: 30px;
 }
 
-
-button:hover{
-    color:rgb(142,166,155);
-    text-decoration: underline rgb(142,166,155);
+.btn:hover{
+    opacity: 1;
+    //color:rgb(107, 146, 127);
+    color: whitesmoke;
+    background-color:rgb(121, 167, 145);
+    
     
  }
+
+ #languagesSwitch{
+      
+    font-size: 15px;
+    margin-top:7px;
+    margin-right: 5%;
+    letter-spacing: 3px;
+    
+}
 
 .scroller {
     width: 70%;
@@ -449,13 +531,7 @@ button:hover{
 
 
 
-#Category.contact{
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    //background-color: aquamarine;
-    padding-top: 0;
-    margin-top: 0;
-    //font-size: 12px;
-}
+
 
 
 
@@ -486,8 +562,16 @@ section{
         font-style: oblique;
     }
 }
+    #Category.contact{
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        //background-color: aquamarine;
+        padding-top: 0;
+        margin-top: 0;
+        //font-size: 12px;
+        text-decoration: none;
+}
 
-    footer{
+footer{
         width:70%;
     }
 
@@ -519,6 +603,7 @@ section{
 
     footer{
         background-color: whitesmoke;
+        background-image: linear-gradient(90deg, whitesmoke 0%, whitesmoke 50%, whitesmoke 100%);
     }
 
 

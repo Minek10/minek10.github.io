@@ -11,6 +11,7 @@ body {
 header {
   width: 100%;
   display: inline-block;
+  z-index: 10;
   top: 0;
   padding-bottom: 3%;
   vertical-align: middle;
@@ -22,11 +23,12 @@ header {
 .clignote {
   color: black;
   animation: clignote 7.5s linear infinite;
+  animation-fill-mode: initial;
 }
 
 @keyframes clignote {
   50% {
-    opacity: 0;
+    transform: scale(1.5);
   }
 }
 
@@ -45,6 +47,37 @@ header {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+#languagesSwitch {
+  float: right;
+  margin-right: 3%;
+  background-color: whitesmoke;
+  border: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  border-radius: 30px;
+}
+
+#languagesSwitch:hover {
+  background: whitesmoke;
+  color: black;
+  border-radius: 30px;
+}
+
+#languagesSwitch:active {
+  background: yellow;
+  color: blue;
+}
+
+#languagesSwitch:focus {
+  background: whitesmoke;
+  color: black;
+  border-radius: 30px;
+}
+
+#languagesSwitch:selected {
+  background: blue;
+  color: yellow;
+}
+
 #screenModeImg {
   padding-top: 3px;
   height: 12px;
@@ -58,9 +91,9 @@ header {
 }
 
 button {
-  padding-left: 1%;
-  padding-right: 1%;
-  font-size: 13px;
+  padding-left: 0.5%;
+  padding-right: 0.5%;
+  font-size: 12px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: black;
   background-color: Transparent;
@@ -184,10 +217,10 @@ z {
   margin-top: 8%;
   margin-left: 3%;
   margin-right: 1%;
-  width: 95%;
+  width: 96%;
 }
 
-#desc span#left {
+#desc span.left {
   width: 30%;
   font-weight: bold;
 }
@@ -197,7 +230,7 @@ z {
   text-align: center;
 }
 
-#desc span#right {
+#desc span.right {
   width: 62%;
 }
 
@@ -353,13 +386,19 @@ footer {
   #imgDescRight {
     display: none;
   }
+  button {
+    padding-left: 3%;
+    padding-right: 3%;
+    border: none;
+    font-size: 13px;
+  }
   #desc {
     margin: auto;
-    width: 70%;
+    width: 90%;
     margin-top: 5%;
-    margin-left: 17%;
+    margin-left: 7%;
   }
-  span#left {
+  .left {
     width: 10px;
     font-weight: bold;
     text-align: right;
@@ -409,6 +448,9 @@ footer {
     padding: 0 0 0 5px;
     margin-top: 3px;
   }
+  #languagesSwitch {
+    font-size: 16px;
+  }
   #hello {
     margin-top: 15%;
   }
@@ -422,9 +464,9 @@ footer {
     text-align: justify;
   }
   #desc {
-    width: 61%;
+    width: 80%;
     margin-top: 5%;
-    margin-left: 22%;
+    margin-left: 12%;
   }
   #imgDescLeft {
     display: none;
@@ -440,7 +482,7 @@ footer {
     margin-top: 15%;
     margin-bottom: 15%;
   }
-  span#left {
+  .left {
     width: 32%;
     font-weight: bold;
   }
@@ -448,7 +490,7 @@ footer {
     width: 8%;
     text-align: center;
   }
-  span#right {
+  .right {
     width: 60%;
   }
   #screenMedia {
@@ -537,7 +579,7 @@ footer {
     font-family: "Trirong", serif;
   }
   #desc {
-    width: 55%;
+    width: 70%;
     margin: auto;
     margin-top: 5%;
   }
@@ -599,6 +641,28 @@ footer {
     font-size: 15px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     letter-spacing: 4px;
+  }
+  #languagesSwitch {
+    font-size: 15px;
+    letter-spacing: 2px;
+  }
+  #languagesSwitch:hover {
+    background: #79a791;
+    color: black;
+    border-radius: 30px;
+  }
+  #languagesSwitch:active {
+    background: yellow;
+    color: blue;
+  }
+  #languagesSwitch:focus {
+    background: #79a791;
+    color: black;
+    border-radius: 30px;
+  }
+  #languagesSwitch:selected {
+    background: blue;
+    color: yellow;
   }
   #buttonNavigation {
     margin: 0;
@@ -726,9 +790,9 @@ footer {
     margin-top: 12%;
   }
   #desc {
-    width: 50%;
+    width: 55%;
     margin: auto;
-    margin-left: 23%;
+    margin-left: 20%;
     margin-top: 4%;
   }
   #imgDescLeft {

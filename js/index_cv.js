@@ -1,17 +1,13 @@
-footer();
-checkDevice();
+init();
+
 
 window.addEventListener('resize', checkDevice);
 window.addEventListener('resize', btnContact);
 
+var language = document.getElementById("languagesSwitch")
+var CV = document.getElementById("CVLink")
 
-
-// var btnExp = document.getElementById("btnExp");
-// var expSection = document.getElementById("expSection");
-// var btnEducation = document.getElementById("btnEducation");
-// var EducationSection = document.getElementById("EducationSection");
-// var btnSkills = document.getElementById("btnSkills");
-// var skills = document.getElementById("SkillSection");
+document.getElementById("CVLink").addEventListener('click', checkLanguageCV) 
 
 
 //transition de pages
@@ -48,10 +44,6 @@ const $ = document.querySelector.bind(document);
 
     
 
-
-
-
-
 function checkDevice(){
 
     var larg = document.body.clientWidth;
@@ -77,6 +69,7 @@ function checkDevice(){
         document.getElementById("contactBtn").style.display="none"
         console.log("modification de contact")
         document.getElementsByClassName("contact")[0].innerText="Me contacter"
+        //document.getElementsByClassName("contact")[0].display.style.textDecoration="none";
         document.getElementById("EducationSection").classList.add("transition");
         
     }
@@ -111,10 +104,55 @@ function btnContact(){
     }
 }
 
+function checkLanguageCV() {
+
+    console.log(language.value)
+
+    if (language.value =="en"){
+        CV.href="../att/CV_ENG.pdf";
+    }
+
+    if (language.value =="fr"){
+        CV.href="../att/CV.pdf";
+    }
+}
+
 function footer(){
     var date = new Date();
     const year = date.getFullYear();
     console.log(year);
     
     document.getElementById("footer").innerText="Designed by Riccardo Carroyer | 2021 - " + year + " |";
+}
+
+function init(){
+    
+    console.log("init")
+    const btnSwitch = document.querySelector('#languagesSwitch');
+    const initLabelsSwitch = () => {
+        btnSwitch.innerHTML = '';
+
+
+
+        AVAILABLE_LANGUAGES.forEach(language => {
+            const option = document.createElement('option');
+            option.value = language;
+            option.innerText = language.toUpperCase();
+            option.selected = language === currentLanguage;
+            btnSwitch.appendChild(option);
+            console.log("language avaible")
+        });
+
+        setLabels(currentLanguage);
+    };
+
+
+    btnSwitch.addEventListener('change', (event) => {
+        currentLanguage = event.target.value;
+        initLabelsSwitch();
+    });
+
+    footer();
+    checkDevice();
+    initLabelsSwitch();
 }

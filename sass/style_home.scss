@@ -22,6 +22,7 @@ body {
 header{
     width: 100%;
     display: inline-block;
+    z-index: 10;
     top:0;
     padding-bottom: 3%;
     vertical-align: middle;
@@ -35,9 +36,13 @@ header{
 .clignote {
     color:black;
     animation: clignote 7.5s linear infinite;
+    -webkit-animation-fill-mode: initial; //Changed from both to initial 
+    animation-fill-mode: initial; //Changed from both to initial
+    //transform-style: preserve-3d;
+
   }
   @keyframes clignote {  
-    50% { opacity: 0; }
+    50% { transform: scale(1.5);}
   }
 
 #banner{
@@ -59,6 +64,39 @@ header{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
+
+#languagesSwitch{
+    float:right;
+    margin-right:3%;
+    background-color: whitesmoke;
+    border:none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border-radius: 30px;
+}
+
+#languagesSwitch:hover {
+    background: whitesmoke;
+    color: black;
+    border-radius: 30px;
+  }
+  
+#languagesSwitch:active {
+    background: yellow;
+    color: blue;
+  }
+  
+#languagesSwitch:focus {
+    background: whitesmoke;
+    color: black;
+    border-radius: 30px;
+  }
+  
+#languagesSwitch:selected {
+    background: blue;
+    color: yellow;
+  }
+
+
 #screenModeImg{
     padding-top:3px;
     height: 12px;  
@@ -77,10 +115,10 @@ header{
 
 button{
     //background-color: rgb(142,166,155);
-     padding-left: 1%;
-     padding-right: 1%;
+     padding-left: 0.5%;
+     padding-right: 0.5%;
     // border: none;
-     font-size: 13px;
+     font-size: 12px;
      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
      color: black;
 
@@ -217,14 +255,15 @@ z{
     margin-top: 8%;
     margin-left: 3%;
     margin-right: 1%;
-    width: 95%;
+    width: 96%;
 
  
 
-    span#left{
+    span.left{
         width: 30%;
         //background-color: aqua;
         font-weight: bold;
+        //background-color: aqua;
     
     }
     
@@ -234,7 +273,7 @@ z{
         text-align: center;
     }
     
-    span#right{
+    span.right{
         width: 62%;
         //background-color: rgb(0, 183, 255);
     }
@@ -426,19 +465,26 @@ footer{
         display:none
     }
 
+    button{
+        padding-left: 3%;
+        padding-right: 3%;
+        border: none;
+        font-size: 13px;
+    }
+
     #desc{
         
         //background-color: pink;
         margin:auto;
-        width: 70%;
+        width: 90%;
         margin-top:5%;
-        margin-left:17%;
+        margin-left:7%;
     }
 
 
 
 
-    span#left{
+    .left{
         width: 10px;
         //background-color: aqua;
         font-weight: bold;
@@ -453,7 +499,7 @@ footer{
         
     }
 
-    span#right{
+    .right{
 
         //background-color: red;
         //text-align: center;
@@ -511,6 +557,11 @@ footer{
         }
     }
 
+    #languagesSwitch{
+      
+        font-size: 16px;
+    }
+
        
     #hello{
         margin-top: 15%;
@@ -533,9 +584,9 @@ footer{
         
         //background-color: pink;
         //margin:auto;
-        width: 61%;
+        width: 80%;
         margin-top:5%;
-        margin-left:22%;
+        margin-left:12%;
     }
 
     #imgDescLeft{
@@ -556,7 +607,7 @@ footer{
         margin-bottom: 15%;
     }
 
-    span#left{
+    .left{
         width: 32%;
         //background-color: aqua;
         font-weight: bold;
@@ -569,7 +620,7 @@ footer{
         text-align: center;
     }
     
-    span#right{
+    .right{
         width: 60%;
         //background-color: yellow;
     }
@@ -694,7 +745,7 @@ footer{
 
 
         #desc{
-            width:55%;
+            width:70%;
             //background-color: blue;
             margin:auto;
             margin-top:5%;
@@ -809,6 +860,34 @@ footer{
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             letter-spacing: 4px;
         }
+
+        #languagesSwitch{
+      
+            font-size: 15px;
+            letter-spacing: 2px;
+        }
+
+        #languagesSwitch:hover {
+            background: rgb(121, 167, 145);
+            color: black;
+            border-radius: 30px;
+          }
+          
+        #languagesSwitch:active {
+            background: yellow;
+            color: blue;
+          }
+          
+        #languagesSwitch:focus {
+            background: rgb(121, 167, 145);
+            color: black;
+            border-radius: 30px;
+          }
+          
+        #languagesSwitch:selected {
+            background: blue;
+            color: yellow;
+          }
 
         #buttonNavigation{
             //background-color: red;
@@ -1018,10 +1097,10 @@ footer{
         }
     
         #desc{
-            width:50%;
+            width:55%;
             //background-color: blue;
             margin:auto;
-            margin-left: 23%;
+            margin-left: 20%;
             margin-top:4%
         }
 

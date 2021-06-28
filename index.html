@@ -15,6 +15,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet"> 
 
+    <script src="./js/utils/translate.js" defer></script>
     <script src="./js/index_home.js" defer></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
@@ -31,13 +32,14 @@
             </span>
                 <span id="buttonNavigation">
                     <a href="#"><button id="aboutBtn" class="btn btnAbout">A propos de moi</button></a>
-                    <a href="./html/cv.html"><button id="btnEducation" class="btn">CV</button></a>
+                    <a href="./html/cv.html"><button id="btnCV" class="btn">CV</button></a>
                     <a href="#"><button id="btnProject" class="btn">Projets</button></a>
                     <a href="#contactMe"><button id="btnSkills" class="btn">Contact</button></a>
+                    <select name="languagesSwitch" id="languagesSwitch"></select>
                     
                 </span>
             </span>
-            <button id="btnTranslate"><img src="./img/flag_uk.png" id="flag" tag="flag_uk"> </button>
+            <!-- <button id="btnTranslate"><img src="./img/flag_uk.png" id="flag" tag="flag_uk"> </button> -->
              
         </div>
     </header>
@@ -47,8 +49,8 @@
 
         
         <div id="hello" class="hello">
-            <p>Bonjour et bienvenue à toutes et à tous !</p> 
-            <p>Mon nom est</p> 
+            <p id="hello1">Bonjour et bienvenue à toutes et à tous !</p> 
+            <p id="hello2">Mon nom est</p> 
             <div id="name" class="clignote"><b>Riccardo Carroyer</b></div>
             <img id="profileImg" src="./img/riccarde_tr.png" alt="">
         </div>
@@ -58,21 +60,21 @@
 
             <!--A Propos-->
         <div id="aboutMe">
-                <p id="Category" class="aboutMe"><z>|</z> A Propos de moi <z>|</z></p>
+                <p id="Category" class="aboutMe"><z>|</z> <span id=aboutMeSection>A Propos de moi</span> <z>|</z></p>
                 <div id="txtAboutMe">
                     <img src="./img/bitmoji_pc_tr.png" alt="" id="imgAbout">
                     <br>
-                    <p>Passionné par l'outil informatique depuis le plus jeune âge, j'ai vite commencé mes premiers sites avec le logiciel FrontPage de la suite Office, j'étais Webmaster de mon équipe de foot à 11 ans !
+                    <p id="about1">Passionné par l'outil informatique depuis le plus jeune âge, j'ai vite commencé mes premiers sites avec le logiciel FrontPage de la suite Office, j'étais Webmaster de mon équipe de foot à 11 ans !
                     Dès que j'ai eu l'opportunité, j'ai choisi une orientation informatique à l'école, j'y ai appris la maintenance, l'assemblage, installation, administration de Windows, Windows Server et de certaines distributions Linux. </p>
                     
-                    <p>Dans la suite de cet apprentissage, j'ai terminé avec fruit un bachelier en informatique de gestion, où m'a été appris une certaine expérience de travail avec certains outils ainsi qu'une méthodologie de travail.  
+                    <p id="about2">Dans la suite de cet apprentissage, j'ai terminé avec fruit un bachelier en informatique de gestion, où m'a été appris une certaine expérience de travail avec certains outils ainsi qu'une méthodologie de travail.  
                     Cette expérience m'a mis à l'aise avec les bases de données, les rouages de la programmation ainsi que l'analyse et la conception d'un projet. </p>
                     
-                    <p>Dans la continuité de ce graduat, j'ai eu l'opportunité d'être sélectionné dans une formation 6 mois à 40 heures semaine comme développeur "Full stack NodeJS" organisé par Cefora-Téchnocité.  
-                    <br>Cette formation m'a permis de professionnaliser encore plus mon approche et mes méthodes de travail.</p>
+                    <p id="about3">Dans la continuité de ce graduat, j'ai eu l'opportunité d'être sélectionné dans une formation 6 mois à 40 heures semaine comme développeur "Full stack NodeJS" organisé par Cefora-Téchnocité.  
+                    Cette formation m'a permis de professionnaliser encore plus mon approche et mes méthodes de travail.</p>
 
-                    <p>Je suis une personne patiente et autonome mais je n'hésite pas à demander conseil ou une astuce à une personne expérimentée lorsque je suis face à des difficultés ou a des questionnements.
-                    Le travail d'équipe m'est agréable.</p>
+                    <p id="about4">Je suis une personne patiente et autonome mais je n'hésite pas à demander conseil ou une astuce à une personne expérimentée lorsque je suis face à des difficultés ou a des questionnements.
+                    J'aime travailler en équipe</p>
                 </div>
 
                 <!--Tableau recap-->
@@ -81,16 +83,16 @@
                 <img src="./img/bitmoji_tr3.png" alt="" id="imgDescRight">
                 <div id="desc">
                     <br>
-                    <span id="left" class="nameTable">Nom complet</span> <span id="middle">:</span> <span id="right">Riccardo Carroyer</span><br>
-                    <span id="left" class="birthTable">Né le </span> <span id="middle">:</span> <span id="right" class="birthTableAnswer">23 janvier 1992</span><br>
-                    <span id="left" Class="countryTable">Pays</span> <span id="middle">:</span> <span id="right" class="countryTableAnswer">Belgique</span><br>
-                    <span id="left" class="nationalityTable">Nationalité</span> <span id="middle">:</span> <span id="right" class="nationalityTableAnswer">Belge</span><br>
-                    <span id="left" class="cityTable">Ville</span> <span id="middle">:</span> <span id="right">Jemappes</span><br>
-                    <span id="left" class="hobbiesTable">Occupations</span> <span id="middle">:</span> <span id="right" class="hobbiesTableAnswer">- Nouvelles technologies<br>- Supporter de football <br>- Promenades <br>- Rétro Gaming</span><br>
-                    <span id="left">Email</span> <span id="middle">:</span> <span id="right"><a href="mailto:riccardo_carroyer@hotmail.be">riccardo_carroyer@hotmail.be</a></span><br>
-                    <span id="left" class="telTable">Téléphone</span> <span id="middle">:</span> <span id="right">0499 27 18 30</span><br>
-                    <span id="left" class="diplomasTable">Diplômes</span> <span id="middle">:</span> <span id="right" class="diplomasTableAnswer"> - Qualification "Technicien en informatique"<br>- Bachelier en "Informatique de gestion"</span><br>
-                    <span id="left" class="mediaTable">Médias</span> <span id="middle">:</span> <span id="right">
+                    <span id="nameTable" class="left">Nom complet</span>        <span id="middle">:</span>      <span id="nameTableAnswer" class="right">Riccardo Carroyer</span><br>
+                    <span id="birthTable" class="left">Né le </span>            <span id="middle">:</span>      <span id="birthTableAnswer" class="right">23 janvier 1992</span><br>
+                    <span id="countryTable" Class="left">Pays</span>            <span id="middle">:</span>      <span id="countryTableAnswer" class="right">Belgique</span><br>
+                    <span id="nationalityTable" class="left">Nationalité</span> <span id="middle">:</span>      <span id="nationalityTableAnswer" class="right">Belge</span><br>
+                    <span id="cityTable" class="left">Ville</span>              <span id="middle">:</span>      <span id="cityTableAnswer" class="right">Jemappes</span><br>
+                    <span id="hobbiesTable" class="left">Occupations</span>     <span id="middle">:</span>      <span id="hobbiesTableAnswer" class="right">- Nouvelles technologies<br>- Supporter de football <br>- Promenades <br>- Rétro Gaming</span><br>
+                    <span id="emailTable" class="left">Email</span>             <span id="middle">:</span>      <span id="mailTableAnswer" class="right"><a href="mailto:riccardo_carroyer@hotmail.be">riccardo_carroyer@hotmail.be</a></span><br>
+                    <span id="telTable" class="left">Téléphone</span>           <span id="middle">:</span>      <span id="telTableAnswer" class="right">0499 27 18 30</span><br>
+                    <span id="diplomasTable" class="left">Diplômes</span>       <span id="middle">:</span>      <span id="diplomasTableAnswer" class="right"> - Qualification "Technicien en informatique"<br>- Bachelier en "Informatique de gestion"</span><br>
+                    <span id="mediaTable" class="left">Médias</span>            <span id="middle">:</span>      <span class="right">
                                                     <a href="https://www.linkedin.com/in/riccardo-carroyer-425092208/"><img id="screenMedia" src="./img/linkedin2.png" alt=""></a>
                                                     <a href="https://github.com/minek10"><img id="screenMedia" src="./img/git2.png" alt=""> </a>                                         </span><br>
                 </div>
@@ -99,7 +101,7 @@
         <hr>
 
                 <!--A Languages de programmmation-->
-        <p id="Category" class="languagesSection"><z>|</z> Les languages utilisés <z>|</z></p>
+        <p id="Category" class="languagesSection"><z>|</z> <span id="LanguagesUsed">Les languages utilisés</span> <z>|</z></p>
         <div id="languages">
             <div id='langImg'>
                     <img id="screenLang" src="./img/html3.png" alt="logo HTML">         
@@ -118,7 +120,7 @@
         <hr>
                 
         <!--Logiciels-->
-        <p id="Category" class="softwaresSection"><z>|</z> Les logiciels utilisés <z>|</z></p>
+        <p id="Category" class="softwaresSection"><z>|</z> <span id="softsUsed">Les logiciels utilisés</span> <z>|</z></p>
         <div id="softs">
             <div id='softsImg' >
                 <img id="screenSofts" src="./img/vscode2.png" alt="logo vscode"> </a>    
@@ -134,7 +136,7 @@
         <hr>
 
         <!--Db-->
-        <p id="Category" class="bdSection"><z>|</z> Les moteurs BD utilisés <z>|</z></p>
+        <p id="Category" class="bdSection"><z>|</z> <span id="dbEngines">Les moteurs BD utilisés</span> <z>|</z></p>
         <div id="db">
             <div id='dbImg'>
                 <img id="screenBd" src="./img/mysql2.png" alt="logo HTML"> </a>    
@@ -146,9 +148,9 @@
     <hr>
     
     <!--Me coontacter-->
-    <p id="Category" class="contactSection"><z>|</z> Me contacter <z>|</z></p>
+    <p id="Category" class="contactSection"><z>|</z> <span id="contactMeSection">Me contacter</span> <z>|</z></p>
     <div id="contactMe" class="contactMe">
-        <p>N'hésitez pas à me contacter si mon profil vous intéressse ou si vous avez la moindre question, j'y répondrais avec le plus grand plaisir !</p>
+        <p id="contactMe">N'hésitez pas à me contacter si mon profil vous intéressse ou si vous avez la moindre question, j'y répondrais avec le plus grand plaisir !</p>
         <img src="./img/bitmoji_tel_tr.png" alt="" id="imgContact">
     </div> 
     <div id="btnContener">
