@@ -5,8 +5,7 @@ var imgContact = document.getElementById("imgContact");
 
 
 window.addEventListener('resize', checkDevice);
-//document.getElementById("btnContener").addEventListener('click', alertJs);
-//document.getElementById("btnTranslate").addEventListener('click', checkLanguage);
+document.getElementById("btnContener").addEventListener('click', alertJs);
 
 
 function alertJs(){
@@ -94,19 +93,3 @@ function init(){
     checkDevice();
     initLabelsSwitch();
 }
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
-
-

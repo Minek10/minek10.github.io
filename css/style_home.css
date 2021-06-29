@@ -11,7 +11,6 @@ body {
 header {
   width: 100%;
   display: inline-block;
-  z-index: 10;
   top: 0;
   padding-bottom: 3%;
   vertical-align: middle;
@@ -23,12 +22,12 @@ header {
 .clignote {
   color: black;
   animation: clignote 7.5s linear infinite;
-  animation-fill-mode: initial;
+  transform-style: preserve-3d;
 }
 
 @keyframes clignote {
   50% {
-    transform: scale(1.5);
+    opacity: 0;
   }
 }
 
@@ -47,37 +46,6 @@ header {
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 
-#languagesSwitch {
-  float: right;
-  margin-right: 3%;
-  background-color: whitesmoke;
-  border: none;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  border-radius: 30px;
-}
-
-#languagesSwitch:hover {
-  background: whitesmoke;
-  color: black;
-  border-radius: 30px;
-}
-
-#languagesSwitch:active {
-  background: yellow;
-  color: blue;
-}
-
-#languagesSwitch:focus {
-  background: whitesmoke;
-  color: black;
-  border-radius: 30px;
-}
-
-#languagesSwitch:selected {
-  background: blue;
-  color: yellow;
-}
-
 #screenModeImg {
   padding-top: 3px;
   height: 12px;
@@ -91,9 +59,9 @@ header {
 }
 
 button {
-  padding-left: 0.5%;
-  padding-right: 0.5%;
-  font-size: 12px;
+  padding-left: 1%;
+  padding-right: 1%;
+  font-size: 13px;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   color: black;
   background-color: Transparent;
@@ -102,6 +70,31 @@ button {
   cursor: pointer;
   overflow: hidden;
   outline: none;
+}
+
+#languagesSwitch {
+  background-color: whitesmoke;
+  border: none;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 12px;
+  margin-top: 3px;
+  margin-right: 1%;
+  border-radius: 30px;
+  opacity: 0.7;
+  transition: 1s;
+}
+
+#languagesSwitch:hover {
+  background: #79a791;
+  color: black;
+  border-radius: 30px;
+  opacity: 1;
+}
+
+#languagesSwitch:focus {
+  background: #79a791;
+  color: black;
+  border-radius: 30px;
 }
 
 button#btnTranslate {
@@ -386,11 +379,17 @@ footer {
   #imgDescRight {
     display: none;
   }
-  button {
-    padding-left: 3%;
-    padding-right: 3%;
-    border: none;
-    font-size: 13px;
+  #languagesSwitch {
+    float: right;
+    font-size: 12px;
+    margin-top: 3px;
+    margin-right: 5%;
+    border-radius: 30px;
+  }
+  #languagesSwitch:hover {
+    background: #79a791;
+    color: black;
+    border-radius: 30px;
   }
   #desc {
     margin: auto;
@@ -436,6 +435,12 @@ footer {
     border: none;
     font-size: 15px;
   }
+  #languagesSwitch {
+    font-size: 15px;
+    margin-top: 3px;
+    margin-right: 5%;
+    border-radius: 30px;
+  }
   button#btnTranslate {
     padding: 0;
     font-size: 16px;
@@ -447,9 +452,6 @@ footer {
     height: 16px;
     padding: 0 0 0 5px;
     margin-top: 3px;
-  }
-  #languagesSwitch {
-    font-size: 16px;
   }
   #hello {
     margin-top: 15%;
@@ -562,6 +564,12 @@ footer {
   button {
     font-size: 16px;
   }
+  #languagesSwitch {
+    font-size: 16px;
+    margin-top: 3px;
+    margin-right: 5%;
+    border-radius: 30px;
+  }
   .bloc {
     margin-left: 7.5%;
     margin-right: 7.5%;
@@ -643,30 +651,8 @@ footer {
     letter-spacing: 4px;
   }
   #languagesSwitch {
-    font-size: 15px;
-    letter-spacing: 2px;
-    opacity: 0.7;
-    transition: 1s;
-    border-radius: 30px;
-  }
-  #languagesSwitch:hover {
-    background: #79a791;
-    color: black;
-    border-radius: 30px;
-    opacity: 1;
-  }
-  #languagesSwitch:active {
-    background: yellow;
-    color: blue;
-  }
-  #languagesSwitch:focus {
-    background: #79a791;
-    color: black;
-    border-radius: 30px;
-  }
-  #languagesSwitch:selected {
-    background: blue;
-    color: yellow;
+    letter-spacing: 3px;
+    margin-top: 0;
   }
   #buttonNavigation {
     margin: 0;
@@ -771,6 +757,11 @@ footer {
   button {
     font-size: 17px;
     letter-spacing: 5px;
+  }
+  #languagesSwitch {
+    letter-spacing: 4px;
+    font-size: 16px;
+    margin-top: 1px;
   }
   button#btnTranslate {
     padding: 0;
@@ -943,8 +934,12 @@ footer {
     font-size: 17px;
     letter-spacing: 4px;
   }
-  v
-.bloc {
+  #languagesSwitch {
+    letter-spacing: 4px;
+    font-size: 17px;
+    margin-top: 0;
+  }
+  .bloc {
     margin-left: 17.5%;
     margin-right: 17.5%;
     width: 65%;

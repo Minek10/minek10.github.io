@@ -93,21 +93,13 @@ button:hover{
     border-radius: 30px;
   }
   
-#languagesSwitch:active {
-    background: yellow;
-    color: blue;
-  }
   
 #languagesSwitch:focus {
     background: rgb(121, 167, 145);
     color: black;
     border-radius: 30px;
   }
-  
-#languagesSwitch:selected {
-    background: blue;
-    color: yellow;
-  }
+
 
 #homeImg{
     width: 10%;
