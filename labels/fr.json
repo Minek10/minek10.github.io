@@ -68,13 +68,19 @@
 
   "WorkExperiences":"Expériences",
 
+  "titleExp5":"■ Analyste-développeur",
+  "dateExp5":"Août 2021 – . . . ",
+  "locationExp5":"Lieu",
+  "functionName5":"Fonction",
+  "function5":"Développeur web .NET (Front et back end) avec blazor, Bootstrap et Entity ",
+
   "titleExp4":"■ Analyste-développeur (stage)",
   "dateExp4":"Décembre 2019 – Février 2020",
   "locationExp4":"Lieu",
   "functionName4":"Fonction",
   "function4":"mise en place d'un outil de digitalisation d'un schéma de fibres optiques et création de la base de données. (ASP.NET et MySQL) ",
 
-  "titleExp3":"■ Analyste (stage) - Tec Charleroi",
+  "titleExp3":"■ Analyste (stage)",
   "dateExp3":"Janvier 2019 – Février 2019",
   "locationExp3":"Lieu",
   "functionName3":"Fonction",

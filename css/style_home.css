@@ -799,6 +799,9 @@ footer {
     padding-top: 10px;
     margin-right: 0%;
   }
+  #languages {
+    width: 75%;
+  }
   #languages #screenLang {
     padding-left: 1%;
   }
@@ -892,9 +895,13 @@ footer {
     padding-top: 10px;
     margin-right: 4%;
   }
+  #languages {
+    width: 55%;
+  }
   #languages #screenLang {
     width: 78px;
     height: 100px;
+    padding-top: 5%;
   }
   #softs #screenSofts {
     width: 78px;
@@ -908,7 +915,7 @@ footer {
   }
   #db #screenBd {
     width: 78px;
-    height: 120px;
+    height: 100px;
   }
   button#contactButton {
     background-color: #8ea69b;
@@ -924,7 +931,7 @@ footer {
   }
 }
 
-@media screen and (min-width: 1950px) {
+@media screen and (min-width: 1900px) {
   body {
     font-size: 16px;
   }
@@ -969,6 +976,9 @@ footer {
     height: 350px;
     width: 200px;
     margin-right: 8%;
+  }
+  #languages {
+    width: 55%;
   }
   #languages #screenLang {
     padding-left: 1%;
@@ -1023,7 +1033,7 @@ footer {
     margin-right: 15%;
   }
   #languages {
-    width: 65%;
+    width: 70%;
   }
   #contactMe {
     margin-bottom: 3%;

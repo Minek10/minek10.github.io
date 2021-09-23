@@ -1114,6 +1114,7 @@ footer{
 
         #languages{
             //background-color: cornflowerblue;
+            width: 75%;
         
             #screenLang{
                 //background-color: rgb(222, 135, 208);
@@ -1259,13 +1260,14 @@ footer{
 
     #languages{
         //background-color: cornflowerblue;
-    
+        width: 55%;
         #screenLang{
             //background-color: rgb(222, 135, 208);
-            // width: 7%;
+            
             // padding-left: 2%;
             width: 78px;
             height: 100px;
+            padding-top: 5%;
         }
           
     }
@@ -1290,7 +1292,7 @@ footer{
     
         #screenBd{
             width: 78px;
-            height: 120px;
+            height: 100px;
 
             //background-color: burlywood;
         }
@@ -1313,7 +1315,7 @@ footer{
     }
 }
 
-@media screen and (min-width: 1950px){
+@media screen and (min-width: 1900px){
 
     body{
         font-size: 16px;
@@ -1385,6 +1387,7 @@ footer{
 
     #languages{
         //background-color: cornflowerblue;
+        width: 55%;
     
         #screenLang{
             //background-color: rgb(222, 135, 208);
@@ -1497,7 +1500,7 @@ footer{
 
     #languages{
         //background-color: cornflowerblue;
-        width: 65%;
+        width: 70%;
           
     }
     

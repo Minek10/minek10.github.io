@@ -16,14 +16,14 @@ function alertJs(){
 
     if (document.body.clientWidth > 500){
         Swal.fire({
-            html: '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <b><div id="alert"<i class="fa fa-phone-square" aria-hidden="true"></i></div></b> <br><a href="tel:+32499271830"> 0499 27 18 30 </a><b> <div id="alert"><i class="fa fa-envelope" aria-hidden="true"></i></div></b> <a href="mailto:riccardo_carroyer@hotmail.be">riccardo_carroyer@hotmail.be</a></span><br>   <div id="alert"><i class="fa fa-linkedin-square"></i></div><a href="https://www.linkedin.com/in/riccardo-carroyer-425092208/"> Linkedin',
+            html: '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <div id="alert"><i class="fa fa-envelope" aria-hidden="true"></i></div></b> <a href="mailto:riccardo_carroyer@hotmail.be">riccardo_carroyer@hotmail.be</a></span><br>   <div id="alert"><i class="fa fa-linkedin-square"></i></div><a href="https://www.linkedin.com/in/riccardo-carroyer-425092208/"> Linkedin',
             imageUrl: './img/labtop_smartphone.jpg',
             confirmButtonText: 'OK',
             confirmButtonColor: 'rgb(142,166,155)',
           })
     }else{
            Swal.fire({
-                html: '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <b><div id="alert"<i class="fa fa-phone-square" aria-hidden="true"></i></div></b> <a href="tel:+32499271830"> 0499 27 18 30 </a><b> <div id="alert"><i class="fa fa-envelope" aria-hidden="true"></i></div></b> <a href="mailto:riccardo_carroyer@hotmail.be">riccardo_carroyer@hotmail.be</a></span><br>   <div id="alert"><i class="fa fa-linkedin-square"></i></div><a href="https://www.linkedin.com/in/riccardo-carroyer-425092208/"> Linkedin',
+                html: '<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"> <div id="alert"><i class="fa fa-envelope" aria-hidden="true"></i></div></b> <a href="mailto:riccardo_carroyer@hotmail.be">riccardo_carroyer@hotmail.be</a></span><br>   <div id="alert"><i class="fa fa-linkedin-square"></i></div><a href="https://www.linkedin.com/in/riccardo-carroyer-425092208/"> Linkedin',
                 confirmButtonText: 'OK',
                 confirmButtonColor: 'rgb(142,166,155)',
             })
