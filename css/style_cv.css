@@ -1,101 +1,28 @@
 @charset "UTF-8";
+:root {
+  --main-color: rgb(142,166,155);
+  --bg-color: whitesmoke;
+}
+
 body {
-  background-color: whitesmoke;
   word-wrap: break-word;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 15px;
+  font-size: 38px;
   margin: 0;
   padding: 0;
-  font-family: 'Karla', sans-serif;
 }
 
-header {
-  width: 100%;
-  display: inline-block;
-  background-color: #8ea69b;
-  background: linear-gradient(360deg, whitesmoke 0%, #a8bab1 50%);
-  top: 0;
-  padding-bottom: 3%;
-  vertical-align: middle;
-  position: fixed;
-  z-index: 1000;
-}
-
-#banner {
-  margin: 0 auto;
-  width: 100%;
-  vertical-align: middle;
-  text-align: center;
-  padding-top: 2%;
-}
-
-#mode {
-  padding-left: 5px;
-  float: left;
-  font-size: 13px;
-}
-
-#screenModeImg {
-  padding-top: 3px;
-  height: 15px;
+#Container {
+  word-wrap: break-word;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  font-family: 'Quicksand', sans-serif;
 }
 
 #buttonNavigation {
-  align-content: center;
-  vertical-align: middle;
-  border: none;
-  background: none;
-  outline: none;
-}
-
-button {
-  padding-left: 0.5%;
-  padding-right: 0.5%;
-  border: none;
-  font-size: 11px;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  background-color: Transparent;
-  background-repeat: no-repeat;
-  border: none;
-  cursor: pointer;
-  overflow: hidden;
-  outline: none;
-}
-
-button:hover {
-  color: white;
-}
-
-#languagesSwitch {
-  float: right;
-  background-color: whitesmoke;
-  border: none;
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  font-size: 11px;
-  margin-top: 2px;
-  margin-right: 1%;
-  border-radius: 30px;
-}
-
-#languagesSwitch:hover {
-  background: #79a791;
-  color: black;
-  border-radius: 30px;
-}
-
-#languagesSwitch:focus {
-  background: #79a791;
-  color: black;
-  border-radius: 30px;
-}
-
-#homeImg {
-  width: 10%;
-  background-color: yellow;
-}
-
-#homeImg:hover {
-  background-color: salmon;
+  font-family: "Sofia", sans-serif;
 }
 
 li {
@@ -105,7 +32,7 @@ li {
 li::before {
   content: "•";
   padding-right: 10px;
-  color: #8ea69b;
+  color: var(--main-color);
   font-size: 20px;
 }
 
@@ -136,22 +63,31 @@ section #Title {
 section #Category {
   text-align: center;
   font-size: 30px;
-  text-decoration: underline overline #8ea69b;
+  text-decoration: underline overline var(--main-color);
   letter-spacing: 5px;
   font-family: "Sofia", sans-serif;
   cursor: default;
+  text-shadow: 3px 3px 3px #ababab;
+}
+
+section .GreenBar {
+  color: var(--main-color);
 }
 
 section #SubCategory {
   text-align: center;
   font-size: 25px;
-  text-decoration: underline dotted 3px #8ea69b;
+  text-decoration: underline dotted 3px var(--main-color);
   font-style: oblique;
 }
 
 #aboutSection {
   text-align: left;
-  padding-top: 10%;
+  padding-top: 5%;
+}
+
+#aboutSection .link {
+  cursor: pointer;
 }
 
 #aboutSection #profileImg {
@@ -165,10 +101,6 @@ section #SubCategory {
   transition-duration: 2s;
 }
 
-#aboutSection #profileImg:hover {
-  content: url("../img/riccarde_smile_tr.png");
-}
-
 #aboutSection #description {
   width: 75%;
   margin: auto;
@@ -180,9 +112,9 @@ section #SubCategory {
 }
 
 #aboutSection #description #function {
-  float: right;
   font-size: 20px;
   padding-right: 10px;
+  text-align: right;
 }
 
 #aboutSection #description #corps {
@@ -195,67 +127,11 @@ section #SubCategory {
 }
 
 #aboutSection #description #network {
-  float: right;
   padding-right: 10px;
+  text-align: right;
 }
 
-footer {
-  position: fixed;
-  bottom: 0;
-  width: 100%;
-  background: linear-gradient(180deg, whitesmoke 0%, #a8bab1 65%, #a8bab1 98%);
-  text-align: center;
-  font-size: 12px;
-  padding-bottom: 5px;
-  padding-top: 5px;
-}
-
-z {
-  color: #8ea69b;
-}
-
-@media screen and (min-width: 490px) {
-  button {
-    padding-left: 1.5%;
-    padding-right: 1.5%;
-    font-size: 13px;
-  }
-  #languagesSwitch {
-    font-size: 13px;
-    margin-top: 1px;
-    margin-right: 1%;
-  }
-}
-
-@media screen and (min-width: 640px) {
-  #buttonNavigation {
-    align-content: center;
-    vertical-align: middle;
-  }
-  button {
-    padding-left: 2%;
-    padding-right: 2%;
-    font-size: 15px;
-  }
-  #languagesSwitch {
-    float: right;
-    margin-right: 5%;
-    background-color: whitesmoke;
-    border: none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-  }
-  #languagesSwitch:hover {
-    background: #79a791;
-    color: black;
-  }
-  #languagesSwitch:active {
-    background: yellow;
-    color: blue;
-  }
-  #languagesSwitch:focus {
-    background: #79a791;
-    color: black;
-  }
+@media screen and (min-width: 576px) {
   section {
     color: black;
     padding-top: 1%;
@@ -265,15 +141,19 @@ z {
     opacity: 1;
     transition-duration: 0.5s;
   }
-  section#aboutSection {
-    padding-top: 10%;
+  #buttonNavigation button {
+    font-size: 20px;
   }
-  header {
-    padding-bottom: 1.5%;
+  #buttonNavigation button:hover {
+    background-color: var(--main-color);
   }
 }
 
-@media screen and (min-width: 790px) {
+@media screen and (min-width: 768px) {
+  #personalInfo {
+    width: 80%;
+    margin: auto;
+  }
   span#name, span#corps {
     margin-left: 10%;
   }
@@ -285,20 +165,31 @@ z {
   }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 992px) {
+  #aboutSection {
+    text-align: left;
+    padding-top: 10%;
+  }
   span#name, span#corps {
     margin-left: 20%;
   }
   span#function, span#network {
     margin-right: 20%;
   }
+  #buttonNavigation button {
+    font-size: 24px;
+  }
 }
 
-@media screen and (min-width: 1260px) {
+@media screen and (min-width: 1200px) {
   body {
     font-size: 12px;
     margin: 0;
     padding: 0;
+    overflow: hidden;
+  }
+  #personalInfo {
+    width: 100%;
   }
   #about {
     float: right;
@@ -306,82 +197,22 @@ z {
     height: 100vh;
     display: fixed;
     background: #f5f5f5;
-    background: linear-gradient(90deg, whitesmoke 0%, #a8bab1 70%);
-  }
-  #header {
-    padding: 0;
-    margin-bottom: 0;
-    background-image: 0;
+    background: linear-gradient(90deg, var(--bg-color) 0%, var(--main-color) 70%);
+    margin-top: 1.5%;
   }
   #aboutSection {
-    margin-top: 0;
-  }
-  header {
-    width: 70%;
-    display: inline-block;
-    top: 0;
-    vertical-align: middle;
-    position: fixed;
-    padding: 0;
-  }
-  #banner {
-    margin: 0 auto;
-    width: 100%;
-    vertical-align: middle;
-    text-align: center;
-    font-size: 10px;
-    padding-bottom: 2%;
-    background-color: whitesmoke;
-  }
-  #mode {
-    padding-left: 10px;
-    float: left;
+    margin-top: 10%;
   }
   #screenModeImg {
     padding-top: 3px;
     height: 15px;
   }
-  #buttonNavigation {
-    align-content: center;
-    vertical-align: middle;
+  #buttonNavigation button {
+    font-size: 14px;
   }
-  .btn {
-    opacity: 0.8;
-    transition: 0.3s;
-    padding-left: 1%;
-    padding-right: 1%;
-    margin-left: 2%;
-    margin-right: 2%;
-    opacity: 0.7;
-    transition: 1s;
-    border-radius: 30px;
-  }
-  .btn:hover {
-    opacity: 1;
-    color: whitesmoke;
-    background-color: #79a791;
-  }
-  #languagesSwitch {
-    font-size: 15px;
-    margin-top: 7px;
-    margin-right: 5%;
-    letter-spacing: 3px;
-    opacity: 0.7;
-    transition: 1s;
-    border-radius: 30px;
-  }
-  #languagesSwitch:hover {
-    background: #79a791;
-    color: black;
-    border-radius: 30px;
-    opacity: 1;
-  }
-  .scroller {
-    width: 70%;
-    height: 100vh;
-    overflow-y: scroll;
-    scrollbar-color: #b6cecc whitesmoke;
-    scrollbar-width: thin;
+  #buttonNavigation button:hover {
+    background-color: var(--bg-color);
+    color: var(--main-color);
   }
   #aboutSection {
     text-align: left;
@@ -394,7 +225,7 @@ z {
     transition-duration: 2s;
   }
   #aboutSection #description {
-    width: 70%;
+    width: 85%;
     margin: auto;
   }
   #aboutSection #description #name {
@@ -403,7 +234,6 @@ z {
     padding-left: 10px;
   }
   #aboutSection #description #function {
-    float: right;
     font-size: 18px;
     padding-right: 10px;
     margin-right: 0;
@@ -414,9 +244,15 @@ z {
     font-size: 14px;
   }
   #aboutSection #description #network {
-    float: right;
     padding-right: 10px;
     margin-right: 0;
+  }
+  .scroller {
+    width: 70%;
+    height: 100vh;
+    overflow-y: scroll;
+    scrollbar-color: var(--main-color) var(--bg-color);
+    scrollbar-width: thin;
   }
   section {
     color: black;
@@ -428,40 +264,26 @@ z {
   section #Category {
     text-align: center;
     font-size: 30px;
-    text-decoration: underline overline #8ea69b;
+    text-decoration: underline overline var(--main-color);
     letter-spacing: 7px;
     padding: 0;
+    margin-top: 0;
   }
   section #SubCategory {
-    text-align: center;
+    text-align: left;
     font-size: 25px;
-    text-decoration: underline dotted 3px #8ea69b;
+    text-decoration: underline dotted 3px var(--main-color);
     font-style: oblique;
   }
-  #Category.contact {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    padding-top: 0;
-    margin-top: 0;
-    text-decoration: none;
-  }
-  footer {
-    width: 70%;
-  }
-  #educations, #skills #experiences {
-    height: 100vh;
+  #educations, #skills, #experiences {
+    padding-top: 4%;
+    height: 100%;
   }
   #flex {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
-    align-self: center;
-    align-items: center;
-    justify-content: baseline;
-  }
-  footer {
-    background-color: whitesmoke;
-    background-image: linear-gradient(90deg, whitesmoke 0%, whitesmoke 50%, whitesmoke 100%);
   }
 }
 
@@ -476,18 +298,8 @@ z {
     width: 25%;
     height: 100vh;
   }
-  header {
-    width: 75%;
-    height: 5%;
-  }
-  button {
-    padding-left: 3%;
-    padding-right: 3%;
-    font-size: 20px;
-    letter-spacing: 7px;
-  }
-  .scroller {
-    width: 75%;
+  #buttonNavigation button {
+    font-size: 16.5px;
   }
   #aboutSection #profileImg {
     width: 275px;
@@ -511,8 +323,23 @@ z {
   #aboutSection #description #network {
     font-size: 18px;
   }
-  footer {
+  #educations, #skills, #experiences {
+    padding-top: 2%;
+  }
+  .scroller {
     width: 75%;
+  }
+}
+
+@media screen and (min-width: 1890px) {
+  #buttonNavigation button {
+    font-size: 20px;
+  }
+  #educations, #skills, #experiences {
+    padding-top: 1%;
+  }
+  #aboutSection {
+    margin-top: 7%;
   }
 }
 
@@ -524,14 +351,11 @@ z {
     width: 25%;
     height: 100vh;
   }
-  button {
-    padding-left: 3%;
-    padding-right: 3%;
-    font-size: 20px;
-    letter-spacing: 7px;
+  #aboutSection {
+    margin-top: 2.5%;
   }
-  .scroller {
-    width: 75%;
+  #aboutSection #buttonNavigation button {
+    font-size: 22px;
   }
   #aboutSection #description {
     width: 75%;
@@ -548,8 +372,8 @@ z {
   #aboutSection #description #network {
     font-size: 1.25em;
   }
-  footer {
-    width: 75%;
+  #educations, #skills, #experiences {
+    padding-top: 0;
   }
 }
 /*# sourceMappingURL=style_cv.css.map */

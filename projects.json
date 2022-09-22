@@ -1,0 +1,19 @@
+[
+{
+	"title" : "Générateur de maison Harry Potter",
+	"desc" : "Qui n'a jamais rêvé de savoir dans quelle maison vous iriez ?",
+	"image": "/img/projectHP.jpg",
+	"url":	"../html/projecthpchoixpeau.html"
+},
+{
+	"title" : "Tombola : Le Jeu",
+	"desc" : "Digitalisation du célèbre jeu tombola, une carte, des numéros générés, le premier joueur a remplir sa carte est le gagnant !",
+	"image": "/img/projectTOMBOLA.jpg",
+	"url":	"../html/projecttombola.html"
+},{
+	"title" : "Pendu Pokémon",
+	"desc" : "Digitalisation du célèbre jeu ''Le Pendu'' sur le thème des pokémons (jusque 3ème gen.)",
+	"image": "/img/projectPENDUPKMN.jpg",
+	"url":	"../html/projectpendupkmn.html"
+}
+]

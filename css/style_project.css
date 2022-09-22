@@ -1,0 +1,142 @@
+:root {
+  --main-color: rgb(142,166,155);
+  --bg-color: whitesmoke;
+}
+
+body {
+  word-wrap: break-word;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+#Container {
+  word-wrap: break-word;
+  font-size: 14px;
+  background-color: var(--bg-color);
+  font-family: 'Quicksand', sans-serif;
+  min-height: 100vh;
+}
+
+img {
+  background-color: var(--bg-color);
+}
+
+#Category {
+  text-align: center;
+  font-size: 30px;
+  text-decoration: underline overline var(--main-color);
+  text-shadow: 3px 3px 3px #ababab;
+  font-family: "Sofia", sans-serif;
+  margin-top: 7%;
+}
+
+.firstCategory {
+  padding-top: 7.5vh;
+}
+
+.GreenBar {
+  color: var(--main-color);
+}
+
+#btnRedirect {
+  background-color: var(--main-color);
+  padding: 10px;
+  color: black;
+}
+
+#btnRedirect:hover {
+  font-weight: bold;
+}
+
+@media screen and (min-width: 567px) {
+  #Container2 {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+  #btnLink {
+    padding-top: 5%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .firstCategory {
+    padding-top: 5vh;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #Container2 {
+    width: 85%;
+    margin-left: 7.5%;
+    margin-right: 7.5%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #btnLink {
+    padding-top: 3%;
+  }
+}
+
+@media screen and (min-width: 1400px) {
+  #Container2 {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  #myCarousel {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  #Container2 {
+    width: 75%;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+  }
+  .firstCategory {
+    padding-top: 3vh;
+  }
+  #myCarousel {
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+  #btnLink {
+    padding-top: 2%;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  .firstCategory {
+    padding-top: 2vh;
+  }
+  #btnLink {
+    padding-top: 2%;
+  }
+}
+
+@media screen and (min-width: 1900px) {
+  #Container2 {
+    width: 70%;
+    margin-left: 15%;
+    margin-right: 15%;
+  }
+  .firstCategory {
+    padding-top: 1vh;
+  }
+  #myCarousel {
+    width: 75%;
+    margin-left: 12.5%;
+    margin-right: 12.5%;
+  }
+  #btnLink {
+    padding-top: 1%;
+  }
+}
+/*# sourceMappingURL=style_projects.css.map */

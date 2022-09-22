@@ -1,0 +1,89 @@
+:root {
+  --main-color: rgb(142,166,155);
+  --bg-color: whitesmoke;
+}
+
+body {
+  word-wrap: break-word;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+}
+
+#Container {
+  word-wrap: break-word;
+  font-size: 14px;
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  font-family: 'Quicksand', sans-serif;
+}
+
+#CardContainer {
+  position: relative;
+  padding: 10% 0 1% 0;
+  width: 90%;
+  margin: 0 5% 0 5%;
+}
+
+.card {
+  font-size: 16px;
+}
+
+.card .card-text {
+  max-height: 10%;
+}
+
+#btnRedirect {
+  background-color: var(--main-color);
+  padding: 2%;
+  color: black;
+  float: right;
+}
+
+#btnRedirect:hover {
+  color: var(--bg-color);
+}
+
+.card:hover {
+  box-shadow: 10px 5px 5px 5px var(--main-color);
+  size: 110%;
+}
+
+@media screen and (min-width: 567px) {
+  #CardContainer {
+    width: 90%;
+    margin: 0 5% 0 5%;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  #CardContainer {
+    padding: 7% 0 1% 0;
+    width: 85%;
+    margin: 0 7.5% 0 7.55%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  #CardContainer {
+    width: 80%;
+    margin: 0 10% 0 10%;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  #CardContainer {
+    padding: 5% 0 1% 0;
+    width: 75%;
+    margin: 0 12.5% 0 12.5%;
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  #CardContainer {
+    padding: 2.5% 0 1% 0;
+  }
+}
+/*# sourceMappingURL=style_project.css.map */

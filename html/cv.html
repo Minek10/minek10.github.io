@@ -1,172 +1,218 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>CV de Riccardo Carroyer</title>
+    <title>CV</title>
+
     <link rel="stylesheet" href="../css/style_cv.css">
+    <link rel="stylesheet" href="../css/style_navmenu.css">
+    <link rel="stylesheet" href="../css/style_footer.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;400&display=swap" rel="stylesheet"> 
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
 
-    <script src="../js/utils/translate.js" defer></script>
-    <script src="../js/index_cv.js" defer></script>
-
+    <!-- <script src="../js/utils/translate.js" defer></script> -->
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script src="../js/index.js" defer></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
 </head>
-
 <body>
+    <div id="Container">
 
-    <header>
-        <div id="banner">
-            <span id="mode">Mode : 
-                <img id="screenModeImg" src="../img/small_screen2.png" alt="">
-            </span>
-                <span id="buttonNavigation">
-                    <a href="../index.html"><button id="homeBtn" class="btn"> <i class="fa fa-home"></i></button></a>
-                    <a href="#about"><button id="contactBtn" class="btn btnAbout">Contact</button></a>
-                    <a href="#educations"><button id="btnEducation" class="btn btnEducations">Formations</button></a>
-                    <a href="#experiences"><button id="btnExp" class="btn btnExp">Expériences</button></a>
-                    <a href="#skills"> <button id="btnSkills" class="btn btnskills">Compétences</button></a>
-                    <select name="languagesSwitch" id="languagesSwitch"></select>
-                </span>
-            </span>
-            
-        </div>
-    </header>
+     <!--REGION Navigation bar-->
+     <div id="navmenu">
+    </div>
+    <!--END REGION Navigation bar-->
 
-    <!--Contact-->
+
+    <!-- REGION About -->
     <div id="about">
+
         <section id="aboutSection">
-            <p id="Category" class="contact"><z>|</z> Contact <z>|</z></p>
-            <p>
-                <img id="profileImg" src="../img/riccarde_tr.png" alt="">
-                    <p id="description">
-                        <span id="name">        Riccardo Carroyer</span><br>
-                        <span id="function">    Développeur web junior</span><br><br>
-                        <span id="corps">        <b><i class="fa fa-envelope" aria-hidden="true"></i></b> <a href="mailto:riccardo_carroyer@hotmail.be" > : riccardo_carroyer@hotmail.be</a></span><br>
-                        <span id="corps">        <b><i class="fa fa-globe" aria-hidden="true"></i> :  <img id="flag" src="../img/flag_fr.png" alt="">  <span id='lang1'>Langue maternelle </span> </span><br>
-                        <span id="corps">        <b><i class="fa fa-globe" aria-hidden="true"></i> :  <img id="flag" src="../img/flag_uk.png" alt="">  <span id='lang2'>Notions techniques</span> </span><br><br>
-                        <span id="network">      <a href="https://www.linkedin.com/in/riccardo-carroyer-425092208/">Linkedin</a> • 
-                                                 <a href="https://github.com/minek10">GitHub</a></span><br><br>
-                        <span id="corps">        <a href="#" id="CVLink"><i class="fa fa-download" aria-hidden="true"></i> <span id=DLCV>Télécharger le CV au format PDF</span></a></span>
-                        
-                    </p>
-            </p>
+
+            <!-- REGION button navigation -->
+            <div id="buttonNavigation" class="text-center mb-2">
+                <a href="#educations"><button id="btnEducation" class="btnEducations" onclick="fadeOut()">• Formations</button></a>
+                <a href="#experiences"><button id="btnExp" class="btnExp" onclick="fadeOut()">• Expériences</button></a>
+                <a href="#skills"> <button id="btnSkills" class="btnskills" onclick="fadeOut()">• Compétences</button></a>
+            </div>
+            <!-- END REGION button navigation -->
+
+            <div id="personalInfo">
+                <img id="profileImg" src="../img/riccarde_tr.png">
+
+                <div id="description">
+
+                    <div class="mt-3 col-12">
+                        <div id="name"> Riccardo Carroyer</div>
+                        <div id="function"> Développeur web junior</div>
+                    </div>
+
+                    <div class="mt-3 col-12">
+                        <div id="corps">        
+                            <i class="fa fa-envelope" aria-hidden="true"></i> 
+                            <span>
+                                <a href="mailto:riccardo_carroyer@hotmail.be" class="text-decoration-none text-black"> : riccardo_carroyer@hotmail.be</a>
+                            </span>
+                        </div>
+                    </div>
+
+                    <div id="corps" class="col-12">     
+                        <div>
+                            <i class="fa fa-globe fw-bold" aria-hidden="true"></i> :  <img id="flag" src="../img/flag_fr.png" alt="">  
+                             <span id='lang1'>
+                                Langue maternelle 
+                            </span> 
+                        </div>   
+                    </div>
+
+                    <div id="corps" class="col-12">     
+                        <div>
+                            <i class="fa fa-globe fw-bold" aria-hidden="true"></i> :  <img id="flag" src="../img/flag_uk.png" alt="">  
+                            <span id='lang2'>
+                                Notions techniques <a onclick="LevelCV()"><i class="fa fa-info-circle ml-2 text-secondary link" aria-hidden="true"></i></span>
+                            </span> 
+                        </div>   
+                    </div>
+
+                    <div class="mt-3 col-12">
+                        <div id="network">      
+                            <a href="https://www.linkedin.com/in/riccardo-carroyer-425092208/" class="text-decoration-none text-black">Linkedin</a> • 
+                            <a href="https://github.com/minek10" class="text-decoration-none text-black">GitHub</a>
+                        </div>
+                    </div>
+
+                    <div id="corps" class="mt-3 col-12">
+                        <div>    
+                            <a href="#" id="CVLink" class="text-decoration-none text-black">
+                                <i class="fa fa-download" aria-hidden="true"></i> 
+                                <span id=DLCV>Télécharger le CV au format PDF</span>
+                            </a>
+                        </div> 
+                    </div>
+
+                </div>
+            </div>
 
         </section>
     </div>
+    <!-- END REGION About -->
 
-    <div class="scroller">
-    <!--Formation-->
+
+    <div class="scroller" id="scroller">
+        
+        <!--REGION Formation-->
         <div id="educations">
-            
-            <section id="EducationSection" > 
-                <p id="Category"><z>|</z> <span id="educationsCategory">Formations</span> <z>|</z></p>
-                <span id='Title'> <span id="title1">■ Formation développeur Full Stack NodeJs</span> </span> <br>
+                
+            <section id="EducationSection"> 
+                <p id="Category"><z class="GreenBar">|</z> <span id="educationsCategory">Formations</span> <z class="GreenBar">|</z></p>
+                <span id='Title'> <span id="title1">■ Formation développeur Full Stack NodeJs</span> </span>
                 <ul>
                     <li><b><u>Date</u> :</b> <span id="date1">Février 2021 – Juillet 2021</span></li>
                     <li><b><u id='location1'>Lieu</u> :</b> Cefora/Technocité Hornu</li>
                 </ul>
-
-                <br> <br> 
-
-                <span id='Title'> <span id="title2">■ Bachelier en informatique de gestion</span> </span> <br>
+    
+                <span id='Title'> <span id="title2">■ Bachelier en informatique de gestion</span> </span>
                 <ul>
                     <li><b><u>Date</u> :</b> <span id ="date2"> Septembre 2016 – Novembre 2020</span></li>
                     <li><b><u id="theseTitle1">Titre du mémoire</u> :</b> <i id="theseName1">"Administration et optimisation du réseau de fibres
-                        optiques dans l'infrastructure du Tec Charleroi"</i></li>
+                            optiques dans l'infrastructure du Tec Charleroi"</i></li>
                     <li><b><u id='location2'>Lieu</u> :</b> IRAM Mons</li>
                 </ul>
-
-                <br> <br> 
-
-                <span id='Title'> <span id="title3">■ Qualification rhétorique "Technicien en informatique"</span> </span> <br>
+    
+                <span id='Title'> <span id="title3">■ Qualification rhétorique "Technicien en informatique"</span> </span>
                 <ul>
                     <li><b><u>Date</u> :</b> <span id='date3'>Septembre 2012 – Juin 2013</span></li>
-                    <li><b><u id="theseTitle2">Titre du mémoire</u> :</b> <i id="theseName2">"Installation, configuration et paramétrage d'un
-                        Windows Server 2012"</i></li>
+                    <li><b><u id="theseTitle2">Titre du mémoire</u> :</b> <i id="theseName2">"Installation, configuration et paramétrage d'un Windows Server 2012"</i></li>
                     <li><b><u id='location3'>Lieu</u> :</b> ITCB Boussu</li>
-                </ul>
-                
-            </section>      
-        </div>
+                </ul>      
+            </section> 
 
+        </div>
+        <!-- END REGION Foramtion -->
+    
+        <!-- REGION Experiences -->
         <div id="experiences">
             <section id="expSection">
-                <p id="Category"><z>|</z> <span id="WorkExperiences">Expériences</span> <z>|</z></p>
-
-                <span id='Title'> <span id="titleExp5">■ Analyste-développeur </span> </span> <br>
+                <p id="Category"><z class="GreenBar">|</z> <span id="WorkExperiences">Expériences</span> <z class="GreenBar">|</z></p>
+                <span id='Title'> <span id="titleExp5">■ Analyste-développeur </span> </span>
                 <ul>
-                    <li><b><u>Date</u> :</b> <span id="dateExp5">Août 2021 – . . . </span></li>
+                    <li><b><u>Date</u> :</b> <span id="dateExp5">Août 2021 – Septembre 2022 </span></li>
                     <li><b><u id="locationExp5">Lieu</u> :</b> EducAssist'</li>
-                    <li><b><u id="functionName5">Fonction</u> :</b> <span id=function5>
-                        Développeur web .NET (Front et back end) avec blazor, Bootstrap et Entity
-                    </span>
-                   </li>
-                </ul><br>
-
-                <span id='Title'> <span id="titleExp4">■ Analyste-développeur (stage) - Tec Charleroi </span> </span> <br>
+                    <li><b><u id="functionName5">Fonction</u> :</b> <span id=function5> Développeur web .NET (Front et back end) avec blazor, Bootstrap et Entity</span></li>
+                </ul>
+    
+                <span id='Title'> <span id="titleExp4">■ Analyste-développeur (stage) - Tec Charleroi </span> </span>
                 <ul>
                     <li><b><u>Date</u> :</b> <span id="dateExp4">Décembre 2019 – Février 2020</span></li>
                     <li><b><u id="locationExp4">Lieu</u> :</b> Tec Charleroi</li>
-                    <li><b><u id="functionName4">Fonction</u> :</b> <span id=function4>
+                    <li><b><u id="functionName4">Fonction</u> :</b> 
+                        <span id=function4>
                         mise en place d'un outil de digitalisation d'un schéma de 
-                        fibres optiques et création de la base de données. (ASP.NET et MySQL) 
-                    </span>
-                   </li>
-                </ul><br>
-
-                <span id='Title'> <span id="titleExp3">■ Analyste (stage) - Tec Charleroi</span> </span> <br>
+                        fibres optiques et création de la base de données. (Razor et MySQL) 
+                        </span>
+                    </li>
+                    </ul>
+    
+                <span id='Title'> <span id="titleExp3">■ Analyste (stage) - Tec Charleroi</span> </span>
                 <ul>
                     <li><b><u>Date</u> :</b> <span id="dateExp3">Janvier 2019 – Février 2019</span></li>
                     <li><b><u id="locationExp3">Lieu</u> :</b> Tec Charleroi</li>
                     <li><b><u id="functionName3">Fonction</u> :</b> 
                         <span id=function3>lecture et analyse de règlements dans le but de bâtir une 
-                        base de données liée à la gestion de prise de congé du personnel</span>
+                            base de données liée à la gestion de prise de congé du personnel</span>
                     </li>
-                </ul><br>
+                </ul>
 
-                <span id='Title'> <span id="titleExp2">■ Préposé recyparc</span> </span> <br>
+                <span id='Title'> <span id="titleExp2">■ Préposé recyparc</span> </span>
                 <ul>
                     <li><b><u>Date</u> :</b> <span id="dateExp2"> Octobre 2015 – Novembre 2020 </span></li>
                     <li><b><u id="locationExp2">Lieu</u> :</b> Hygea</li>
                     <li><b><u id=functionName2>Fonction</u> :</b>  
                         <span id=function2>accueil du citoyen et orientation vers les conteneurs adéquats </span></li>
-                </ul>
-
-                <span id='Title'> <span id="titleExp1">■ Technicien-vendeur IT (stage rhétorique)</span> </span> <br>
-                <ul>
-                    <li><b><u>Date</u> :</b> <span id="dateExp1">Mars 2013</span></li>
-                    <li><b><u id=locationExp1>Lieu </u> :</b> Service Informatique Harvent</li>
-                    <li><b><u id=functionName1>Fonction</u> :</b> 
-                        <span id=function1>réparation, diagnostics, montage informatique</span></li>
-                </ul>
+                    </ul>
+    
+                    <span id='Title'> <span id="titleExp1">■ Technicien-vendeur IT (stage rhétorique)</span> </span>
+                    <ul>
+                        <li><b><u>Date</u> :</b> <span id="dateExp1">Mars 2013</span></li>
+                        <li><b><u id=locationExp1>Lieu </u> :</b> Service Informatique Harvent</li>
+                        <li><b><u id=functionName1>Fonction</u> :</b> 
+                            <span id=function1>réparation, diagnostics, montage informatique</span></li>
+                    </ul>
             </section>
         </div>
+        <!-- END REGION experiences -->
 
-        <!--Compétences-->
+
+         <!--REGION Compétences-->
         <div id="skills">
             <section id="SkillSection"> 
                 
-                <p id="Category"><z>|</z> <span id="skills0">Compétences</span> <z>|</z></p>
+                <p id="Category"><z class="GreenBar">|</z> <span id="skills0">Compétences</span> <z class="GreenBar">|</z></p>
 
                 <p id="SubCategory"> <span id="programming">Programmation :</span></p>
                 <div id="flex"> 
                 <ul>
-                    <span id='Title'>■ Front-End </span> <br>
-                    <li>HTML, CSS (SASS) </li>
-                    <li>Javascript (Vanilla, ES6, Angular, React, Cypress)</li>
-                    <li>Bootstrap</li>
+                    <span id='Title'>■ Front-End </span> 
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>SASS</li>
+                    <li>bootstrap</li>
+                    <li>Blazor</li>
                 </ul>
                 <ul>
-                    <span id='Title'>■ Back-End </span> <br>
-                    <li>NodeJS (Express, Typescript, TypeORM)</li>
-                    <li>Javascript</li>
-                    <li>.NET, C#</li>
+                    <span id='Title'>■ Back-End </span>
+                    <li>.NET</li>
+                    <li>C#</li>
+                    <li>Blazor</li>
+                    <li>Javascript (ES6)</li>
                 </ul><br>
             </div>
 
@@ -178,14 +224,9 @@
                     <li>InnoDb</li>
                 </ul><br>
                 <ul>
-                    <span id='Title'>■ NoSQL </span> <br>
-                    <li>Mongo</li>
-                    <li>Elastic</li>
-                </ul><br>
-                <ul>
                     <span id='Title'>■ SQL </span> <br>
-                    <li>Entity</li>
-                    <li>Link</li>
+                    <li>Entity Framework</li>
+                    <li>Linq</li>
                 </ul><br>
                 </div>
                 
@@ -236,13 +277,15 @@
                 
             </section>
         </div>
-</div>
-<!--Footer-->
+        <!-- END REGION compétences -->
 
-    <footer id="footer">
-        
-    </footer>
-   
+    </div>
+
+    <div id="footer" class="footerWhite footerCV">
+</div>
+</div>
+
+
 
 </body>
 </html>

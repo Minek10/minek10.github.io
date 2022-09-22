@@ -1,0 +1,396 @@
+
+:root {
+    --main-color: rgb(142,166,155);
+    --bg-color: whitesmoke;
+}
+
+body {
+    word-wrap: break-word;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 38px;
+    margin: 0;
+    padding: 0;
+}
+
+#Container{
+    word-wrap: break-word;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    font-family: 'Quicksand', sans-serif;
+}
+
+.sweetAlertColor{
+    color: var(--main-color);
+}
+
+#a{
+    text-decoration: none;
+    color: black;
+}
+
+#Category{
+    text-align: center;
+    font-size: 30px;
+    text-decoration: underline overline var(--main-color);
+    text-shadow: 3px 3px 3px #ababab;
+    font-family: "Sofia", sans-serif;
+    margin-top: 7%;
+    //background-color: red;;
+}
+
+.firstCategory{
+    padding-top: 7.5vh;
+  }
+   
+.GreenBar{
+    color: var(--main-color);
+}
+
+// REGION button
+button#contactButton{
+    background-color:var(--bg-color);
+    padding: 10px;
+    border-radius: 10px;
+    border: none;
+    padding: 10px;
+}
+
+button#contactButton:hover{
+    font-weight: bold;
+}
+// END REGION
+
+.row.no-gutter {
+    margin-left: 0;
+    margin-right: 0;
+    }
+    
+    .row.no-gutter > div[class*="col-"] {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+
+// REGION about me
+#AboutMe{
+    padding: 1% 2% 1% 2%;
+  }
+
+  #txtAboutMe{
+    text-justify: auto;
+    padding-left: 1%;
+    padding-right: 1%;
+    text-align: justify;
+}
+
+#imgDesc {
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#profileImg {
+    width: 70%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 25%;
+}
+
+#about1{
+    margin-top: 3%;
+}
+
+#screenMedia{
+    padding-top:3px;
+    padding-left: 3px;
+    padding-right: 3px;
+    height: 25px;      
+}
+
+#screenMedia:hover{
+    opacity: 0.4;  
+}
+    
+// END REGION
+
+    // REGION table
+    #table{
+        background-color: var(--main-color);
+        box-shadow: 0px 5px 5px 5px var(--main-color);
+    }
+    // END REGION
+
+    // REGION Skills
+    #logoImg{
+        //background-color: rgb(222, 135, 208);
+        width: 60px;
+        height: 75px;  
+        margin-right: 5px;  
+        margin-left: 5px;  
+        }
+
+        #logoImg:hover{
+            opacity: 0.4;
+        }
+
+    #SkillsSoftware{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+    #SkillsLanguage{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+    #SkillsDb{
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+    }
+    // END REGION
+
+    // REGION Contact
+    #ContactMe{
+        background-color: var(--main-color);
+        box-shadow: 0px 5px 5px 5px var(--main-color);
+    }
+
+    #imgContact{
+        display: none;
+    }
+    // END REGION
+
+@media screen and (min-width: 567px){
+    #imgDesc, #profileImg {
+        width: 50%;
+       }
+    
+    #Container{
+        font-size: 16px;
+    }
+
+    #SkillsDb{
+        justify-content: center;
+    }
+
+    // .firstCategory{
+    //     background-color: blue;
+    //     padding-top: 5vh;
+    //   }
+}
+
+@media screen and (min-width: 768px){
+    #imgDesc, #profileImg {
+        width: 40%;
+    }
+
+    #Container{
+        font-size: 18px;
+    }
+
+    .firstCategory{
+        padding-top: 5vh;
+      }
+
+    // REGION skills
+    #SkillsSoftware{
+        justify-content: center;
+    }
+    #SkillsLanguage{
+        justify-content: center;
+    }
+    #SkillsDb{
+        justify-content: center;
+    }
+
+    #logoImg{
+        margin-left : 2%;
+        margin-right : 2%;
+    }
+    // END REGION
+}
+
+@media screen and (min-width: 992px){
+#Container{
+    font-size: 18px;
+}
+
+  #Category{
+    margin-top: 11.5vh;
+    font-family: "Sofia", sans-serif;
+    letter-spacing: 5px;
+    font-size: 30px;
+  }
+
+  .firstCategory{
+    padding-top: 0;
+  }
+
+    // REGION about me
+
+    #profileImg {
+        width: 30%;
+        //background-color: red;
+        float: right;
+        margin-right: 15px;
+    }
+
+    #about1{
+        margin-top: 0;
+    }
+
+    #hello{
+        size:18px;
+    }
+
+    #imgDesc {
+        width: 40%;
+    }
+    // #END REGION
+}
+
+@media screen and (min-width: 1200px){
+    #Container{
+        font-size: 16px;
+    }
+
+    #AboutMe{
+        margin-left:5%;
+        margin-right: 5%;
+    }
+   
+    // REGION about me
+    #profileImg {
+        width: 30%;
+    }
+    // #END REGION
+
+    //REGION table
+
+    #tableContent{
+        display: flex;
+        justify-content:space-evenly;
+        //background-color: aqua;
+        margin-left:5%;
+        margin-right: 5%;
+        color:pink;
+    }
+
+    #table2{
+        //background-color: red;
+        width: 60%;
+    }
+
+    #imgDesc {
+        width: 30%;
+
+    }
+    //END REGION
+}
+
+@media screen and (min-width: 1400px){
+    #AboutMe{
+        margin-left:7.5%;
+        margin-right: 7.5%;
+    }
+
+    // REGION about me
+    #profileImg {
+        width: 25%;
+    }
+    
+    #imgDesc {
+        width: 30%;
+        height: 70%;
+        margin: auto;
+    }
+    // #END REGION
+
+    //REGION table
+    #tableContent{
+        // display: flex;
+        // justify-content:flex-end;
+        //background-color: aqua;
+        margin-left:7.5%;
+        margin-right: 7.5%;
+    }
+    #table{
+        //background-color: darkseagreen;
+    }
+    #table2{
+        //background-color: red;
+        margin-right: 5%;
+        width: 55%;
+        //margin-right: 50%;
+        //background-color: darkgoldenrod;
+    }
+    //END REGION
+}
+
+@media screen and (min-width: 1600px){
+    #AboutMe{
+        margin-left:10%;
+        margin-right: 10%;
+    }
+
+    // REGION about me
+    #profileImg {
+        width: 20%;
+    }
+    
+    #imgDesc {
+        width: 30%;
+        height: 70%;
+        margin: auto;
+    }
+    // #END REGION
+
+    //REGION table
+    #tableContent{
+        margin-left:10%;
+        margin-right: 10%;
+    }
+
+    #table2{
+        margin-right: 5%;
+        width: 55%;
+        //margin-right: 50%;
+        //background-color: darkgoldenrod;
+    }
+    //END REGION
+}
+
+@media screen and (min-width: 1900px){
+    #AboutMe{
+        margin-left:15%;
+        margin-right: 15%;
+    }
+
+    // REGION about me
+    #profileImg {
+        width: 15%;
+    }
+    
+    #imgDesc {
+        width: 25%;
+        height: 70%;
+        margin: auto;
+    }
+    // #END REGION
+
+    //REGION table
+    #tableContent{
+        margin-left:15%;
+        margin-right: 15%;
+    }
+
+    #table2{
+        margin-right: 8%;
+    }
+    //END REGION
+}

@@ -1,166 +1,197 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>PortFolio de Riccardo Carroyer</title>
-    <link rel="stylesheet" href="./css/style_home.css">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Karla:wght@200;400&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/style_index.css">
+    <link rel="stylesheet" href="css/style_navmenu.css">
+    <link rel="stylesheet" href="css/style_footer.css">
 
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap" rel="stylesheet"> 
 
-    <script src="./js/utils/translate.js" defer></script>
-    <script src="./js/index_home.js" defer></script>
+    <script src="./js/index.js" defer></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="//cdn.jsdelivr.net/npm/sweetalert2@11/dist/sweetalert2.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+
+    <title>A Propos de moi</title>
 </head>
 
-
-
 <body>
+<div id="Container">
 
-    <header>
-        <div id="banner">
-            <span id="mode">Mode : 
-                <img id="screenModeImg" src="./img/small_screen2.png" alt="">
-            </span>
-                <span id="buttonNavigation">
-                    <a href="#"><button id="aboutBtn" class="btn btnAbout">A propos de moi</button></a>
-                    <a href="./html/cv.html"><button id="btnCV" class="btn">CV</button></a>
-                    <a href="#"><button id="btnProject" class="btn">Projets</button></a>
-                    <a href="#contactMe"><button id="btnContact" class="btn">Contact</button></a>
-                    <select name="languagesSwitch" id="languagesSwitch"></select>
-                </span>
-            </span>
-             
-        </div>
-    </header>
+    <!--Navigation bar-->
+    <div id="navmenu"></div>
+    <!--end of Navigation bar-->
+    
+    <script>
+    $(function(){
+        $("#navbar").load("/html/navmenu.html");
+        $("#footer").load("/html/footer.html");
+        });
+    </script>
     
 
-    <div id="contener" class="bloc">
 
-        
+    <div class="firstCategory">
+        <p id="Category">
+            <z class="GreenBar">|</z> 
+            <span id=aboutMeSection>A Propos de moi</span> 
+            <z class="GreenBar">|</z>
+        </p>
+    </div>
+
+    <div class="no-gutters">
+
+    <div id="AboutMe" class="pb-5 px-2 text-center reduce">
         <div id="hello" class="hello">
-            <p id="hello1">Bonjour et bienvenue à toutes et à tous !</p> 
-            <p id="hello2">Mon nom est</p> 
-            <div id="name" class="clignote"><b>Riccardo Carroyer</b></div>
+            <span id="hello1" class="fw-light">Bonjour et bienvenue à toutes et à tous,</span> 
+            <span id="hello2">mon nom est <b>Riccardo Carroyer</b>,</span> 
+
+        </div>   
+        <div id="txtAboutMe" class="mt-4">
             <img id="profileImg" src="./img/riccarde_tr.png" alt="">
+            <p id="about1">Passionné par l'outil informatique depuis le plus jeune âge, j'ai vite commencé mes premiers sites avec le logiciel FrontPage de la suite Office, j'étais Webmaster de mon équipe de foot à 11 ans !
+            Dès que j'ai eu l'opportunité, j'ai choisi une orientation informatique à l'école, j'y ai appris la maintenance, l'assemblage, installation, administration de Windows, Windows Server et de certaines distributions Linux. </p>
+            
+            <p id="about2">Dans la suite de cet apprentissage, j'ai terminé avec fruit un bachelier en informatique de gestion, où m'a été appris une certaine expérience de travail avec certains outils ainsi qu'une méthodologie de travail.  
+            Cette expérience m'a mis à l'aise avec les bases de données, les rouages de la programmation ainsi que l'analyse et la conception d'un projet. </p>
+            
+            <p id="about3">Dans la continuité de ce graduat, j'ai eu l'opportunité d'être sélectionné dans une formation 6 mois à 40 heures semaine comme développeur "Full stack NodeJS" organisé par Cefora-Téchnocité.  
+            Cette formation m'a permis de professionnaliser encore plus mon approche et mes méthodes de travail.</p>
+
+            <p id="about4">Cette formation m'a permis de collaborer avec une société de développement, où j'ai le plaisir de travailler dans une équipe formidable avec comme outil le framework web de Microsoft "Blazor"</p>
+
+            <p id="about5">Je suis une personne patiente et autonome mais je n'hésite pas à demander conseil ou une astuce à une personne expérimentée lorsque je suis face à des difficultés ou à des questionnements.
+            J'aime travailler en équipe</p>
         </div>
-    
+    </div>
 
-        <hr>
 
-            <!--A Propos-->
-        <div id="aboutMe">
-                <p id="Category" class="aboutMe"><z>|</z> <span id=aboutMeSection>A Propos de moi</span> <z>|</z></p>
-                <div id="txtAboutMe">
-                    <img src="./img/bitmoji_pc_tr.png" alt="" id="imgAbout">
-                    <br>
-                    <p id="about1">Passionné par l'outil informatique depuis le plus jeune âge, j'ai vite commencé mes premiers sites avec le logiciel FrontPage de la suite Office, j'étais Webmaster de mon équipe de foot à 11 ans !
-                    Dès que j'ai eu l'opportunité, j'ai choisi une orientation informatique à l'école, j'y ai appris la maintenance, l'assemblage, installation, administration de Windows, Windows Server et de certaines distributions Linux. </p>
-                    
-                    <p id="about2">Dans la suite de cet apprentissage, j'ai terminé avec fruit un bachelier en informatique de gestion, où m'a été appris une certaine expérience de travail avec certains outils ainsi qu'une méthodologie de travail.  
-                    Cette expérience m'a mis à l'aise avec les bases de données, les rouages de la programmation ainsi que l'analyse et la conception d'un projet. </p>
-                    
-                    <p id="about3">Dans la continuité de ce graduat, j'ai eu l'opportunité d'être sélectionné dans une formation 6 mois à 40 heures semaine comme développeur "Full stack NodeJS" organisé par Cefora-Téchnocité.  
-                    Cette formation m'a permis de professionnaliser encore plus mon approche et mes méthodes de travail.</p>
+    <div id="table" class="py-5 px-2">
+    <div id="tableContent">
+        
+  
+            <img src="./img/bitmoji_pc_tr.png" alt="" id="imgDesc">
+       
 
-                    <p id="about4">Je suis une personne patiente et autonome mais je n'hésite pas à demander conseil ou une astuce à une personne expérimentée lorsque je suis face à des difficultés ou a des questionnements.
-                    J'aime travailler en équipe</p>
-                </div>
-
-                <!--Tableau recap-->
-                <br>
-                <img src="./img/bitmoji_tr3.png" alt="" id="imgDescLeft">
-                <img src="./img/bitmoji_tr3.png" alt="" id="imgDescRight">
-                <div id="desc">
-                    <br>
-                    <span id="nameTable" class="left">Nom complet</span>        <span id="middle">:</span>      <span id="nameTableAnswer" class="right">Riccardo Carroyer</span><br>
-                    <span id="birthTable" class="left">Né le </span>            <span id="middle">:</span>      <span id="birthTableAnswer" class="right">23 janvier 1992</span><br>
-                    <span id="countryTable" Class="left">Pays</span>            <span id="middle">:</span>      <span id="countryTableAnswer" class="right">Belgique</span><br>
-                    <span id="nationalityTable" class="left">Nationalité</span> <span id="middle">:</span>      <span id="nationalityTableAnswer" class="right">Belge</span><br>
-                    <span id="cityTable" class="left">Ville</span>              <span id="middle">:</span>      <span id="cityTableAnswer" class="right">Jemappes</span><br>
-                    <span id="hobbiesTable" class="left">Occupations</span>     <span id="middle">:</span>      <span id="hobbiesTableAnswer" class="right">- Nouvelles technologies<br>- Supporter de football <br>- Promenades <br>- Rétro Gaming</span><br>
-                    <span id="emailTable" class="left">Email</span>             <span id="middle">:</span>      <span id="mailTableAnswer" class="right"><a href="mailto:riccardo_carroyer@hotmail.be">riccardo_carroyer@hotmail.be</a></span><br>
-                    <span id="diplomasTable" class="left">Diplômes</span>       <span id="middle">:</span>      <span id="diplomasTableAnswer" class="right"> - Qualification "Technicien en informatique"<br>- Bachelier en "Informatique de gestion"</span><br>
-                    <span id="mediaTable" class="left">Médias</span>            <span id="middle">:</span>      <span class="right">
-                                                    <a href="https://www.linkedin.com/in/riccardo-carroyer-425092208/"><img id="screenMedia" src="./img/linkedin2.png" alt=""></a>
-                                                    <a href="https://github.com/minek10"><img id="screenMedia" src="./img/git2.png" alt=""> </a>                                         </span><br>
-                </div>
-        </div>
-
-        <hr>
-
-                <!--A Languages de programmmation-->
-        <p id="Category" class="languagesSection"><z>|</z> <span id="LanguagesUsed">Les languages utilisés</span> <z>|</z></p>
-        <div id="languages">
-            <div id='langImg'>
-                    <img id="screenLang" src="./img/html3.png" alt="logo HTML">         
-                    <img id="screenLang" src="./img/angular2.png" alt="Logo Angular">   
-                    <img id="screenLang" src="./img/react2.png" alt="Logo react">       
-                    <img id="screenLang" src="./img/css3.png" alt="logo css">           
-                    <img id="screenLang" src="./img/sass2.png" alt="logo sass">     
-                    <img id="screenLang" src="./img//bootstrap.png" alt="Logo Bootstrap">    
-                    <img id="screenLang" src="./img/js3.png" alt="js3">                 
-                    <img id="screenLang" src="./img/nodeJs2.png" alt="Logo nodeJs">     
-                    <img id="screenLang" src="./img/typescript2.png"  alt="logo Typescript">
-                    <img id="screenLang" src="./img/c2.png" alt="Logo C#">               
-                    <img id="screenLang" src="./img/asp2.png" alt="Logo ASP">
+            <table class="table table-sm my-3 table-borderless center" id="table2">
+                <tbody>
+                    <tr>
+                        <td class="text-end">Nom Complet</td>
+                        <td class="text-center" style="width: 10px;">:</td>
+                        <td class="fw-lighter">Riccardo Carroyer</td>
+                    </tr>
+                    <tr>
+                        <td class="text-end">Né le</td>
+                        <td class="text-center" style="width: 10px;">:</td>
+                        <td class="col-6">23 janvier 1992</td>
+                    </tr>
+                    <tr>
+                        <td class="text-end">Nationnalité</td>
+                        <td class="text-center" style="width: 10px;">:</td>
+                        <td class="">Belge</td>
+                    </tr>
+                    <tr>
+                        <td class="text-end">Ville</td>
+                        <td class="text-center" style="width: 10px;">:</td>
+                        <td class="">Jemappes</td>
+                    </tr>
+                    <tr>
+                        <td class="text-end">Pays</td>
+                        <td class="text-center" style="width: 10px;">:</td>
+                        <td class="">Belgique</td>
+                    </tr>
+                    <tr>
+                        <td class="text-end">Email</td>
+                        <td class="text-center" style="width: 10px;">:</td>
+                        <td class=""><a class="text-decoration-none text-black"href="mailto:riccardo_carroyer@hotmail.be">riccardo_carroyer@hotmail.be</a></td>
+                    </tr>
+                    <tr>
+                        <td class="text-end">Diplômes</td>
+                        <td class="text-center" style="width: 10px;">:</td>
+                        <td class="">
+                            <div><i class="fa fa-caret-right" aria-hidden="true"></i> Qualification "Technicien en informatique"</div> 
+                            <div><i class="fa fa-caret-right" aria-hidden="true"></i> Bachelier en "Informatique de gestion"</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-end">Centres d'intérêt</td>
+                        <td class="text-center" style="width: 10px;">:</td>
+                        <td class="">                            
+                            <div><i class="fa fa-caret-right" aria-hidden="true"></i> Nouvelles technologies</div> 
+                            <div><i class="fa fa-caret-right" aria-hidden="true"></i> Supporter de football</div>
+                            <div><i class="fa fa-caret-right" aria-hidden="true"></i> Promenades</div> 
+                            <div><i class="fa fa-caret-right" aria-hidden="true"></i> Rétro Gaming</div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="text-end">Médias</td>
+                        <td class="text-center" style="width: 10px;">:</td>
+                        <td class="">                            
+                            <a href="https://www.linkedin.com/in/riccardo-carroyer-425092208/"><img id="screenMedia" src="./img/linkedin.png" alt=""></a>
+                            <a href="https://github.com/minek10"><img id="screenMedia" src="./img/git.png" alt=""> </a>
+                        </td>
+                    </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
 
-        <hr>
-                
-        <!--Logiciels-->
-        <p id="Category" class="softwaresSection"><z>|</z> <span id="softsUsed">Les logiciels utilisés</span> <z>|</z></p>
-        <div id="softs">
-            <div id='softsImg' >
-                <img id="screenSofts" src="./img/vscode2.png" alt="logo vscode"> </a>    
-                <img id="screenSofts" src="./img/vsStudio2.png" alt="Logo vsStudio"> </a>    
-                <img id="screenSofts" src="./img/wamp.png" alt="Logo wamp"> </a>    
-                <img id="screenSofts" src="./img/ws2l.png" alt="logo wsl"> </a>   
-                <img id="screenSofts" src="./img/insomnia2.png" alt="logo insomnia"> </a>   
-                <img id="screenSofts" src="./img/heidi2.png" alt="jlogi HeidiSql"> </a>   
-                <img id="screenSofts" src="./img/nosqlBooster2.png" alt="Logo nosqlBooster"> </a>   
+        <div class="py-5 px-2">
+            <p id="Category" class="languagesSection"><z class="GreenBar">|</z> <span id="LanguagesUsed">Les languages utilisés</span> <z class="GreenBar">|</z></p>
+            <div id="SkillsLanguage" class="d-flex mt-4 px-5">
+                    <img id="logoImg" src="./img/html.png" alt="logo HTML" title="HTML 5">            
+                    <img id="logoImg" src="./img/css.png" alt="logo css" title="CSS 3">           
+                    <img id="logoImg" src="./img/sass.png" alt="logo sass" title="SASS">     
+                    <img id="logoImg" src="./img//bootstrap.png" alt="Logo Bootstrap" title="Bootstrap 5">    
+                    <img id="logoImg" src="./img/js.png" alt="js3" title="Javascript">                 
+                    <img id="logoImg" src="./img/csharp.png" alt="Logo C#" title="C#">               
+                    <img id="logoImg" src="./img/blazor.png" alt="Logo blazor" title="Blazor">
             </div>
+
+            <p id="Category" class="softwaresSection"><z class="GreenBar">|</z> <span id="softsUsed">Les logiciels utilisés</span> <z class="GreenBar">|</z></p>
+            <div id="SkillsSoftware" class="d-flex mt-4 px-5">
+                    <img id="logoImg" src="./img/vscode.png" alt="logo vscode" title="Visual Studio Code">    
+                    <img id="logoImg" src="./img/vsstudio.png" alt="Logo vsStudio" title="Visual Studio 19/22"> 
+                    <img id="logoImg" src="./img/wamp.png" alt="Logo wamp" title="WampServer"> 
+                    <img id="logoImg" src="./img/wsl.png" alt="logo wsl" title="WSL"> 
+                    <img id="logoImg" src="./img/insomnia.png" alt="logo insomnia" title="Insomnia">
+            </div>
+
+            <p id="Category" class="bdSection"><z class="GreenBar">|</z> <span id="dbEngines">Les moteurs DB utilisés</span> <z class="GreenBar">|</z></p>
+            <div id="SkillsDb" class="d-flex mt-4 px-5">
+                    <img id="logoImg" src="./img/mysql.png" alt="logo mysql" title="MySql">    
+                    <img id="logoImg" src="./img//ef.png" alt="Logo Entity Framework" title="Entity Framework">
+            </div>
+            </div>
+            
+
+            <div id="ContactMe" class="py-5 px-2 mt-5" >
+                <div id="contactMe" class="text-center contactMe">
+                <p id="contactMe">N'hésitez pas à me contacter si mon profil vous intéressse ou si vous avez la moindre question, j'y répondrais avec le plus grand plaisir !</p>
+                <img src="./img/bitmoji_tel_tr.png" alt="" id="imgContact">
+            </div> 
+            <div id="btnContener" class="text-center">
+                <button id="contactButton" class="btnContact">
+                    <a  class="text-decoration-none text-black" href="/html/contact.html">Me contacter</a>
+                </button>
+
+            </div> 
         </div>
 
-        <hr>
-
-        <!--Db-->
-        <p id="Category" class="bdSection"><z>|</z> <span id="dbEngines">Les moteurs BD utilisés</span> <z>|</z></p>
-        <div id="db">
-            <div id='dbImg'>
-                <img id="screenBd" src="./img/mysql2.png" alt="logo HTML"> </a>    
-                <img id="screenBd" src="./img/mongodb2.png" alt="Logo Angular"> </a>    
-                <img id="screenBd" src="./img/elastic2.png" alt="Logo react"> </a>    
-                <img id="screenBd" src="./img//ef0.png" alt="Logo Entity Framework">
-            </div>
-        </div>
-
-    <hr>
-    
-    <!--Me coontacter-->
-    <p id="Category" class="contactSection"><z>|</z> <span id="contactMeSection">Me contacter</span> <z>|</z></p>
-    <div id="contactMe" class="contactMe">
-        <p id="contactMe">N'hésitez pas à me contacter si mon profil vous intéressse ou si vous avez la moindre question, j'y répondrais avec le plus grand plaisir !</p>
-        <img src="./img/bitmoji_tel_tr.png" alt="" id="imgContact">
-    </div> 
-    <div id="btnContener">
-        <button id="contactButton" class="btnContact">Me contacter</button>
-    </div> 
+    </div>
+</div>
 
 
-</div>   
+<div id="footer" class="footerWhite">
+</div>
 
-
-<!--Footer-->
 
 </body>
 </html>

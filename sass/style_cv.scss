@@ -1,112 +1,27 @@
+:root {
+    --main-color: rgb(142,166,155);
+    --bg-color: whitesmoke;
+}
+
 body {
-    background-color: whitesmoke;
-    //overflow: hidden;
     word-wrap: break-word;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 15px;
+    font-size: 38px;
     margin: 0;
     padding: 0;
-    font-family: 'Karla', sans-serif;
-    //font-family: 'Quicksand', sans-serif;
 }
 
-header{
-    width: 100%;
-    display: inline-block;
-    background-color: rgb(142,166,155);
-    background: linear-gradient(360deg, rgba(245,245,245,1) 0%, rgba(168,186,177,1) 50%);
-    top:0;
-    padding-bottom: 3%;
-    vertical-align: middle;
-    position:fixed;
-    z-index: 1000;
+#Container{
+    word-wrap: break-word;
+    font-size: 14px;
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg-color);
+    font-family: 'Quicksand', sans-serif;
 }
 
-#banner{
-    margin : 0 auto;
-    //background-color: blue;
-    width: 100%;
-    vertical-align: middle;
-    text-align: center;
-    padding-top:2%;
-}
-
-#mode{
-    //background-color: yellow;
-    padding-left: 5px;
-    float: left;
-    font-size: 13px;
-}
-
-#screenModeImg{
-    padding-top:3px;
-    height: 15px;  
-    
-}
-
-  
 #buttonNavigation{
-    //background-color: brown;
-    align-content: center;
-    vertical-align: middle;
-    //background-color: red;
-    border: none;
-    background: none;
-    outline: none;
-}
-
-button{
-
-    padding-left: 0.5%;
-    padding-right: 0.5%;
-    border: none;
-    font-size: 11px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-
-    background-color: Transparent;
-    background-repeat:no-repeat;
-    border: none;
-    cursor:pointer;
-    overflow: hidden;
-    outline:none;
-    //background-color: red;
-}
-
-button:hover{
-   color:white
-}
-
-#languagesSwitch{
-    float:right;
-    background-color: whitesmoke;
-    border:none;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-size: 11px;
-    margin-top:2px;
-    margin-right: 1%;
-    border-radius: 30px;
-}
-
-#languagesSwitch:hover {
-    background: rgb(121, 167, 145);
-    color: black;
-    border-radius: 30px;
-  }
-  
-  
-#languagesSwitch:focus {
-    background: rgb(121, 167, 145);
-    color: black;
-    border-radius: 30px;
-  }
-
-
-#homeImg{
-    width: 10%;
-    background-color: yellow;
-}
-#homeImg:hover{
-    background-color: salmon;
+    font-family: "Sofia", sans-serif;
 }
 
 li{
@@ -115,7 +30,7 @@ li{
 li::before{
     content: "•";
     padding-right: 10px;
-    color: rgb(142,166,155);
+    color: var(--main-color);
     font-size:20px;
 }
 
@@ -130,6 +45,7 @@ a:hover{
 }
 
 
+// REGION Section
 section{
     color : black;
     //background-color: yellow;
@@ -149,27 +65,35 @@ section{
         text-align: center;
         font-size: 30px;
         //background-color: red;
-        text-decoration: underline overline rgb(142,166,155);
+        text-decoration: underline overline var(--main-color);
         letter-spacing: 5px;
         font-family: "Sofia", sans-serif;
         cursor: default;
-        
+        text-shadow: 3px 3px 3px #ababab;
+    }
+
+    .GreenBar{
+        color: var(--main-color);
     }
     
     #SubCategory{
         text-align: center;
         font-size: 25px;
         //background-color: red;
-        text-decoration: underline dotted 3px rgb(142,166,155);
+        text-decoration: underline dotted 3px var(--main-color);
         font-style: oblique;
     }
 }
+// END REGION Section
 
-
-
+// REGION about
 #aboutSection{
     text-align: left;
-    padding-top: 10%;
+    padding-top: 5%;
+
+    .link{
+        cursor: pointer;
+    }
 
     #profileImg{
         display: block;
@@ -182,13 +106,6 @@ section{
         transition-duration: 2s;
 
     }
-
-    #profileImg:hover{
-
-        content:url("../img/riccarde_smile_tr.png");
-        
-        //background-color: yellow;
-    }
     #description{
         //background-color: blueviolet;
         width: 75%;
@@ -197,12 +114,15 @@ section{
         #name{
             font-size: 28px;
             padding-left:10px;
+            //background-color: brown;
         }
+
         #function{
-            float: right;
             font-size: 20px;
             padding-right:10px;
+            text-align: right;
         }
+
         #corps{
             padding-left:10px;
             //background-color: red;
@@ -210,111 +130,48 @@ section{
                 width: 20px;
                 height: 10px;
             }
-            
-
         }
+
         #network{
-            float: right;
             padding-right:10px;
-           
+            text-align: right;
         }
-        
     }
 }
+// END REGION About
 
-footer{
-    position:fixed;
-    bottom:0;
-    width:100%;
-    background: linear-gradient(180deg, rgba(245,245,245,1) 0%, rgba(168,186,177,1) 65%, rgba(168,186,177,1) 98%);
-    text-align: center;
-    font-size: 12px;
-    padding-bottom: 5px;
-    padding-top:5px;
-    
-}
 
-z{
-    color: rgb(142,166,155);
-}
-
-@media screen and (min-width: 490px){
-    button{
-        padding-left: 1.5%;
-        padding-right: 1.5%;
-        font-size: 13px;
-    }
-
-    #languagesSwitch{
-      
-        font-size: 13px;
-        margin-top:1px;
-        margin-right: 1%;
-    }
-}
-
-//tablet
-@media screen and (min-width: 640px){
-
-    #buttonNavigation{
-        //background-color: brown;
-        align-content: center;
-        vertical-align: middle;
-    }
-    
-    button{
-        padding-left: 2%;
-        padding-right: 2%;
-        font-size: 15px;
-    }
-
-    #languagesSwitch{
-        float:right;
-        margin-right:5%;
-        background-color: whitesmoke;
-        border:none;
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    }
-    
-    #languagesSwitch:hover {
-        background: rgb(121, 167, 145);
-        color: black;
-      }
-      
-    #languagesSwitch:active {
-        background: yellow;
-        color: blue;
-      }
-      
-    #languagesSwitch:focus {
-        background: rgb(121, 167, 145);
-        color: black;
-      }
-    
+@media screen and (min-width: 576px){    
     section{
         color : black;
         //background-color: yellow;
         padding-top: 1%;
         padding-bottom: 5%;
         padding-left:2%;
-        padding-right: 2% ;
+        padding-right: 2%;
         opacity: 1;
         transition-duration: 0.5s;
     }
 
-    section#aboutSection{
-        padding-top: 10%;
-        //background-color: sandybrown;
+    #buttonNavigation{
+        button{
+            font-size: 20px;
+        }
+        button:hover{
+            background-color: var(--main-color);
+        }
     }
-
-    header{
-        padding-bottom: 1.5%;
-
-    }
-
 }
 
-@media screen and (min-width: 790px) {
+
+@media screen and (min-width: 768px) {
+
+    #personalInfo{
+        width: 80%;
+        //background-color: blue;
+        margin: auto;
+    }
+
     span#name, span#corps{
         margin-left:10%;
         //background-color: slateblue;
@@ -329,286 +186,167 @@ z{
     }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 992px) {
+
+    #aboutSection{
+        text-align: left;
+        padding-top: 10%;
+    }
+
     span#name, span#corps{
         margin-left:20%;
-        //background-color: slateblue;
     }
 
     span#function, span#network{
         margin-right:20%;
     }
-}
-//Laptop
-@media screen and (min-width: 1260px) {
 
-body{
-    font-size: 12px;
-    margin: 0;
-    padding: 0;
-    //overflow: hidden;
+    #buttonNavigation{
+        button{
+            font-size: 24px;
+        }
+    }
 }
 
+@media screen and (min-width: 1200px) {
 
-#about{
-    float:right;
-    width: 30%;
-    height: 100vh;
-    display: fixed;
-    //background-color: rgb(142,166,155);
-    background: #f5f5f5;
-    //background: linear-gradient(180deg, rgba(245,255,250,1) 0%, rgba(192,209,201,1) 50%);
-    background: linear-gradient(90deg, rgba(245,245,245,1) 0%, rgba(168,186,177,1) 70%);
-    
-
-}
-
-#header{
-    padding:0;
-    margin-bottom: 0;
-    //margin-bottom: 100px;
-    //display: inline-block;
-    //background-color: yellowgreen;
-    background-image: 0;
-}
-
-
-
-#aboutSection{
-    margin-top : 0;
-    //background-color: yellow;
-}
-
-header{
-    width: 70%;
-    //height: 5%;
-    display: inline-block;
-    top:0;
-    vertical-align: middle;
-    position:fixed;
-
-    padding:0;
-    //padding-top: 2%;
-    //margin-bottom: 100px;
-    //display: inline-block;
-    //background-color: yellowgreen;
-    //background-color: whitesmoke;
- 
-}
-
-#banner{
-    margin : 0 auto;
-    //background-color: blue;
-    width: 100%;
-    vertical-align: middle;
-    text-align: center;
-    font-size: 10px;
-    padding-bottom: 2%;
-    background-color: whitesmoke;
-    //background-image: 0;
-    
-        
-}
-
-#mode{
-    //background-color: yellow;
-    padding-left: 10px;
-    float: left;
-    //font-size: 15px;
-}
-
-#screenModeImg{
-    padding-top:3px;
-    height: 15px;  
-}
-  
-#buttonNavigation{
-    //background-color: brown;
-    align-content: center;
-    vertical-align: middle;
-}
-
- .btn{
-    opacity: 0.8;
-    transition: 0.3s;
-    padding-left: 1%;
-    padding-right: 1%;
-    margin-left: 2%;
-    margin-right: 2%;
-    opacity: 0.7;
-    transition: 1s;
-    border-radius: 30px;
-}
-
-.btn:hover{
-    opacity: 1;
-    //color:rgb(107, 146, 127);
-    color: whitesmoke;
-    background-color:rgb(121, 167, 145);
-    
-    
- }
-
- #languagesSwitch{
-      
-    font-size: 15px;
-    margin-top:7px;
-    margin-right: 5%;
-    letter-spacing: 3px;
-    opacity: 0.7;
-    transition: 1s;
-    border-radius: 30px;
-    
-}
-
-
-#languagesSwitch:hover {
-    background: rgb(121, 167, 145);
-    color: black;
-    border-radius: 30px;
-    opacity: 1;
-  }
-
-.scroller {
-    width: 70%;
-    height: 100vh;
-    overflow-y: scroll;
-    //scrollbar-color: rgb(142,166,155) whitesmoke;
-    scrollbar-color: rgb(182, 206, 204) whitesmoke;
-    scrollbar-width: thin;
-
-}
-
-#about{
-    
-}
-
-#aboutSection{
-    text-align: left;
-    
-    
-
-    #profileImg{
-          
-        width: 175px;
-        height: 200px;
-        border-radius: 10%;
-        padding-top: 2%;
-        transition-duration: 2s;
-        //background-color: pink;
-    
+    body{
+        font-size: 12px;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
     }
 
-    #description{
-        //background-color: blueviolet;
-        width: 70%;
-        margin:auto;
+    // REGION About
+    #personalInfo{
+        width: 100%;
+        //background-color: orange;
+    }
+    
+    #about{
+        float:right;
+        width: 30%;
+        height: 100vh;
+        display: fixed;
+        background: #f5f5f5;
+        background: linear-gradient(90deg, var(--bg-color) 0%, var(--main-color) 70%);
+        margin-top: 1.5%;
+    }
+     
+    #aboutSection{
+        margin-top : 10%;
+        //background-color: yellow;
+    }
+    
+    #screenModeImg{
+        padding-top:3px;
+        height: 15px;  
+    }
 
-        #name{
-            margin-left:0;
-            font-size: 26px;
-            padding-left:10px;
-        }
-        #function{
-            float: right;
-            font-size: 18px;
-            padding-right:10px;
-            margin-right:0;
-        }
-        #corps{
-            margin-left:0;
-            padding-left:10px;
+    #buttonNavigation{
+        button{
             font-size: 14px;
+        }
+        button:hover{
+            background-color: var(--bg-color);
+            color: var(--main-color); 
+        }
+    }
+
+    #aboutSection{
+        text-align: left;
+        
+        #profileImg{
+            width: 175px;
+            height: 200px;
+            border-radius: 10%;
+            padding-top: 2%;
+            transition-duration: 2s;
+            //background-color: pink;
+        }
+    
+        #description{
+            //background-color: blueviolet;
+            width: 85%;
+            margin:auto;
+    
+            #name{
+                margin-left:0;
+                font-size: 26px;
+                padding-left:10px;
+            }
+            #function{
+                font-size: 18px;
+                padding-right:10px;
+                margin-right:0;
+            }
+            #corps{
+                margin-left:0;
+                padding-left:10px;
+                font-size: 14px;
+                //background-color: red;
+            }
+            #network{
+                padding-right:10px;
+                margin-right:0;
+            }
+        }
+    }
+    // END REGION About
+
+    // REGION SCROLLER
+    .scroller {
+        width: 70%;
+        height: 100vh;
+        overflow-y: scroll;
+        //scrollbar-color: rgb(142,166,155) whitesmoke;
+        scrollbar-color: var(--main-color) var(--bg-color);
+        scrollbar-width: thin;
+    }
+    
+    section{
+        color : black;
+        //background-color: yellow;
+        padding : 6% 3% 3% 3%;
+
+        #Title{
+            font-size: 1.2em;
             //background-color: red;
         }
-        #network{
-            float: right;
-            padding-right:10px;
-            margin-right:0;
-        }
-
-
         
-    }
-}
-
-
-
-
-
-
-
-section{
-    color : black;
-    //background-color: yellow;
-    padding : 6% 3% 3% 3%;
-    
-    #Title{
-        font-size: 1.2em;
-        //background-color: red;
-    }
-
-    #Category{
-        text-align: center;
-        font-size: 30px;
-        //background-color: red;
-        text-decoration: underline overline rgb(142,166,155);
-        letter-spacing: 7px;
-        padding: 0;
+        #Category{
+            text-align: center;
+            font-size: 30px;
+            //background-color: red;
+            text-decoration: underline overline var(--main-color);
+            letter-spacing: 7px;
+            padding: 0;
+            margin-top: 0;
+        }
+            
+        #SubCategory{
+            text-align: left;
+            font-size: 25px;
+            //background-color: red;
+            text-decoration: underline dotted 3px var(--main-color);
+            font-style: oblique;
+        }
     }
     
-    #SubCategory{
-        text-align: center;
-        font-size: 25px;
-        //background-color: red;
-        text-decoration: underline dotted 3px rgb(142,166,155);
-        font-style: oblique;
+    #educations, #skills, #experiences {
+        padding-top: 4%;
+        //background-color: aqua;
+        height: 100%;
     }
-}
-    #Category.contact{
-        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-        //background-color: aquamarine;
-        padding-top: 0;
-        margin-top: 0;
-        //font-size: 12px;
-        text-decoration: none;
-}
-
-footer{
-        width:70%;
-    }
-
-
-    #educations, #skills #experiences{
-        height: 100vh;
-    }
-
-
-    #skills{
-        //background-color: yellowgreen;
-    }
-
-    #educations{
-        //background-color: blueviolet;
-    }
-
-    #flex{
+    
+     #flex{
         //background-color: brown;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
         width: 100%;
-        align-self: center;
-        align-items: center;
-        justify-content:baseline;
-
     }
-
-    footer{
-        background-color: whitesmoke;
-        background-image: linear-gradient(90deg, whitesmoke 0%, whitesmoke 50%, whitesmoke 100%);
-    }
-
+    // END REGION Scroller
 
 }
 
@@ -618,69 +356,81 @@ footer{
         font-size: 15px;
         //overflow: hidden;
     }
-
+    
     span#mode{
         font-size: 18px;
     }
-    
+
+    // REGION About
     #about{
         width: 25%;
         height: 100vh;
     }
 
-    header{
-        width: 75%;
-        height: 5%;
+    #buttonNavigation{
+        button{
+            font-size: 16.5px;
+        }
     }
+        
+    #aboutSection{
     
+         #profileImg{
+              
+                width: 275px;
+                height: 300px;
+                border-radius: 10%;
+                padding-top: 2%;
+                transition-duration: 2s;
+                //background-color: pink;
+            }
+        
+            #description{
+                width: 75%;
+    
+                #name{
+                    font-size: 30px;
+                }
+                #function{
+                    font-size: 20px;
+                }
+                #corps{
+                    font-size: 16px;
+                    //background-color: red;
+                }
+                #network{
+                    font-size: 18px;
+                    //background-color: aqua;
+                }
+            }
+        }
 
-    button{
-        padding-left: 3%;
-        padding-right: 3%;
-        font-size: 20px;
-        letter-spacing: 7px;
+        // END REGION About
+
+        #educations, #skills, #experiences {
+            padding-top: 2%;
+        }
+
+        .scroller {
+            width: 75%;
+       }
+       
     }
-    
-    .scroller {
-        width: 75%;
+
+@media screen and (min-width: 1890px){
+    #buttonNavigation{
+        button{
+            font-size: 20px;
+        }
+    }
+
+    #educations, #skills, #experiences {
+        padding-top: 1%;
     }
 
     #aboutSection{
 
-        #profileImg{
-          
-            width: 275px;
-            height: 300px;
-            border-radius: 10%;
-            padding-top: 2%;
-            transition-duration: 2s;
-            //background-color: pink;
-        
-        }
-    
-        #description{
-            width: 75%;
-
-            #name{
-                font-size: 30px;
-            }
-            #function{
-                font-size: 20px;
-            }
-            #corps{
-                font-size: 16px;
-                //background-color: red;
-            }
-            #network{
-                font-size: 18px;
-                //background-color: aqua;
-            }
-            
-        }
-    }
-
-    footer{
-        width:75%;
+        margin-top: 7%;
     }
 }
 
@@ -688,57 +438,49 @@ footer{
 
     body{
         font-size: 15px;
-        //overflow: hidden;
     }
-    
+        
     #about{
         width: 25%;
         height: 100vh;
     }
 
-    button{
-        padding-left: 3%;
-        padding-right: 3%;
-        font-size: 20px;
-        letter-spacing: 7px;
-    }
-    
-    .scroller {
-        width: 75%;
-    }
-
+    // REGION About
     #aboutSection{
-    
+        margin-top: 2.5%;
+        #buttonNavigation{
+            //background-color: red;
+            
+            button{
+                font-size: 22px;
+            }
+        }
+        
         #description{
             width: 75%;
-
+    
             #name{
                 font-size: 36px;
             }
+
             #function{
                 font-size: 26px;
             }
+                
             #corps{
                 font-size: 1.25em;
                 //background-color: red;
             }
+
             #network{
                 font-size: 1.25em;
-            }
-            
+            }   
         }
     }
+    // END REGION About
 
-    footer{
-        width:75%;
+    #educations, #skills, #experiences {
+        padding-top: 0;
     }
 }
-
-
-
-
-
-
-
-  
-
+    

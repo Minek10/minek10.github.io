@@ -1,0 +1,113 @@
+
+:root {
+    --main-color: rgb(142,166,155);
+    --bg-color: whitesmoke;
+}
+
+// REGION menu bar
+.topnav {
+    overflow: hidden;
+    background-color: var(--main-color);
+    position: fixed;
+    top:0;
+    width: 100vw;
+    z-index: 1000;
+    font-family: 'Quicksand', sans-serif;
+  }
+  
+  /* Hide the links inside the navigation menu (except for logo/home) */
+  .topnav #myLinks {
+    display: none;
+    border-bottom: thick double var(--bg-color);
+    //min-height: 100vh;
+    //position: fixed;
+  }
+  
+  /* Style navigation menu links */
+  .topnav a {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    border-bottom: 1px solid var(--bg-color);
+  }
+
+  .topnav label {
+    color: black;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+    display: block;
+    border-bottom: 1px solid var(--bg-color);
+  }
+  
+  /* Style the hamburger menu */
+  .topnav a.icon {
+    background: var(--main-color);
+    display: block;
+    position: absolute;
+    right: 0;
+    top: 0;
+  }
+  
+  /* Add a grey background color on mouse-over */
+  .topnav a:hover {
+    background-color: var(--bg-color);
+    color: black;
+  }
+  
+  /* Style the active link (or home/logo) */
+  .active {
+    background-color: var(--main-color);
+    color: black;
+  }
+
+  //END REGION
+  
+
+  @media screen and (min-width: 992px){
+// REGION menu bar
+
+.topnav {
+  overflow: hidden;
+  background-color: var(--main-color);
+  position: relative;
+  top:0;
+}
+    
+.topnav #myLinks {
+    background-color: var(--main-color);
+    display: flex;
+    justify-content:center;
+    position: fixed;
+    min-width: 100vw;
+    min-height: 3%;
+    border:none;
+    box-shadow: 0px 2px 12px 2px var(--main-color);
+    text-transform: uppercase;
+}
+      
+/* Style navigation menu links */
+.topnav a {
+    border-bottom: none;
+    margin-left: 2.5%;
+    margin-right: 2.5%;
+}
+    
+.topnav label {
+    display: none;
+}
+    
+.topnav a:hover {
+    background-color: transparent;
+    transition: 0.5s;
+    color : var(--bg-color);
+    //font-weight: bold;
+}
+    
+#HamburgerBtn{
+    display: none;
+}
+}
+//END REGION
