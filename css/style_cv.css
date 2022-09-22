@@ -23,6 +23,8 @@ body {
 
 #buttonNavigation {
   font-family: "Sofia", sans-serif;
+  margin-top: 15%;
+  font-size: 16px;
 }
 
 li {
@@ -141,6 +143,9 @@ section #SubCategory {
     opacity: 1;
     transition-duration: 0.5s;
   }
+  #buttonNavigation {
+    margin-top: 10%;
+  }
   #buttonNavigation button {
     font-size: 20px;
   }
@@ -163,6 +168,9 @@ section #SubCategory {
   #mode {
     font-size: 15px;
   }
+  #buttonNavigation {
+    margin-top: 8%;
+  }
 }
 
 @media screen and (min-width: 992px) {
@@ -175,6 +183,9 @@ section #SubCategory {
   }
   span#function, span#network {
     margin-right: 20%;
+  }
+  #buttonNavigation {
+    margin-top: 3%;
   }
   #buttonNavigation button {
     font-size: 24px;
@@ -206,6 +217,9 @@ section #SubCategory {
   #screenModeImg {
     padding-top: 3px;
     height: 15px;
+  }
+  #buttonNavigation {
+    margin-top: 0;
   }
   #buttonNavigation button {
     font-size: 14px;
@@ -284,6 +298,9 @@ section #SubCategory {
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
+  }
+  #footer {
+    position: fixed;
   }
 }
 

@@ -22,6 +22,8 @@ body {
 
 #buttonNavigation{
     font-family: "Sofia", sans-serif;
+    margin-top: 15%;
+    font-size: 16px;
 }
 
 li{
@@ -154,6 +156,8 @@ section{
     }
 
     #buttonNavigation{
+        margin-top: 10%;
+
         button{
             font-size: 20px;
         }
@@ -184,6 +188,10 @@ section{
     #mode{
         font-size: 15px;
     }
+
+    #buttonNavigation{
+        margin-top: 8%;
+    }
 }
 
 @media screen and (min-width: 992px) {
@@ -202,6 +210,7 @@ section{
     }
 
     #buttonNavigation{
+        margin-top: 3%;
         button{
             font-size: 24px;
         }
@@ -244,6 +253,7 @@ section{
     }
 
     #buttonNavigation{
+        margin-top: 0;
         button{
             font-size: 14px;
         }
@@ -348,6 +358,9 @@ section{
     }
     // END REGION Scroller
 
+    #footer{
+        position: fixed;
+    }
 }
 
 @media screen and (min-width: 1580px){
