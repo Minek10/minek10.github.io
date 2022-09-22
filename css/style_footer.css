@@ -31,4 +31,8 @@
 .footerCV {
   position: fixed;
 }
+
+#actualYear {
+  margin-left: 4px;
+}
 /*# sourceMappingURL=style_footer.css.map */

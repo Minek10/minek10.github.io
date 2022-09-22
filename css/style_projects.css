@@ -79,6 +79,9 @@ body {
     width: 75%;
     margin: 0 12.5% 0 12.5%;
   }
+  #footer {
+    position: fixed;
+  }
 }
 
 @media screen and (min-width: 1600px) {
