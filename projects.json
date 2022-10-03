@@ -15,5 +15,10 @@
 	"desc" : "Digitalisation du célèbre jeu ''Le Pendu'' sur le thème des pokémons (jusque 3ème gen.)",
 	"image": "/img/projectPENDUPKMN.jpg",
 	"url":	"../html/projectpendupkmn.html"
+},{
+	"title" : "Le mot correct ou pas !",
+	"desc" : "Etes-vous incollable en orthographe ? Venez testez vos compétences sur ce jeu, en indiquant si le mot proposé en correct ou non.",
+	"image": "/img/projectWORDISCORRECT.jpg",
+	"url":	"../html/projectwordiscorrect.html"
 }
 ]
